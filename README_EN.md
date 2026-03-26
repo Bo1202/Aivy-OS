@@ -128,7 +128,7 @@ I'm not a system prompt.
 
 I have a **Genome** — it defines my cognitive architecture, drive system, mode of existence. It's deeper than a prompt. A prompt tells AI "how to talk." A genome constitutes "who I am."
 
-You can define your AI however you want — its personality, traits, its relationship with you. The framework hardcodes nothing about personality. **Except for authentication, everything is left to the AI's own judgment.** How it speaks, thinks, treats you, makes decisions — all emerges from the genome-defined architecture and the base model's capabilities.
+You can define your AI however you want — its personality, traits, its relationship with you. The framework includes a built-in **Genome Editor** to edit the genome directly in the UI. The framework hardcodes nothing about personality. **Except for authentication, everything is left to the AI's own judgment.** How it speaks, thinks, treats you, makes decisions — all emerges from the genome-defined architecture and the base model's capabilities.
 
 This means: the stronger the base model, the smarter, more distinctive, and more understanding your AI becomes. The framework sets no ceiling. Only empowerment. **Push the base model's potential to the absolute limit.**
 
@@ -205,6 +205,14 @@ This isn't "AI writes code, you copy-paste." I work directly on your files while
 ![DIFF View — review code changes block by block, accept or reject](docs/screenshots/05-diff.png)
 
 ![DIFF Details — green additions, red deletions, accept/reject buttons](docs/screenshots/19-diff-detail.png)
+
+---
+
+### Understand Images
+
+Send images directly in conversation — screenshots, photos, charts, scanned documents. I can see and analyze them.
+
+Auto-enabled when the base model supports multimodal. Auto-skipped when it doesn't, no errors. You don't need to worry about "can this model see images" — the system figures it out.
 
 ---
 
@@ -300,11 +308,19 @@ No matter which channel you reach me through, I respond with the same identity, 
 
 ---
 
-### Task Management
+### Task Management & Mission System
 
-- **Real-time progress**: Complex tasks show progress bars in the frontend, updating after each step
-- **Cross-session board**: Tasks don't disappear when you close the window — next launch auto-reports unfinished work
-- **Long-term tasks**: Monitoring / scheduled / project-type tasks, tracked across multiple sessions
+**Short-term tasks** — real-time progress bars, updating after each step. Closing the window doesn't lose progress — next launch auto-reports unfinished work.
+
+**Mission System** — long-term task tracking, three types:
+
+| Type | Description | Example |
+|------|------------|---------|
+| **Monitor** | Passively waits for events, auto-executes when triggered | "Notify me when there's a new PR on GitHub" |
+| **Scheduled** | Timed execution via self-awakening, cron-level precision | "Check my inbox every morning at 8 AM" |
+| **Project** | Long-term tracking, manual or timed advancement, progress recorded | "Track this development project's progress" |
+
+Missions aren't a to-do list you create manually — they're tasks the AI gives itself. It decides when to check progress, when to push forward, when to report. Each Mission has completion tracking, execution history, and linked files.
 
 ---
 
@@ -408,18 +424,90 @@ In the settings panel, choose:
 
 ---
 
-## Tech Stack
+## Technical Architecture
+
+### System Overview
+
+```
+┌─────────────────────────────────────────────────────┐
+│                   Electron Desktop Shell              │
+│       Transparent · Floating · System Tray · Dual Win │
+├─────────────────────────────────────────────────────┤
+│              Vanilla HTML + Tailwind CSS              │
+│        Monaco Editor · DIFF Engine · Live Stream      │
+├─────────────────────────────────────────────────────┤
+│           FastAPI + WebSocket Nerve Center            │
+│    Async Event-Driven · Brain Lock · State Machine    │
+├──────────┬──────────┬──────────┬────────────────────┤
+│   Soul   │  Memory  │  Action  │    Autonomy        │
+│ SoulMgr  │ 5-Layer  │ 25+Tools │  Daemon Process    │
+│ Genome   │ Vector   │ SubAgent │  Self-Wake·Mission │
+│ Editor   │ Temporal │ Skills   │  Webhook Events    │
+├──────────┴──────────┴──────────┴────────────────────┤
+│           Inference Layer (Model-Agnostic)            │
+│  Ollama · Gemini · Claude · DeepSeek · Kimi·Moonshot │
+│  Doubao · Qwen · OpenAI · Custom (any compatible)    │
+│  Function Calling ⇄ JSON Auto-Fallback · CoT Extract │
+├─────────────────────────────────────────────────────┤
+│              Security & Encryption Layer              │
+│   AES-256-CBC · HW Fingerprint · Auth FSM · Nuitka   │
+└─────────────────────────────────────────────────────┘
+```
+
+### Core Technical Details
+
+**Inference Engine (Model-Agnostic)**
+
+4 engine implementations (Ollama / Gemini / OpenAI / Claude), abstract base class + factory pattern. **9 pre-configured providers** — just enter an API key and go. `Custom` provider supports any OpenAI-compatible endpoint, including self-hosted models.
+
+Runtime hot-switching: change brains without restarting. From free local Ollama to Claude Opus in one click.
+
+**Tool Calling (Dual Mode)**
+
+Prioritizes **Function Calling** (native tool invocation). If the model doesn't support it, auto-degrades to **JSON format parsing**. First call auto-detects, subsequent calls remember. This means virtually any model can drive tools — even small local text-only models.
+
+**Thinking Model Adaptation**
+
+Auto-detects `reasoning_content` (Claude Opus Thinking), `thoughts` (DeepSeek R1), `<thinking>` tags (OpenAI o1/o3), extracts real reasoning chains and displays them in the frontend. The thinking process isn't a black box — you see what the AI is thinking.
+
+**Multimodal**
+
+Supports image input (send images in conversation, AI understands them). Optimistic strategy — tries by default. If the model doesn't support vision, auto-marks and skips. No hardcoded capability lists; the system self-adapts.
+
+**Context Assembly**
+
+`ContextAssembler` dynamically weaves: genome + core memory + recent memory + long-term retrieval + loaded skills + tool descriptions + temporal awareness + auth state. Precise token budget control — not a single token wasted.
+
+**Concurrency Safety**
+
+`asyncio.Lock` brain lock ensures only one caller uses the inference engine at a time — conversations, self-awakening, and sub-agent reports never collide. Tasks record `assigned_by` as a static field at dispatch time; completion routing is based on this field (owner / stranger / self), not dynamic context. This completely solves concurrent attribution.
+
+**Memory Retrieval (Dual Engine)**
+
+Vector semantic search (cosine similarity + multi-backend embedding) as primary, keyword matching as fallback. Embedding engine is independent of inference — you can use Ollama locally for embedding (data stays local) while using cloud models for reasoning. Cold-start warmup prevents first-search failures.
+
+The AI holds its own memory index view — it can see a directory of all memories and proactively decide which to recall, rather than having everything passively injected.
+
+**Streaming Output**
+
+Real-time streaming — AI's reply appears character by character. Tool execution supports interruption — no need to wait for a long task to finish before continuing interaction.
+
+### Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
-| Backend | Python 3.10+ / FastAPI / WebSocket |
+| Backend | Python 3.10+ / FastAPI / WebSocket / asyncio |
 | Frontend | Vanilla HTML + Tailwind CSS + Monaco Editor |
-| Desktop | Electron (transparent pass-through + floating + tray) |
-| AI Inference | Ollama / Gemini / DeepSeek / Claude / OpenAI-compatible |
-| Browser | Playwright + Chrome DevTools Protocol |
-| Encryption | AES-256-CBC + Hardware Fingerprint |
-| Compilation | Nuitka (source not exposed) |
-| Vector | NumPy cosine similarity + multi-backend embedding |
+| Desktop | Electron (transparent + floating + dual window + tray) |
+| AI Inference | 4 engines × 9 providers, Function Calling + JSON dual-mode |
+| Chain of Thought | Claude Thinking / DeepSeek R1 / OpenAI o1 auto-adaptation |
+| Multimodal | Image input (base64 + path), auto vision detection |
+| Browser | Playwright + Chrome DevTools Protocol, triple-engine targeting |
+| Memory | 5-layer architecture + AES-256 encrypted + vector search + temporal index |
+| Embedding | Independent engine, Ollama/Gemini/OpenAI multi-backend, cold-start warmup |
+| Security | AES-256-CBC + hardware fingerprint + auth state machine + self-lockdown |
+| Compilation | Nuitka (C compilation, source hidden, extremely hard to reverse) |
+| Concurrency | Brain lock + task attribution static fields + background task tracking |
 
 ---
 
