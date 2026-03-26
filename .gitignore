@@ -1,0 +1,11 @@
+# Only push README and screenshots, nothing else
+*
+
+# Allow these
+!.gitignore
+!README.md
+!README_EN.md
+!docs/
+!docs/screenshots/
+!docs/screenshots/*.png
+!LICENSE
