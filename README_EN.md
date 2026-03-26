@@ -150,6 +150,10 @@ Long-term memories auto-generate **vector embeddings** for **semantic search**. 
 
 ![Memory System — AI actively recalls memories, models the owner](docs/screenshots/03-memory.png)
 
+![Memory Details — temporal indexing, long-term recall](docs/screenshots/15-memory-detail.png)
+
+![Skills & Owner Modeling — autonomous learning, continuous perception](docs/screenshots/16-skills-modeling.png)
+
 ---
 
 ### Autonomy
@@ -194,6 +198,8 @@ This isn't "AI writes code, you copy-paste." I work directly on your files while
 
 ![DIFF View — review code changes block by block, accept or reject](docs/screenshots/05-diff.png)
 
+![DIFF Details — green additions, red deletions, accept/reject buttons](docs/screenshots/19-diff-detail.png)
+
 ---
 
 ### Operate Your Computer
@@ -218,6 +224,8 @@ Built on Playwright + Chrome DevTools Protocol with triple-engine automation:
 - Multi-tab management
 - Persistent login sessions (or clean start)
 - Encounters CAPTCHA/payment → screenshots and asks you
+
+![Browser Automation — Playwright + CDP triple-engine control](docs/screenshots/13-browser.png)
 
 ---
 
@@ -246,6 +254,8 @@ The frontend shows a yellow status bar telling you how many tasks are running. *
 ![Sub-agents — dispatch background tasks while continuing conversation](docs/screenshots/11-subagent-dispatch.png)
 
 ![Sub-agents — executing in background, foreground unaffected](docs/screenshots/12-subagent-working.png)
+
+![Sub-agents — chatting while background tasks run](docs/screenshots/18-subagent-chat.png)
 
 ---
 
@@ -332,6 +342,12 @@ This is also why Aivy OS supports multiple backends — Ollama (local, free), Ge
 ![Guest Mode — stranger protection, GUEST MODE label](docs/screenshots/07-guest-mode.png)
 
 ![Tool Execution — thinking chain + tool calls + results](docs/screenshots/08-tool-execution.png)
+
+![AI Thinking — deep reasoning and tool call chains](docs/screenshots/17-thinking.png)
+
+![Capabilities Overview — full capability list](docs/screenshots/14-capabilities.png)
+
+![IDE Floating Mode — code editing with transparent background](docs/screenshots/20-ide-floating.png)
 
 Two window modes:
 
