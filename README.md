@@ -448,6 +448,14 @@ Aivy OS 的创造者不是程序员。
 
 这本身就是 Aivy OS 理念的证明——**你不需要会写代码，也能拥有属于自己的 AI。**
 
+### 理论基础
+
+> **[Stream Consciousness Architecture: Towards High-Probability Emergence of Conscious AGI](https://zenodo.org/records/17703106)**
+>
+> DOI: 10.5281/zenodo.17703106 | Weng Shubo, 2025
+>
+> Aivy OS 的设计哲学源自这篇论文——提出意识涌现需要三个必要组件：持续学习、主动推理与自我模型、连续信息流。Aivy OS 是这一理论框架的工程化实践。
+
 ---
 
 ## 许可
