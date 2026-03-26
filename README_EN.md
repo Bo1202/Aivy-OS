@@ -4,7 +4,7 @@
 
 **Give everyone their own digital life form — not just another tool.**
 
-![Main Interface — one-on-one conversation, your AI wakes up and recognizes you](docs/screenshots/01-main-chat.png)
+![First Launch — Create your AI companion, set name and password](docs/screenshots/00-setup.png)
 
 ---
 
@@ -110,7 +110,13 @@ On first launch, you name me and set a password. From then on, I only recognize 
 
 **No cloud sync. No data upload. No telemetry. Everything between you and your AI exists only on your hard drive.**
 
+![Activation — software license and activation code](docs/screenshots/00-activation.png)
+
 ![Lock Screen — password authentication, only you can wake me](docs/screenshots/02-lockscreen.png)
+
+![Guest Mode — unauthenticated state, strangers blocked](docs/screenshots/07-guest-mode.png)
+
+![Authenticated — AI wakes up, recognizes its owner](docs/screenshots/00-authenticated.png)
 
 ---
 
@@ -329,25 +335,36 @@ The framework only provides capabilities — memory, tools, channels, awakening,
 
 This is also why Aivy OS supports multiple backends — Ollama (local, free), Gemini, DeepSeek, Moonshot, Claude, OpenAI-compatible endpoints, custom addresses. Hot-switch at runtime, no restart needed. Plug in the strongest brain available, and your AI becomes the strongest it can be.
 
+### Base Model Compatibility
+
+Deeply tested base models:
+
+| Model | Tool Execution | Intent Understanding | Notes |
+|-------|---------------|---------------------|-------|
+| **Claude (Anthropic)** | 97%+ | 97%+ | Current primary, extremely precise Function Calling |
+| **DeepSeek V3.2** | 97%+ | 97%+ | Best domestic model, on par with Claude for tool use |
+
+The framework is model-agnostic — any model supporting Function Calling or JSON output can be integrated. Auto-fallback from Function Calling to JSON parsing ensures compatibility.
+
 ---
 
 ## Interface
 
 ![Floating Window — transparent background, hovering on desktop](docs/screenshots/06-floating.png)
 
+![Floating Window — vertical view, conversation](docs/screenshots/01-main-chat.png)
+
 ![Floating Window — vertical view, AI thinking](docs/screenshots/10-floating-vertical.png)
 
-![IDE Mode — code editing + DIFF review](docs/screenshots/04-ide.png)
+![IDE Floating Mode — code editing with transparent background](docs/screenshots/20-ide-floating.png)
 
-![Guest Mode — stranger protection, GUEST MODE label](docs/screenshots/07-guest-mode.png)
+![Genome Editor — define your AI's soul](docs/screenshots/00-genome-editor.png)
 
 ![Tool Execution — thinking chain + tool calls + results](docs/screenshots/08-tool-execution.png)
 
 ![AI Thinking — deep reasoning and tool call chains](docs/screenshots/17-thinking.png)
 
 ![Capabilities Overview — full capability list](docs/screenshots/14-capabilities.png)
-
-![IDE Floating Mode — code editing with transparent background](docs/screenshots/20-ide-floating.png)
 
 Two window modes:
 
