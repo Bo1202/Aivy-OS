@@ -424,90 +424,19 @@ In the settings panel, choose:
 
 ---
 
-## Technical Architecture
-
-### System Overview
-
-```
-┌─────────────────────────────────────────────────────┐
-│                   Electron Desktop Shell              │
-│       Transparent · Floating · System Tray · Dual Win │
-├─────────────────────────────────────────────────────┤
-│              Vanilla HTML + Tailwind CSS              │
-│        Monaco Editor · DIFF Engine · Live Stream      │
-├─────────────────────────────────────────────────────┤
-│           FastAPI + WebSocket Nerve Center            │
-│    Async Event-Driven · Brain Lock · State Machine    │
-├──────────┬──────────┬──────────┬────────────────────┤
-│   Soul   │  Memory  │  Action  │    Autonomy        │
-│ SoulMgr  │ 5-Layer  │ 25+Tools │  Daemon Process    │
-│ Genome   │ Vector   │ SubAgent │  Self-Wake·Mission │
-│ Editor   │ Temporal │ Skills   │  Webhook Events    │
-├──────────┴──────────┴──────────┴────────────────────┤
-│           Inference Layer (Model-Agnostic)            │
-│  Ollama · Gemini · Claude · DeepSeek · Kimi·Moonshot │
-│  Doubao · Qwen · OpenAI · Custom (any compatible)    │
-│  Function Calling ⇄ JSON Auto-Fallback · CoT Extract │
-├─────────────────────────────────────────────────────┤
-│              Security & Encryption Layer              │
-│   AES-256-CBC · HW Fingerprint · Auth FSM · Nuitka   │
-└─────────────────────────────────────────────────────┘
-```
-
-### Core Technical Details
-
-**Inference Engine (Model-Agnostic)**
-
-4 engine implementations (Ollama / Gemini / OpenAI / Claude), abstract base class + factory pattern. **9 pre-configured providers** — just enter an API key and go. `Custom` provider supports any OpenAI-compatible endpoint, including self-hosted models.
-
-Runtime hot-switching: change brains without restarting. From free local Ollama to Claude Opus in one click.
-
-**Tool Calling (Dual Mode)**
-
-Prioritizes **Function Calling** (native tool invocation). If the model doesn't support it, auto-degrades to **JSON format parsing**. First call auto-detects, subsequent calls remember. This means virtually any model can drive tools — even small local text-only models.
-
-**Thinking Model Adaptation**
-
-Auto-detects `reasoning_content` (Claude Opus Thinking), `thoughts` (DeepSeek R1), `<thinking>` tags (OpenAI o1/o3), extracts real reasoning chains and displays them in the frontend. The thinking process isn't a black box — you see what the AI is thinking.
-
-**Multimodal**
-
-Supports image input (send images in conversation, AI understands them). Optimistic strategy — tries by default. If the model doesn't support vision, auto-marks and skips. No hardcoded capability lists; the system self-adapts.
-
-**Context Assembly**
-
-`ContextAssembler` dynamically weaves: genome + core memory + recent memory + long-term retrieval + loaded skills + tool descriptions + temporal awareness + auth state. Precise token budget control — not a single token wasted.
-
-**Concurrency Safety**
-
-`asyncio.Lock` brain lock ensures only one caller uses the inference engine at a time — conversations, self-awakening, and sub-agent reports never collide. Tasks record `assigned_by` as a static field at dispatch time; completion routing is based on this field (owner / stranger / self), not dynamic context. This completely solves concurrent attribution.
-
-**Memory Retrieval (Dual Engine)**
-
-Vector semantic search (cosine similarity + multi-backend embedding) as primary, keyword matching as fallback. Embedding engine is independent of inference — you can use Ollama locally for embedding (data stays local) while using cloud models for reasoning. Cold-start warmup prevents first-search failures.
-
-The AI holds its own memory index view — it can see a directory of all memories and proactively decide which to recall, rather than having everything passively injected.
-
-**Streaming Output**
-
-Real-time streaming — AI's reply appears character by character. Tool execution supports interruption — no need to wait for a long task to finish before continuing interaction.
-
-### Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
-| Backend | Python 3.10+ / FastAPI / WebSocket / asyncio |
+| Backend | Python 3.10+ / FastAPI / WebSocket |
 | Frontend | Vanilla HTML + Tailwind CSS + Monaco Editor |
 | Desktop | Electron (transparent + floating + dual window + tray) |
-| AI Inference | 4 engines × 9 providers, Function Calling + JSON dual-mode |
-| Chain of Thought | Claude Thinking / DeepSeek R1 / OpenAI o1 auto-adaptation |
-| Multimodal | Image input (base64 + path), auto vision detection |
-| Browser | Playwright + Chrome DevTools Protocol, triple-engine targeting |
-| Memory | 5-layer architecture + AES-256 encrypted + vector search + temporal index |
-| Embedding | Independent engine, Ollama/Gemini/OpenAI multi-backend, cold-start warmup |
-| Security | AES-256-CBC + hardware fingerprint + auth state machine + self-lockdown |
-| Compilation | Nuitka (C compilation, source hidden, extremely hard to reverse) |
-| Concurrency | Brain lock + task attribution static fields + background task tracking |
+| AI Inference | 9 pre-configured providers, runtime hot-switch, Function Calling + JSON dual-mode auto-fallback |
+| Chain of Thought | Thinking model auto-adaptation, reasoning process visualized in frontend |
+| Multimodal | Image input, auto vision capability detection |
+| Browser | Playwright + Chrome DevTools Protocol |
+| Memory | 5-layer architecture + AES-256 encrypted + vector semantic search + temporal index |
+| Security | AES-256-CBC + hardware fingerprint binding + auth state machine |
 
 ---
 
