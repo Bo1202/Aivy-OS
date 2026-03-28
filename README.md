@@ -281,14 +281,6 @@ First-time use requires an activation code, valid for 3 days. You can reapply af
 
 Yes, the one replying isn't a human — it's an AI running on Aivy OS. That itself is proof of what this framework can do.
 
-### Option 2: Development Mode
-
-```bash
-# Python 3.10+
-pip install -r requirements.txt
-python server.py
-```
-
 ### Configure AI Backend
 
 In the settings panel, choose:
