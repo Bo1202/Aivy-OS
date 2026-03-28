@@ -1,5 +1,10 @@
 # Aivy OS
 
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
+[![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
+
 **English** | **[中文](README_ZH.md)**
 
 **Give everyone their own digital life form — not just another tool.**
