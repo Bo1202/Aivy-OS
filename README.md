@@ -216,50 +216,38 @@ skills/
 
 | | |
 |---|---|
-| ![First Launch — Create your AI companion](docs/screenshots/00-setup.png) | ![Activation — software license and activation code](docs/screenshots/00-activation.png) |
-| Create your AI companion | Activation code |
-| ![Genome Editor — define your AI's soul](docs/screenshots/00-genome-editor.png) | ![Authenticated — AI wakes up](docs/screenshots/00-authenticated.png) |
-| Genome Editor — define your AI's soul | AI wakes up, recognizes its owner |
+| ![](docs/screenshots/00-setup.png) | ![](docs/screenshots/00-activation.png) |
+| ![](docs/screenshots/00-genome-editor.png) | ![](docs/screenshots/00-authenticated.png) |
 
 ### Security
 
 | | |
 |---|---|
-| ![Lock Screen — password authentication](docs/screenshots/02-lockscreen.png) | ![Guest Mode — strangers blocked](docs/screenshots/07-guest-mode.png) |
-| Lock Screen — only password unlocks | Guest Mode — unauthenticated state |
+| ![](docs/screenshots/02-lockscreen.png) | ![](docs/screenshots/07-guest-mode.png) |
 
 ### Chat & Interaction
 
 | | |
 |---|---|
-| ![Floating Window — chat](docs/screenshots/01-main-chat.png) | ![Floating Window — transparent](docs/screenshots/06-floating.png) |
-| Floating chat window | Transparent floating window |
-| ![AI Thinking](docs/screenshots/10-floating-vertical.png) | ![Tool Execution](docs/screenshots/08-tool-execution.png) |
-| AI thinking | Tool execution chain |
-| ![Deep Reasoning](docs/screenshots/17-thinking.png) | ![Capabilities](docs/screenshots/14-capabilities.png) |
-| Deep reasoning | Unlimited memory system |
+| ![](docs/screenshots/01-main-chat.png) | ![](docs/screenshots/06-floating.png) |
+| ![](docs/screenshots/10-floating-vertical.png) | ![](docs/screenshots/08-tool-execution.png) |
+| ![](docs/screenshots/17-thinking.png) | ![](docs/screenshots/14-capabilities.png) |
 
 ### IDE & Code
 
 | | |
 |---|---|
-| ![IDE Mode — Monaco Editor](docs/screenshots/04-ide.png) | ![IDE Floating](docs/screenshots/20-ide-floating.png) |
-| IDE Mode | IDE in floating window |
-| ![DIFF View](docs/screenshots/05-diff.png) | ![DIFF Detail](docs/screenshots/19-diff-detail.png) |
-| DIFF review | Accept or reject changes |
+| ![](docs/screenshots/04-ide.png) | ![](docs/screenshots/20-ide-floating.png) |
+| ![](docs/screenshots/05-diff.png) | ![](docs/screenshots/19-diff-detail.png) |
 
 ### Advanced Features
 
 | | |
 |---|---|
-| ![Memory System](docs/screenshots/03-memory.png) | ![Memory Details](docs/screenshots/15-memory-detail.png) |
-| Memory system | Temporal recall |
-| ![Browser Automation](docs/screenshots/13-browser.png) | ![Self-Awakening](docs/screenshots/09-self-awakening.png) |
-| Browser automation | Timed task execution |
-| ![Sub-agents](docs/screenshots/11-subagent-dispatch.png) | ![Sub-agents Working](docs/screenshots/12-subagent-working.png) |
-| Dispatch background tasks | Background execution |
-| ![Sub-agents Chat](docs/screenshots/18-subagent-chat.png) | ![Skills](docs/screenshots/16-skills-modeling.png) |
-| Chat while tasks run | Skills & owner modeling |
+| ![](docs/screenshots/03-memory.png) | ![](docs/screenshots/15-memory-detail.png) |
+| ![](docs/screenshots/13-browser.png) | ![](docs/screenshots/09-self-awakening.png) |
+| ![](docs/screenshots/11-subagent-dispatch.png) | ![](docs/screenshots/12-subagent-working.png) |
+| ![](docs/screenshots/18-subagent-chat.png) | ![](docs/screenshots/16-skills-modeling.png) |
 
 ---
 
