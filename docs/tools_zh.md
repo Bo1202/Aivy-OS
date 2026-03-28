@@ -185,8 +185,6 @@ AI 读写电脑上任何文件的能力。
 
 **搜索策略：** 有 URL 直接访问，不需要先搜索；无 URL 先搜索再从结果中选择访问；结果不够换关键词或换引擎重新搜索。
 
-**与 OpenClaw 的区别：** OpenClaw 依赖 Brave Search API（需要 API Key），Aivy OS 使用自建 Crawl4AI 爬虫引擎，零配置即可使用，不依赖第三方付费服务。
-
 ---
 
 ### doc_tool — 文档处理
