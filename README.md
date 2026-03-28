@@ -90,9 +90,9 @@ Driven by an independent **daemon process** — real timers, not polling. Alarm-
 
 ### 🛠 Tools
 
-> IDE, browser, file ops, Python, document processing
+> 30+ tools — IDE, browser, desktop control, Python, document processing
 
-Not just chat. Has hands, eyes, and tools.
+Not just chat. Has hands, eyes, and tools. Full tools reference: [📄 Tools Reference](docs/tools_en.md).
 
 **Code — Built-in IDE**
 
@@ -109,28 +109,32 @@ Send screenshots, photos, charts, scanned documents. Auto-enabled with multimoda
 | Capability | Description |
 |-----------|-------------|
 | **File operations** | Read, precise editing, write, search, copy, move, batch management |
+| **File undo** | Roll back file edits, one-click restore |
 | **System commands** | cmd / PowerShell / bash, process management, software installation |
-| **Python execution** | Code, data analysis, visualization, format conversion |
-| **Global search** | Full-disk filename search + pattern matching + regex content search |
+| **Python execution** | Persistent memory environment, data analysis, visualization, API calls, automation scripts |
+| **Global search** | Everything engine full-disk search + pattern matching + regex content search |
 | **System monitoring** | CPU, memory, disk, processes — real-time |
+| **Desktop control** | Control **any software** on your computer — WeChat, VS Code, Photoshop, not just browsers |
 
 **Browser — Real Automation**
 
 Not API calls. **Opens a browser and operates it like a human.**
 
-Playwright + Chrome DevTools Protocol, triple-engine automation:
+Playwright + Chrome DevTools Protocol, triple-engine automation (CDP + Playwright + JS DOM):
 - Click, type, screenshot, fill forms, execute JavaScript
-- Multi-tab management
+- Multi-tab management, iframe penetration
+- Area zoom screenshots, element number labels for positioning
+- File upload (direct injection + intercepted file chooser)
 - Persistent login sessions (or clean start)
 - CAPTCHA/payment → screenshots and asks you
 
 **Documents**
 
-PDF, Word, Excel, PPT — read, generate, edit. No Office needed.
+PDF, Word, Excel, PPT — segmented reading, keyword search & locate, summary overview, generate, edit. No Office needed.
 
 **Web Search**
 
-Multi-engine (Google / Bing / DuckDuckGo), web scraping, API calls.
+Self-built Crawl4AI crawler engine, multi-search-engine (Google / Bing / Baidu / Sogou / 360), no third-party API dependency, zero-config usage. Web scraping and parsing, supports concurrent multi-URL.
 
 ### 💬 Channels
 
@@ -160,7 +164,7 @@ Same identity, same memory across all channels. Not three AIs — one AI, differ
 
 ### 🔌 Extensible
 
-> 16 skills + hot-installable plugins + background parallelism
+> 16 skills + hot-installable plugins + background parallelism + private project space
 
 **Background Parallelism**
 
@@ -176,7 +180,9 @@ Schedule periodic checks on external sources — GitHub repos, inboxes, file cha
 
 **Task Management & Mission System**
 
-**Short-term tasks** — real-time progress bars. Closing window doesn't lose progress.
+**Task Journal** — cross-session persistent project board. AI auto-creates tasks, breaks down steps, records tool results and lessons learned per step. Survives window closes, picks up where it left off next session.
+
+**Live Progress Bar** — visual task progress in current conversation, so you see what AI is doing in real-time.
 
 **Mission System** — long-term tracking:
 
@@ -207,6 +213,14 @@ skills/
 - **Safe isolation**: Built-in tools protected from accidental deletion, plugins have separate namespace
 - **AI self-awareness**: Auto-detects new capabilities after installation
 - **Installation log**: All operations recorded
+
+**Private Project Space**
+
+A private workspace fully separated from system files. AI uses a dedicated interface for your personal files, separated from system file concerns. Default directory structure: Todo, In Progress, Completed, Reminders, Archive, References, AI Management, Temp.
+
+**Internal Directives**
+
+AI has internal directives not exposed at the tool layer — file attachment delivery, WeChat push, emotional state adjustment, floating window toggle, remote unlock. Interface control and channel communication are autonomously determined by AI.
 
 ---
 
