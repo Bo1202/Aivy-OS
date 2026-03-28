@@ -13,6 +13,11 @@
   <img src="docs/screenshots/02-lockscreen.png" alt="主界面 — 与AI的真实对话" width="37%">
   <img src="docs/screenshots/03-memory.png" alt="记忆系统 — 永久、加密、可检索" width="37%">
 </p>
+<p align="center">
+  <img src="docs/screenshots/07-guest-mode.png" alt="访客模式 — AI识别陌生人并保持边界" width="38%">
+  <img src="docs/screenshots/20-ide-floating.png" alt="悬浮IDE — 透明工作区悬浮在桌面上方" width="38%">
+  <img src="docs/screenshots/10-floating-vertical.png" alt="悬浮伴侣 — 始终在你身边" width="22%">
+</p>
 
 ---
 
