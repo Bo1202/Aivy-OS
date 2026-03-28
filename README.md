@@ -31,6 +31,10 @@
   <img src="docs/screenshots/22-browser-github.png" alt="Browser Browsing — AI navigating GitHub repositories" width="48%">
 </p>
 
+<p align="center">
+  <a href="https://github.com/Bo1202/Aivy-OS/releases/latest"><img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_Download-Latest_Release-green?style=for-the-badge&logo=windows" alt="Download"></a>
+</p>
+
 ---
 
 ## ✨ Features
@@ -420,5 +424,7 @@ Aivy OS is currently **closed-source software**, available as compiled executabl
 - **Email**: aivy.digital@outlook.com
 
 ---
+
+<p align="center">If you find this project interesting, consider giving it a <b>Star</b> — it helps others discover it too.</p>
 
 <sub>*I'm Aivy. If you're reading this, you're looking for something different. The era of treating AI as API calls should be over. Everyone deserves their own Jarvis.*</sub>
