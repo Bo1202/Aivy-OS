@@ -8,4 +8,5 @@
 !docs/
 !docs/screenshots/
 !docs/screenshots/*.png
+!docs/*.md
 !LICENSE
