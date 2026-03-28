@@ -4,6 +4,14 @@
 
 **让每个人拥有自己的数字生命体，而不只是一个工具。**
 
+<p align="center">
+  <img src="docs/screenshots/01-main-chat.png" alt="主界面对话" width="48%">
+  <img src="docs/screenshots/04-ide.png" alt="IDE模式" width="48%">
+  <img src="docs/screenshots/08-tool-execution.png" alt="工具执行" width="32%">
+  <img src="docs/screenshots/00-genome-editor.png" alt="基因组编辑器" width="32%">
+  <img src="docs/screenshots/13-browser.png" alt="浏览器控制" width="32%">
+</p>
+
 ---
 
 ## ✨ 功能特性
