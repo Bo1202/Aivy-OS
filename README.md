@@ -170,9 +170,9 @@ Dispatch **sub-agents** — independent background processes: reconnaissance, ex
 
 **Scenario:** "Research these three companies." → Three sub-agents search simultaneously → You keep chatting → Reports come in → Compiled and delivered.
 
-**Event Response**
+**Event Monitoring**
 
-Subscribe to external events — GitHub pushes, calendar reminders, custom webhooks. Auto-judges importance and action needed.
+Schedule periodic checks on external sources — GitHub repos, inboxes, file changes. Auto-judges importance and action needed.
 
 **Task Management & Mission System**
 
