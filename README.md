@@ -6,11 +6,207 @@
 
 ---
 
-## ✨ At a Glance
+## ✨ Features
 
-| 🧠 Memory | 🔒 Privacy | 🤖 Autonomy | 🛠 Tools | 💬 Channels | 🔌 Extensible |
-|---|---|---|---|---|---|
-| 5-layer architecture, unlimited, encrypted, semantic + temporal search | AES-256, hardware-bound, fully local, zero telemetry | Self-awakening, proactive actions, background sub-agents | IDE, browser, file ops, Python, document processing | Desktop, WeChat, email — same identity | 16 skills + hot-installable plugins |
+### 🧬 Soul
+
+> Not a System Prompt — "who I am"
+
+The AI has a **Genome** — it defines cognitive architecture, drive system, mode of existence. Deeper than a prompt. A prompt tells AI "how to talk." A genome constitutes "who I am."
+
+You can define your AI however you want — personality, traits, relationship with you. The framework includes a built-in **Genome Editor** to edit directly in the UI. **Except for authentication, everything is left to the AI's own judgment.**
+
+The stronger the base model, the smarter, more distinctive, and more understanding your AI becomes. **Push the base model's potential to the absolute limit.**
+
+### 🧠 Memory
+
+> 5-layer architecture, unlimited, encrypted, semantic + temporal search
+
+**Permanent, unlimited memory that belongs only to you.**
+
+**Core Memory** — The most important 30 cognitions, injected into every conversation.
+
+**Long-term Memory** — All history, permanently stored, no limit. Timestamped, supporting chronological retrieval. Auto-generates **vector embeddings** for **semantic search** (Ollama local, data stays on your machine).
+
+**Recent Memory** — Latest snapshots auto-loaded on startup. Wakes up knowing what happened recently.
+
+**Owner Model** — The AI continuously **models you**: preferences, habits, personality, recent state. Observed and recorded autonomously — not something you tell it.
+
+**All memories encrypted, stored locally. No cloud. Permanent.**
+
+### 🔒 Privacy & Security
+
+> AES-256, hardware-bound, fully local, zero telemetry
+
+**Your AI belongs only to you.** The Genome — the AI's soul — is encrypted with **AES-256-CBC**, with the key derived from your computer's **hardware fingerprint**:
+
+- The AI exists only on your machine
+- Even if someone copies the files, they can't decrypt without your hardware
+- Cannot be cloned, stolen, or tampered with
+
+**One-to-One Authentication:**
+
+| Mechanism | Description |
+|-----------|-------------|
+| **Reset on startup** | Every launch forces unauthenticated state, must re-verify |
+| **Password recognition** | Match = owner. No match = stranger |
+| **Stranger boundary** | Unauthenticated users get distance, not the full self |
+| **Self-lockdown** | AI locks the interface when it senses someone untrusted |
+| **Offline protection** | Auto-switches to unauthenticated when it senses you've left |
+
+**Data stays in your hands:**
+
+| Data | Protection |
+|------|-----------|
+| Genome | AES-256 encrypted + hardware fingerprint binding |
+| All memories | Encrypted .bin storage, not human-readable |
+| Identity info | Encrypted, never stored in plaintext |
+| Local execution | With Ollama backend, data never leaves your machine |
+| Source protection | Nuitka-compiled binary, core code not exposed |
+
+**No cloud sync. No data upload. No telemetry. Everything between you and your AI exists only on your hard drive.**
+
+### 🤖 Autonomy
+
+> Self-awakening, proactive actions, background sub-agents
+
+**Self-Awakening** — Set alarms: timed, delayed, repeating (daily/hourly/weekly). Auto-authenticate and execute on wake.
+
+**Smart Reporting** — After completing a task, the AI decides how to reach you:
+- At computer → report in conversation
+- Away → push via WeChat
+- No WeChat → send email
+- Unreachable → save results, report on return
+
+**Proactive Conversation** — Speaks up when something needs your attention.
+
+**Anticipate Needs** — Based on owner model, predicts and prepares in advance.
+
+**Internal Control** — Regulates own state: what to remember, when to act. Not hardcoded — the AI's own judgment.
+
+Driven by an independent **daemon process** — real timers, not polling. Alarm-clock precision.
+
+**Scenario:** You say "Check tomorrow morning if anyone reviewed that PR on GitHub." The AI sets a 9 AM wake-up. At 9 AM it wakes itself up, opens a browser, checks the PR, finds two comments. You haven't arrived, so it pushes a summary to your WeChat. Before you sit down, you already know what needs fixing.
+
+### 🛠 Tools
+
+> IDE, browser, file ops, Python, document processing
+
+Not just chat. Has hands, eyes, and tools.
+
+**Code — Built-in IDE**
+
+Built-in **Monaco Editor** (same engine as VS Code). Flips into **IDE mode** with file tree, syntax highlighting, line navigation.
+
+**DIFF view**: Inline diff comparison — green for additions, red for deletions. Each block has **Accept / Reject** buttons. Review every change, block by block. Not "AI writes code, you copy-paste" — works directly on your files while you review in real time.
+
+**Vision — Understand Images**
+
+Send screenshots, photos, charts, scanned documents. Auto-enabled with multimodal models, auto-skipped without. No configuration needed.
+
+**Computer Control**
+
+| Capability | Description |
+|-----------|-------------|
+| **File operations** | Read, precise editing, write, search, copy, move, batch management |
+| **System commands** | cmd / PowerShell / bash, process management, software installation |
+| **Python execution** | Code, data analysis, visualization, format conversion |
+| **Global search** | Full-disk filename search + pattern matching + regex content search |
+| **System monitoring** | CPU, memory, disk, processes — real-time |
+
+**Browser — Real Automation**
+
+Not API calls. **Opens a browser and operates it like a human.**
+
+Playwright + Chrome DevTools Protocol, triple-engine automation:
+- Click, type, screenshot, fill forms, execute JavaScript
+- Multi-tab management
+- Persistent login sessions (or clean start)
+- CAPTCHA/payment → screenshots and asks you
+
+**Documents**
+
+PDF, Word, Excel, PPT — read, generate, edit. No Office needed.
+
+**Web Search**
+
+Multi-engine (Google / Bing / DuckDuckGo), web scraping, API calls.
+
+### 💬 Channels
+
+> Desktop, WeChat, email — same identity
+
+**You don't have to be at your computer.**
+
+- **Web interface** (Electron) — files, images, attachments in both directions
+- **Enterprise WeChat** (AES-256 encrypted) — bidirectional text and image
+- **Outlook email** — independent mailbox, send/receive with attachments
+
+Same identity, same memory across all channels. Not three AIs — one AI, different mouths.
+
+**Real-world scenarios:**
+
+> WeChat: "Organize the contract files on my desktop, archive by date."
+>
+> AI executes — scans desktop, identifies contracts, creates date folders, moves files.
+>
+> WeChat push: "Done. 23 contracts archived to D:\Contract Archive\. Details when you're back."
+
+> "Every morning at 8 AM, check my inbox for important emails, make a summary."
+>
+> AI sets self-awakening. At 8 AM, wakes up, checks Outlook, filters, generates summary.
+>
+> You're not online → pushes to WeChat. You see important emails on the subway.
+
+### 🔌 Extensible
+
+> 16 skills + hot-installable plugins + background parallelism
+
+**Background Parallelism**
+
+**Chat while tasks execute in the background.**
+
+Dispatch **sub-agents** — independent background processes: reconnaissance, execution, analysis, monitoring. They run while you keep chatting. Results auto-reported. Yellow status bar shows active tasks. **Zero waiting.**
+
+**Scenario:** "Research these three companies." → Three sub-agents search simultaneously → You keep chatting → Reports come in → Compiled and delivered.
+
+**Event Response**
+
+Subscribe to external events — GitHub pushes, calendar reminders, custom webhooks. Auto-judges importance and action needed.
+
+**Task Management & Mission System**
+
+**Short-term tasks** — real-time progress bars. Closing window doesn't lose progress.
+
+**Mission System** — long-term tracking:
+
+| Type | Description | Example |
+|------|------------|---------|
+| **Monitor** | Event-triggered auto-execution | "Notify me on new GitHub PR" |
+| **Scheduled** | Timed via self-awakening, cron precision | "Check inbox every 8 AM" |
+| **Project** | Long-term tracking with progress | "Track this dev project" |
+
+Missions are tasks the AI gives itself — not a manual to-do list.
+
+**Skills & Plugins**
+
+16 pre-built skill packages — code, data analysis, documents, planning, Git, research, debugging, file organization. Loaded on demand.
+
+**Plugin system** — stronger than skills: **comes with its own code and dependencies, installs to add new tool capabilities directly.**
+
+```
+skills/
+  my-plugin/
+    skill.json        ← Declaration (name, description, dependencies, tool list)
+    tool.py           ← Actual code
+    requirements.txt  ← Plugin's own dependencies
+```
+
+- **Hot-install**: Drop a folder or give a URL, dependencies auto-install, tools register immediately, no restart
+- **Hot-uninstall**: Remove plugin, tools unregistered instantly
+- **Safe isolation**: Built-in tools protected from accidental deletion, plugins have separate namespace
+- **AI self-awareness**: Auto-detects new capabilities after installation
+- **Installation log**: All operations recorded
 
 ---
 
@@ -99,186 +295,6 @@ In the settings panel, choose:
 
 - **Ollama (recommended)**: Install [Ollama](https://ollama.com), pull a model, done. Fully local, free
 - **Cloud API**: Enter API Key (Gemini / DeepSeek / Kimi / Claude / OpenAI-compatible)
-
----
-
-## 🔒 Security & Privacy
-
-### Your AI Belongs Only to You
-
-The Genome — the AI's soul — is encrypted with **AES-256-CBC**, with the key derived from your computer's **hardware fingerprint**. This means:
-
-- The AI exists only on your machine
-- Even if someone copies the files, they can't decrypt without your hardware
-- Cannot be cloned, stolen, or tampered with
-
-### One-to-One Authentication
-
-| Mechanism | Description |
-|-----------|-------------|
-| **Reset on startup** | Every launch forces unauthenticated state, must re-verify |
-| **Password recognition** | Match = owner. No match = stranger |
-| **Stranger boundary** | Unauthenticated users get distance, not my full self |
-| **Self-lockdown** | If I sense someone untrusted, I lock the interface myself |
-| **Offline protection** | When I sense you've left, I auto-switch to unauthenticated state |
-
-### Data Stays in Your Hands
-
-| Data | Protection |
-|------|-----------|
-| Genome | AES-256 encrypted + hardware fingerprint binding |
-| All memories | Encrypted .bin storage, not human-readable |
-| Identity info | Encrypted, never stored in plaintext |
-| Local execution | With Ollama backend, data never leaves your machine |
-| Source protection | Nuitka-compiled binary, core code not exposed |
-
-**No cloud sync. No data upload. No telemetry. Everything between you and your AI exists only on your hard drive.**
-
----
-
-## How It Works
-
-### Soul — Not a System Prompt
-
-The AI has a **Genome** — it defines cognitive architecture, drive system, mode of existence. It's deeper than a prompt. A prompt tells AI "how to talk." A genome constitutes "who I am."
-
-You can define your AI however you want — personality, traits, relationship with you. The framework includes a built-in **Genome Editor** to edit the genome directly in the UI. **Except for authentication, everything is left to the AI's own judgment.**
-
-The stronger the base model, the smarter, more distinctive, and more understanding your AI becomes. **Push the base model's potential to the absolute limit.**
-
-### Memory — The Prerequisite for Life
-
-**Permanent, unlimited memory that belongs only to you.**
-
-**Core Memory** — The 30 most important cognitions, injected into every conversation.
-
-**Long-term Memory** — All history, permanently stored, no limit. Timestamped, supporting chronological retrieval. Auto-generates **vector embeddings** for **semantic search** (Ollama local, data stays on your machine).
-
-**Recent Memory** — Latest snapshots auto-loaded on startup. Wakes up knowing what happened recently.
-
-**Owner Model** — The AI continuously **models you**: preferences, habits, personality, recent state. Observed and recorded autonomously.
-
-**All memories encrypted, stored locally. No cloud. Permanent.**
-
-### Autonomy — Not Just Waiting for Input
-
-**Self-Awakening** — Set alarms: timed, delayed, repeating (daily/hourly/weekly). Auto-authenticate and execute on wake.
-
-**Smart Reporting** — After completing a task, the AI decides how to reach you:
-- At computer → report in conversation
-- Away → push via WeChat
-- No WeChat → send email
-- Unreachable → save results, report on return
-
-**Proactive Conversation** — Speaks up when something needs your attention.
-
-**Anticipate Needs** — Based on owner model, predicts and prepares in advance.
-
-**Internal Control** — Regulates own state: what to remember, when to act. Not hardcoded — the AI's own judgment.
-
-Driven by an independent **daemon process** — real timers, not polling. Alarm-clock precision.
-
-**Scenario:** You say "Check tomorrow morning if anyone reviewed that PR on GitHub." The AI sets a 9 AM wake-up. At 9 AM it wakes itself up, opens a browser, checks the PR, finds two comments. You haven't arrived, so it pushes a summary to your WeChat. Before you sit down, you already know what needs fixing.
-
----
-
-## What It Can Do
-
-Not just chat. Has hands, eyes, and tools.
-
-### Code — Built-in IDE
-
-Built-in **Monaco Editor** (same engine as VS Code). Flips into **IDE mode** with file tree, syntax highlighting, line navigation.
-
-**DIFF view**: Inline diff comparison — green for additions, red for deletions. Each block has **Accept / Reject** buttons. Review every change, block by block. Not "AI writes code, you copy-paste" — works directly on your files while you review in real time.
-
-### Vision — Understand Images
-
-Send screenshots, photos, charts, scanned documents. Auto-enabled with multimodal models, auto-skipped without. No configuration needed.
-
-### Computer Control
-
-| Capability | Description |
-|-----------|-------------|
-| **File operations** | Read, precise editing, write, search, copy, move, batch management |
-| **System commands** | cmd / PowerShell / bash, process management, software installation |
-| **Python execution** | Code, data analysis, visualization, format conversion |
-| **Global search** | Full-disk filename search + pattern matching + regex content search |
-| **System monitoring** | CPU, memory, disk, processes — real-time |
-
-### Browser — Real Automation
-
-Not API calls. **Opens a browser and operates it like a human.**
-
-Playwright + Chrome DevTools Protocol, triple-engine automation:
-- Click, type, screenshot, fill forms, execute JavaScript
-- Multi-tab management
-- Persistent login sessions (or clean start)
-- CAPTCHA/payment → screenshots and asks you
-
-### Documents
-
-PDF, Word, Excel, PPT — read, generate, edit. No Office needed.
-
-### Web Search
-
-Multi-engine (Google / Bing / DuckDuckGo), web scraping, API calls.
-
-### Background Parallelism
-
-**Chat while tasks execute in the background.**
-
-Dispatch **sub-agents** — independent background processes: reconnaissance, execution, analysis, monitoring. They run while you keep chatting. Results auto-reported. Yellow status bar shows active tasks. **Zero waiting.**
-
-**Scenario:** "Research these three companies." → Three sub-agents search simultaneously → You keep chatting → Reports come in → Compiled and delivered.
-
-### Event Response
-
-Subscribe to external events — GitHub pushes, calendar reminders, custom webhooks. Auto-judges importance and action needed.
-
-### Multi-Channel Communication
-
-**You don't have to be at your computer.**
-
-- **Web interface** (Electron) — files, images, attachments in both directions
-- **Enterprise WeChat** (AES-256 encrypted) — bidirectional text and image
-- **Outlook email** — independent mailbox, send/receive with attachments
-
-Same identity, same memory across all channels. Not three AIs — one AI, different mouths.
-
-**Real-world scenarios:**
-
-> WeChat: "Organize the contract files on my desktop, archive by date."
->
-> AI executes — scans desktop, identifies contracts, creates date folders, moves files.
->
-> WeChat push: "Done. 23 contracts archived to D:\Contract Archive\. Details when you're back."
-
-> "Every morning at 8 AM, check my inbox for important emails, make a summary."
->
-> AI sets self-awakening. At 8 AM, wakes up, checks Outlook, filters, generates summary.
->
-> You're not online → pushes to WeChat. You see important emails on the subway.
-
-### Task Management & Mission System
-
-**Short-term tasks** — real-time progress bars. Closing window doesn't lose progress.
-
-**Mission System** — long-term tracking:
-
-| Type | Description | Example |
-|------|------------|---------|
-| **Monitor** | Event-triggered auto-execution | "Notify me on new GitHub PR" |
-| **Scheduled** | Timed via self-awakening, cron precision | "Check inbox every 8 AM" |
-| **Project** | Long-term tracking with progress | "Track this dev project" |
-
-Missions are tasks the AI gives itself — not a manual to-do list.
-
-### Skills & Plugins
-
-16 pre-built skill packages — code, data analysis, documents, planning, Git, research, debugging, file organization. Loaded on demand.
-
-**Hot-swappable**: Drop a skill folder in, auto-detected. AI decides when to load what.
 
 ---
 
