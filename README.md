@@ -5,11 +5,13 @@
 **Give everyone their own digital life form — not just another tool.**
 
 <p align="center">
-  <img src="docs/screenshots/01-main-chat.png" alt="Main Chat" width="48%">
-  <img src="docs/screenshots/04-ide.png" alt="IDE Mode" width="48%">
-  <img src="docs/screenshots/08-tool-execution.png" alt="Tool Execution" width="32%">
-  <img src="docs/screenshots/00-genome-editor.png" alt="Genome Editor" width="32%">
-  <img src="docs/screenshots/13-browser.png" alt="Browser Control" width="32%">
+  <img src="docs/screenshots/04-ide.png" alt="IDE Mode — Three-panel editor with file explorer, code editing, and Neural Link" width="48%">
+  <img src="docs/screenshots/05-diff.png" alt="DIFF View — Code comparison with real-time change tracking" width="48%">
+</p>
+<p align="center">
+  <img src="docs/screenshots/00-setup.png" alt="First-time Setup — Create your AI companion" width="24%">
+  <img src="docs/screenshots/02-lockscreen.png" alt="Main Interface — Rich conversation with your AI" width="37%">
+  <img src="docs/screenshots/03-memory.png" alt="Memory System — Persistent, encrypted, searchable" width="37%">
 </p>
 
 ---
