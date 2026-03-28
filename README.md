@@ -92,7 +92,7 @@ Driven by an independent **daemon process** — real timers, not polling. Alarm-
 
 > 30+ tools — IDE, browser, desktop control, Python, document processing
 
-Not just chat. Has hands, eyes, and tools. Full tools reference: [📄 Tools Reference](docs/tools_en.md).
+Not just chat. Has hands, eyes, and tools. Full tools reference: [📄 Tools Reference](docs/tools.md).
 
 **Code — Built-in IDE**
 
