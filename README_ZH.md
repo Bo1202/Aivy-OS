@@ -287,14 +287,6 @@ skills/
 
 是的，回复你的不是人——是一个运行在 Aivy OS 上的 AI。这本身就是这个框架能力的证明。
 
-### 方式二：开发模式
-
-```bash
-# Python 3.10+
-pip install -r requirements.txt
-python server.py
-```
-
 ### 配置 AI 后端
 
 在设置面板中选择：
