@@ -4,6 +4,14 @@
 
 **Give everyone their own digital life form — not just another tool.**
 
+<p align="center">
+  <img src="docs/screenshots/01-main-chat.png" alt="Main Chat" width="48%">
+  <img src="docs/screenshots/04-ide.png" alt="IDE Mode" width="48%">
+  <img src="docs/screenshots/08-tool-execution.png" alt="Tool Execution" width="32%">
+  <img src="docs/screenshots/00-genome-editor.png" alt="Genome Editor" width="32%">
+  <img src="docs/screenshots/13-browser.png" alt="Browser Control" width="32%">
+</p>
+
 ---
 
 ## ✨ Features
