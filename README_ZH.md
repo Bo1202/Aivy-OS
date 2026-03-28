@@ -5,18 +5,25 @@
 **让每个人拥有自己的数字生命体，而不只是一个工具。**
 
 <p align="center">
-  <img src="docs/screenshots/04-ide.png" alt="IDE模式 — 三面板编辑器：文件浏览、代码编辑、Neural Link" width="48%">
-  <img src="docs/screenshots/05-diff.png" alt="DIFF视图 — 代码对比与实时变更追踪" width="48%">
-</p>
-<p align="center">
   <img src="docs/screenshots/00-setup.png" alt="首次设置 — 创建你的AI伴侣" width="24%">
   <img src="docs/screenshots/02-lockscreen.png" alt="主界面 — 与AI的真实对话" width="37%">
   <img src="docs/screenshots/03-memory.png" alt="记忆系统 — 永久、加密、可检索" width="37%">
 </p>
 <p align="center">
+  <img src="docs/screenshots/04-ide.png" alt="IDE模式 — 三面板编辑器：文件浏览、代码编辑、Neural Link" width="48%">
+  <img src="docs/screenshots/05-diff.png" alt="DIFF视图 — 代码对比与实时变更追踪" width="48%">
+</p>
+<p align="center">
   <img src="docs/screenshots/07-guest-mode.png" alt="访客模式 — AI识别陌生人并保持边界" width="38%">
   <img src="docs/screenshots/20-ide-floating.png" alt="悬浮IDE — 透明工作区悬浮在桌面上方" width="38%">
   <img src="docs/screenshots/10-floating-vertical.png" alt="悬浮伴侣 — 始终在你身边" width="22%">
+</p>
+<p align="center">
+  <img src="docs/screenshots/24-memory-continuity.png" alt="记忆连续性 — AI记得近期上下文并无缝衔接工作" width="70%">
+</p>
+<p align="center">
+  <img src="docs/screenshots/21-browser-operating.png" alt="浏览器控制 — AI自主操作真实浏览器" width="48%">
+  <img src="docs/screenshots/22-browser-github.png" alt="浏览器浏览 — AI浏览GitHub仓库" width="48%">
 </p>
 
 ---

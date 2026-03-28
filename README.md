@@ -5,18 +5,25 @@
 **Give everyone their own digital life form — not just another tool.**
 
 <p align="center">
-  <img src="docs/screenshots/04-ide.png" alt="IDE Mode — Three-panel editor with file explorer, code editing, and Neural Link" width="48%">
-  <img src="docs/screenshots/05-diff.png" alt="DIFF View — Code comparison with real-time change tracking" width="48%">
-</p>
-<p align="center">
   <img src="docs/screenshots/00-setup.png" alt="First-time Setup — Create your AI companion" width="24%">
   <img src="docs/screenshots/02-lockscreen.png" alt="Main Interface — Rich conversation with your AI" width="37%">
   <img src="docs/screenshots/03-memory.png" alt="Memory System — Persistent, encrypted, searchable" width="37%">
 </p>
 <p align="center">
+  <img src="docs/screenshots/04-ide.png" alt="IDE Mode — Three-panel editor with file explorer, code editing, and Neural Link" width="48%">
+  <img src="docs/screenshots/05-diff.png" alt="DIFF View — Code comparison with real-time change tracking" width="48%">
+</p>
+<p align="center">
   <img src="docs/screenshots/07-guest-mode.png" alt="Guest Mode — AI recognizes strangers and maintains boundaries" width="38%">
   <img src="docs/screenshots/20-ide-floating.png" alt="Floating IDE — Transparent workspace hovering over your desktop" width="38%">
   <img src="docs/screenshots/10-floating-vertical.png" alt="Floating Companion — Always by your side" width="22%">
+</p>
+<p align="center">
+  <img src="docs/screenshots/24-memory-continuity.png" alt="Memory Continuity — AI remembers recent context and resumes work seamlessly" width="70%">
+</p>
+<p align="center">
+  <img src="docs/screenshots/21-browser-operating.png" alt="Browser Control — AI autonomously operating a real browser" width="48%">
+  <img src="docs/screenshots/22-browser-github.png" alt="Browser Browsing — AI navigating GitHub repositories" width="48%">
 </p>
 
 ---
