@@ -13,6 +13,11 @@
   <img src="docs/screenshots/02-lockscreen.png" alt="Main Interface — Rich conversation with your AI" width="37%">
   <img src="docs/screenshots/03-memory.png" alt="Memory System — Persistent, encrypted, searchable" width="37%">
 </p>
+<p align="center">
+  <img src="docs/screenshots/07-guest-mode.png" alt="Guest Mode — AI recognizes strangers and maintains boundaries" width="38%">
+  <img src="docs/screenshots/20-ide-floating.png" alt="Floating IDE — Transparent workspace hovering over your desktop" width="38%">
+  <img src="docs/screenshots/10-floating-vertical.png" alt="Floating Companion — Always by your side" width="22%">
+</p>
 
 ---
 
