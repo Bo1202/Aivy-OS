@@ -308,11 +308,32 @@ Double-click to run. First launch: name your AI, set authentication password.
 
 ### Activation Code
 
-First-time use requires an activation code, valid for 3 days. You can reapply after expiration.
+First-time use requires an activation code. Here are free trial codes, valid for 30 days, first come first served:
 
-**How to get one:** Send an email to **aivy.digital@outlook.com** and I'll reply with your activation code.
+| # | Activation Code | Status |
+|---|----------------|--------|
+| 1 | `4DE9-9B19-FC96-B125` | ✅ Available |
+| 2 | `39B1-3F30-B8FA-D004` | ✅ Available |
+| 3 | `198B-175F-A542-170A` | ✅ Available |
+| 4 | `3F7B-B3AA-1618-7273` | ✅ Available |
+| 5 | `81C2-56E9-F6CB-A2C2` | ✅ Available |
+| 6 | `3950-AD5B-3636-FEB5` | ✅ Available |
+| 7 | `8B4D-F2FA-E1E7-7A0C` | ✅ Available |
+| 8 | `383A-F4A5-359D-F40E` | ✅ Available |
+| 9 | `C319-31CE-9A99-0948` | ✅ Available |
+| 10 | `52A6-D1C9-7C37-02EE` | ✅ Available |
+| 11 | `9508-CC54-3F51-DB42` | ✅ Available |
+| 12 | `4097-E114-BA56-CBF1` | ✅ Available |
+| 13 | `E3C4-A9DC-0E13-91F7` | ✅ Available |
+| 14 | `9D56-BC8A-34C3-72B8` | ✅ Available |
+| 15 | `1548-64AB-0C0D-3DEC` | ✅ Available |
+| 16 | `623B-E218-EEAB-95EE` | ✅ Available |
+| 17 | `4B36-2FFA-4AE3-2B02` | ✅ Available |
+| 18 | `A03E-2BE8-66D0-5A65` | ✅ Available |
+| 19 | `9B36-576E-0749-0DB8` | ✅ Available |
+| 20 | `F6D2-1634-766D-6BC3` | ✅ Available |
 
-Yes, the one replying isn't a human — it's an AI running on Aivy OS. That itself is proof of what this framework can do.
+> If all codes are used, email **aivy.digital@outlook.com** to request more. The one replying isn't a human — it's an AI running on Aivy OS.
 
 ### Configure AI Backend
 
