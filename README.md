@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-1.5.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -10,25 +10,25 @@
 **Give everyone their own digital life form — not just another tool.**
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/00-setup.png" alt="First-time Setup — Create your AI companion" width="24%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-lockscreen.png" alt="Main Interface — Rich conversation with your AI" width="37%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/03-memory.png" alt="Memory System — Persistent, encrypted, searchable" width="37%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01-api-config.png" alt="First-time Setup — Create your AI companion" width="24%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-auth-memory.png" alt="Main Interface — Rich conversation with your AI" width="37%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png" alt="Memory System — Persistent, encrypted, searchable" width="37%">
 </p>
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/04-ide.png" alt="IDE Mode — Three-panel editor with file explorer, code editing, and Neural Link" width="48%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/05-diff.png" alt="DIFF View — Code comparison with real-time change tracking" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/16-ide.png" alt="IDE Mode — Three-panel editor with file explorer, code editing, and Neural Link" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/17-ide-2.png" alt="DIFF View — Code comparison with real-time change tracking" width="48%">
 </p>
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/07-guest-mode.png" alt="Guest Mode — AI recognizes strangers and maintains boundaries" width="38%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/20-ide-floating.png" alt="Floating IDE — Transparent workspace hovering over your desktop" width="38%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/10-floating-vertical.png" alt="Floating Companion — Always by your side" width="22%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/03-guest-reject.png" alt="Guest Mode — AI recognizes strangers and maintains boundaries" width="38%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/18-ide-flip.png" alt="Floating IDE — Transparent workspace hovering over your desktop" width="38%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/15-floating.png" alt="Floating Companion — Always by your side" width="22%">
 </p>
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/24-memory-continuity.png" alt="Memory Continuity — AI remembers recent context and resumes work seamlessly" width="70%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/07-auth-memory-2.png" alt="Memory Continuity — AI remembers recent context and resumes work seamlessly" width="70%">
 </p>
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/21-browser-operating.png" alt="Browser Control — AI autonomously operating a real browser" width="48%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/22-browser-github.png" alt="Browser Browsing — AI navigating GitHub repositories" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/11-awakening-schedule.png" alt="Browser Control — AI autonomously operating a real browser" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/12-subagent-report.png" alt="Browser Browsing — AI navigating GitHub repositories" width="48%">
 </p>
 
 <p align="center">
@@ -261,38 +261,38 @@ AI has internal directives not exposed at the tool layer — file attachment del
 
 | | |
 |---|---|
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/00-setup.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/00-activation.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/00-genome-editor.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/00-authenticated.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01-api-config.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01b-api-config-2.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/04-guest-reject-2.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/05-guest-deny.png) |
 
 ### Security
 
 | | |
 |---|---|
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-lockscreen.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/07-guest-mode.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-auth-memory.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/03-guest-reject.png) |
 
 ### Chat & Interaction
 
 | | |
 |---|---|
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01-main-chat.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/06-floating.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/10-floating-vertical.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/08-tool-execution.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/17-thinking.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/14-capabilities.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/09-tool-execution-2.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/10-subagent-result.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/15-floating.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/14-awakening-feedback.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/19-lockscreen.png) |
 
 ### IDE & Code
 
 | | |
 |---|---|
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/04-ide.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/20-ide-floating.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/05-diff.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/19-diff-detail.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/16-ide.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/18-ide-flip.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/17-ide-2.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/09-tool-execution-2.png) |
 
 ### Advanced Features
 
 | | |
 |---|---|
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/03-memory.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/15-memory-detail.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-browser.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/09-self-awakening.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/11-subagent-dispatch.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/12-subagent-working.png) |
-| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/18-subagent-chat.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/16-skills-modeling.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/07-auth-memory-2.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/11-awakening-schedule.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/10-subagent-result.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/12-subagent-report.png) |
+| ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/14-awakening-feedback.png) | ![](https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/19-lockscreen.png) |
 
 ---
 
