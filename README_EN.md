@@ -232,12 +232,9 @@ When done, she notifies you via desktop or WeChat.
 
 ### 1. Download & install
 
-Go to the [Releases page](../../releases) and download the latest version:
+Go to the [Releases page](../../releases) and download `Aivy OS Setup x.x.x.exe`, then double-click to run.
 
-- `Aivy OS Setup x.x.x.exe` — Installer (recommended)
-- `AivyOS-Portable.zip` — Portable (no installation)
-
-Double-click to run. First launch guides you through naming your AI and setting a password.
+First launch guides you through naming your AI and setting a password.
 
 ### 2. Enter activation code
 
