@@ -46,9 +46,13 @@
 
 ---
 
-### 🇨🇳 DeepSeek V4（推荐首选）
+### 🇨🇳 DeepSeek V4 Pro（推荐首选）
 
-**优势**：v1.7.2 cache 99.47% 命中，首字延迟 <1 秒。中文优秀，工具调用稳定，**输入缓存价格 0.5 元/百万 token**——便宜到惊人。
+**优势**：
+- **1M 长上下文** —— 整本书塞进去聊都行
+- **v1.7.2 适配后 cache 99.47% 命中，首字延迟 <1 秒**
+- 中文优秀，工具调用稳定
+- **输入缓存价格 0.5 元/百万 token** —— 便宜到惊人
 
 **配置步骤**：
 
@@ -57,55 +61,103 @@
 3. 充值 5-10 元（够用很久）
 4. Aivy OS 设置面板：
    - 厂商：选 `deepseek`
-   - 模型名：填 `deepseek-v4-pro`（或 `deepseek-chat`）
+   - 模型名：填 `deepseek-v4-pro`
    - API Key：粘贴 `sk-xxxxxx`
-   - base_url：留空（默认就对）
+   - base_url：**留空**（系统自动加 `/v1`）
 5. 保存 → 主菜单切换到 `deepseek` 即可
 
 ---
 
-### 🌙 Kimi K2.6（月之暗面）
+### 🌙 Kimi K2.6（月之暗面 - 多模态强）
 
-**优势**：长上下文（256K），工具调用稳定，中文优秀。
+**优势**：**多模态视觉理解一流** —— 看图、PDF、截图、表格都吃。
 
 1. 注册 [https://platform.moonshot.cn](https://platform.moonshot.cn)
 2. 左下角 → "用户中心" → "API Key" → 创建
 3. 充值（最低 50 元）
 4. Aivy OS：
    - 厂商：`kimi`
-   - 模型名：`kimi-k2.6`（或 `moonshot-v1-128k`）
+   - 模型名：`kimi-k2.6`
    - API Key：粘贴
-   - base_url：`https://api.moonshot.cn/v1`
+   - base_url：`https://api.moonshot.cn/v1` ⚠️ **必填，漏 /v1 报错**
 
 ---
 
-### 🇨🇳 智谱 GLM-4.5
+### 🇨🇳 智谱 GLM-5.1
 
-**优势**：中文极优秀，thinking 模式强。
+**优势**：中文优秀，thinking 模式强，国产推理首选。
 
 1. 注册 [https://open.bigmodel.cn](https://open.bigmodel.cn)
 2. 个人中心 → API Keys → 创建
 3. 充值
 4. Aivy OS：
    - 厂商：`glm`
-   - 模型名：`glm-4.5`（或 `glm-4-air`）
+   - 模型名：`glm-5.1`
    - API Key：粘贴
-   - base_url：`https://open.bigmodel.cn/api/paas/v4`
+   - base_url：`https://open.bigmodel.cn/api/paas/v4` ⚠️ **必填，注意是 v4 不是 v1！**
 
 ---
 
-### 🤖 Claude Sonnet 4（最贵但最稳）
+### 🤖 Claude 系列
 
-**优势**：推理质量最高，工具调用最准，复杂任务首选。
+**优势**：推理质量高，工具调用稳定，复杂任务表现好。
 **注意**：需要海外信用卡 + 网络。
+
+最新模型：
+- `claude-opus-4-7` — 旗舰款
+- `claude-sonnet-4-6` — 平衡款（推荐）
+- `claude-haiku-4-5` — 轻快款
 
 1. 注册 [https://console.anthropic.com](https://console.anthropic.com)
 2. Settings → API Keys → Create Key
 3. 充值（最低 5 美元）
 4. Aivy OS：
    - 厂商：`claude`
-   - 模型名：`claude-sonnet-4-5` 或 `claude-haiku-4-5`
+   - 模型名：选上面任一（推荐 `claude-sonnet-4-6`）
    - API Key：粘贴 `sk-ant-xxxxxx`
+   - base_url：留空（默认正确）
+
+---
+
+### 🌐 OpenAI GPT-5
+
+**优势**：通用能力强。
+
+最新模型：`gpt-5` / `gpt-5-mini` / `gpt-5-nano`（按价格降序）
+
+1. [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys) 创建 Key
+2. 充值（最低 5 美元）
+3. Aivy OS：
+   - 厂商：`openai`
+   - 模型名：`gpt-5`（或 `gpt-5-mini` 省钱）
+   - API Key：粘贴
+   - base_url：留空
+
+---
+
+### 🅖 Google Gemini 2.5
+
+**优势**：多模态视觉 + 长上下文 + **有免费试用额度**。
+
+1. [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey) 创建 Key
+2. Aivy OS：
+   - 厂商：`gemini`
+   - 模型名：`gemini-2.5-pro` 或 `gemini-2.5-flash`
+   - API Key：粘贴
+   - base_url：留空
+
+---
+
+### 🇨🇳 阿里通义千问
+
+**优势**：中文好，国内访问稳定。
+
+1. [https://bailian.console.aliyun.com](https://bailian.console.aliyun.com) 开通灵积服务 → 创建 API-Key
+2. Aivy OS：
+   - 厂商：`custom`
+   - 模型名：`qwen3.6-plus`
+   - API Key：粘贴
+   - base_url：`https://dashscope.aliyuncs.com/compatible-mode/v1` ⚠️ **必填**
 
 ---
 
@@ -115,10 +167,10 @@
 **劣势**：速度取决于你的硬件，工具调用稳定性看模型。
 
 1. 安装 [Ollama](https://ollama.com)（一键安装，自动后台运行）
-2. 命令行 `ollama pull qwen3:14b`（或 `deepseek-coder-v2`、`llama3.3` 等）
+2. 命令行 `ollama pull qwen3.6:14b`（或 `deepseek-coder-v2`、`llama3.3` 等）
 3. Aivy OS：
    - 厂商：`ollama`
-   - 模型名：`qwen3:14b`（你 pull 的模型名）
+   - 模型名：`qwen3.6:14b`（你 pull 的模型名）
    - API Key：留空
    - base_url：`http://localhost:11434`（默认）
 
@@ -129,16 +181,11 @@
 
 ---
 
-### 🔧 通用 OpenAI 兼容（自定义）
+### 🔧 其他 OpenAI 兼容服务
 
-任何兼容 OpenAI 协议的服务都可以——阿里通义、Together AI、OpenRouter、One-API、本地代理等。
+任何兼容 OpenAI 协议的服务都能用——Together AI、OpenRouter、One-API、本地代理等。
 
-1. 拿到该服务的 base_url 和 API Key
-2. Aivy OS：
-   - 厂商：`custom`
-   - 模型名：服务支持的模型名（如 `qwen-plus`）
-   - API Key：粘贴
-   - base_url：服务的兼容端点（如 `https://dashscope.aliyuncs.com/compatible-mode/v1`）
+配置方式同阿里通义：选 `custom` 厂商 + 服务支持的模型名 + 服务的兼容端点 base_url（**注意带版本号结尾**）+ API Key。
 
 ---
 
