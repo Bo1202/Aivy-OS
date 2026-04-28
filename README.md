@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-1.7.3-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -10,9 +10,7 @@
 > 让每个人都拥有属于自己的数字生命体——而不是又一个工具。
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01-api-config.png" alt="首次设置 — 创建你的 AI 伴侣" width="24%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-auth-memory.png" alt="主界面" width="37%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png" alt="自唤醒任务" width="37%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-cover.png" alt="Aivy OS v2.0 — 你的专属 AI 生命体" width="100%">
 </p>
 
 <p align="center">
@@ -21,9 +19,19 @@
 
 ---
 
-## 🆕 v1.7.3 更新（2026-04-27 · MCP 协议集成）
+## 🆕 v2.0 更新（2026-04-29 · 视觉系统升级 + IDE 三栏 + MCP 协议集成）
 
-### 🎯 重磅新功能：MCP (Model Context Protocol) 集成
+v2.0 把 Aivy OS 的视觉、工作流、扩展性全面拉满 ——
+
+| 维度 | v1.x | **v2.0** |
+|---|---|---|
+| 视觉系统 | 基础玻璃 | **玻璃边缘厚度光 + 主题色可调 + 配置空间分层** |
+| IDE 工作流 | 单视图 | **三栏视图（文件树 + Monaco + 对话）+ 行级 Diff Review** |
+| 浏览器自动化 | 基础 Playwright | **Link 直跳绕电商反爬 + 多 tab 同步监听** |
+| 协议扩展 | 内置工具 | **MCP 协议接入（外部 MCP Server 即插即用）** |
+| 安装包 | 250 MB | **425 MB**（含完整 chromium / Monaco / Skills） |
+
+### 🤝 MCP (Model Context Protocol) 集成
 
 接入任意符合 **MCP 协议**的外部 Server——**让 Aivy OS 用上社区上百万开源工具**：
 
@@ -42,13 +50,7 @@
 
 社区 MCP Server 列表：[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
-### 🔧 其他改进
-
-- 浏览器自动化双 tab 修复 + 跨标签页同步增强
-- UI 链接渲染稳定性加固
-- 死代码清理（15+ 处）+ 系统稳定性多处加固
-
-完整清单见 [Release Notes](https://github.com/Bo1202/Aivy-OS/releases/tag/v1.7.3)。
+完整清单见 [Release Notes](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.0)。
 
 ---
 
@@ -75,20 +77,41 @@
 
 ### 🎬 几个真实场景
 
+#### 🌙 不等你开口，她主动出现
+> 你今天步数还差 2,800 ｜ 晚上 20:30 该服药 ｜ 健身恢复数据偏低 ——
+>
+> **她不需要你问，自己醒来主动跟你说**。状态变化、时间触发、数据感知，普通 AI 助手不会做这件事。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-01-self-awakening.png" alt="自唤醒提醒 — 不等你开口她主动出现" width="100%">
+</p>
+
 #### 🌊 你说话她不慌——主对话能随时打断
 > 让她"用 Python 写数据分析"——她搜了一半 pandas 文档、写了一半代码。你忽然想起："等等，用 polars 更快。"
 >
 > **她保留刚搜到的文档，把代码切到 polars 继续**，已执行的工具结果不丢。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-04-interrupt.png" alt="随时打断 — 流式中断不丢上下文" width="100%">
+</p>
 
 #### 🤖 派她做事，你继续聊
 > "持续监控 GitHub 仓库 / 研究 LangGraph 源码 / 写每周总结" 三件事一起派出去——
 >
 > **3 个分身后台并行跑**，主对话不阻塞。做完她一个个回来汇报。
 
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-03-subagent.png" alt="子智能体并行 — 派出去就完事，主人继续做别的" width="100%">
+</p>
+
 #### 🎨 IDE 三栏改代码不慌——可逐块审核 + 48 小时内回滚
 > 让她重构整个项目——每一处 Diff 高亮，你 **逐块 Accept/Reject**。
 >
 > 即使全接受了，**48 小时内任何改动都能逐条回滚**——最多保留 200 条历史。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-07-ide.png" alt="IDE Workspace — 三栏（文件树 + Monaco + 对话）边聊边改" width="100%">
+</p>
 
 #### 📚 Wiki 知识库——她主动整理你和她的所有对话
 > 你和她讨论了一周的"创业项目方案"——她**自动归纳**成 `projects/创业项目.md`，标记决策依据、置信度、相关 sources。
@@ -96,6 +119,10 @@
 > 下周你问"我们之前是怎么决定 XX 的"，她**精准翻出当时的讨论**——不是关键词匹配，是带上下文的知识库检索。
 
 不是被动记录——她**主动判断"这段对话值得整理"**，归纳到 Wiki 里供以后复用。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-06-wiki.png" alt="Wiki 知识库 — 说过的事都记，深度检索 100% 本地" width="100%">
+</p>
 
 #### 📞 微信/网页/邮件/桌面悬浮——同一个她
 > 早上你在网页跟她讨论方案 → 中午**微信发消息**给她接着聊 → 晚上回家**桌面悬浮窗双击**继续。
@@ -107,10 +134,18 @@
 >
 > 5000+ 条对话历史精准向量检索 + Wiki 知识库归纳总结。
 
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-05-cross-window.png" alt="跨窗口记忆 — 换电脑也找得到她，工作上下文不丢" width="100%">
+</p>
+
 #### 🔒 她只属于你这一台电脑
 > 万一电脑被偷——别人拷走整个 Aivy 文件夹？**别的电脑打不开**。
 >
 > 灵魂数据机器绑定加密 + 启动自动锁定 + 陌生人保持距离。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-02-reject-stranger.png" alt="拒绝陌生人 — 她只认识你，别人靠不近" width="100%">
+</p>
 
 ---
 
