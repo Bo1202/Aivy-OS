@@ -31,6 +31,15 @@ v2.0 takes Aivy OS's visuals, workflow, and extensibility to the next level —
 | Protocol extension | Built-in tools only | **MCP protocol integration (plug & play external MCP servers)** |
 | Installer size | 250 MB | **425 MB** (full chromium / Monaco / Skills) |
 
+### ⚡ DeepSeek V4 Pro Perfect Fit
+
+| Metric | v1.x | **v2.0** |
+|---|---|---|
+| KV Cache hit rate | 99.47% | **100%** |
+| Cache coverage | ~50% | **80%+** |
+
+DeepSeek V4 Pro 1M context + sustained KV cache hits — continuous conversations with **zero cold start, zero waste**, first-token latency <1s.
+
 ### 🤝 MCP (Model Context Protocol) Integration
 
 Connect any MCP-compliant external server — **let Aivy OS use millions of community open-source tools**:

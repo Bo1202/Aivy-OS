@@ -31,6 +31,15 @@ v2.0 把 Aivy OS 的视觉、工作流、扩展性全面拉满 ——
 | 协议扩展 | 内置工具 | **MCP 协议接入（外部 MCP Server 即插即用）** |
 | 安装包 | 250 MB | **425 MB**（含完整 chromium / Monaco / Skills） |
 
+### ⚡ DeepSeek V4 Pro 完美适配
+
+| 指标 | v1.x | **v2.0** |
+|---|---|---|
+| KV Cache 命中率 | 99.47% | **100%** |
+| Cache 覆盖率 | ~50% | **80%+** |
+
+DeepSeek V4 Pro 1M 上下文 + KV Cache 持续命中，连续对话**零冷启动、零浪费**——首字延迟 <1 秒。
+
 ### 🤝 MCP (Model Context Protocol) 集成
 
 接入任意符合 **MCP 协议**的外部 Server——**让 Aivy OS 用上社区上百万开源工具**：
