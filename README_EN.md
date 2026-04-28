@@ -10,9 +10,7 @@
 > Give everyone their own digital life form — not just another tool.
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01-api-config.png" alt="First-time Setup — Create your AI companion" width="24%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-auth-memory.png" alt="Main Interface" width="37%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png" alt="Self-awakening Task" width="37%">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-cover.png" alt="Aivy OS v2.0 — Your dedicated AI life form" width="100%">
 </p>
 
 <p align="center">
@@ -191,40 +189,6 @@ When done, she notifies you via desktop or WeChat.
 > At the same time, she can **send a private WeChat**: "That customer email from earlier doesn't feel right to me. Let's talk about it privately when you're free."
 >
 > The main interface only shows "📱 Private message sent" — your coworker can't see the content.
-
----
-
-## 📸 Interface screenshots
-
-### Setup & authentication
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/01-api-config.png" alt="First-time Setup" width="32%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/02-auth-memory.png" alt="Main Interface" width="32%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/03-guest-reject.png" alt="Guest Mode" width="32%">
-</p>
-
-### Conversation & interaction
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/07-auth-memory-2.png" alt="Memory Continuity" width="48%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/13-awakening-task.png" alt="Self-awakening Task" width="48%">
-</p>
-
-### IDE & code
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/16-ide.png" alt="IDE Mode" width="48%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/17-ide-2.png" alt="DIFF View" width="48%">
-</p>
-
-### Advanced features
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/11-awakening-schedule.png" alt="Browser Automation" width="32%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/12-subagent-report.png" alt="Sub-agent" width="32%">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/15-floating.png" alt="Floating Mode" width="22%">
-</p>
 
 ---
 
