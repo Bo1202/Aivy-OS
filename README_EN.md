@@ -38,7 +38,7 @@ v2.0 takes Aivy OS's visuals, workflow, and extensibility to the next level —
 | KV Cache hit rate | 99.47% | **100%** |
 | Cache coverage | ~50% | **80%+** |
 
-DeepSeek V4 Pro 1M context + sustained KV cache hits — continuous conversations with **zero cold start, zero waste**, first-token latency <1s.
+DeepSeek V4 Pro 1M context + sustained KV cache hits — continuous conversations with **zero cold start, zero waste**.
 
 ### 🤝 MCP (Model Context Protocol) Integration
 

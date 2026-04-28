@@ -38,7 +38,7 @@ v2.0 把 Aivy OS 的视觉、工作流、扩展性全面拉满 ——
 | KV Cache 命中率 | 99.47% | **100%** |
 | Cache 覆盖率 | ~50% | **80%+** |
 
-DeepSeek V4 Pro 1M 上下文 + KV Cache 持续命中，连续对话**零冷启动、零浪费**——首字延迟 <1 秒。
+DeepSeek V4 Pro 1M 上下文 + KV Cache 持续命中，连续对话**零冷启动、零浪费**。
 
 ### 🤝 MCP (Model Context Protocol) 集成
 
