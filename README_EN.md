@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-1.6.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -16,6 +16,41 @@
 <p align="center">
   <a href="https://github.com/Bo1202/Aivy-OS/releases/latest"><img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_Download-Latest_Release-green?style=for-the-badge&logo=windows" alt="Download"></a>
 </p>
+
+---
+
+## 🆕 v2.0 Update (2026-04-29 · Visual System Upgrade + IDE Three-Pane + MCP Protocol)
+
+v2.0 takes Aivy OS's visuals, workflow, and extensibility to the next level —
+
+| Aspect | v1.x | **v2.0** |
+|---|---|---|
+| Visual system | Basic glass | **Glass edge thickness light + adjustable theme color + config space layering** |
+| IDE workflow | Single view | **Three-pane (file tree + Monaco + chat) + line-level Diff Review** |
+| Browser automation | Basic Playwright | **Link-direct navigation bypassing e-commerce anti-scraping + multi-tab sync** |
+| Protocol extension | Built-in tools only | **MCP protocol integration (plug & play external MCP servers)** |
+| Installer size | 250 MB | **425 MB** (full chromium / Monaco / Skills) |
+
+### 🤝 MCP (Model Context Protocol) Integration
+
+Connect any MCP-compliant external server — **let Aivy OS use millions of community open-source tools**:
+
+| MCP Server | Use case |
+|---|---|
+| `chrome-devtools-mcp` | Deep browser control |
+| `postgres-mcp` / `sqlite-mcp` | Database queries |
+| `filesystem-mcp` / `git-mcp` | Filesystem / Git operations |
+| `slack-mcp` / `notion-mcp` | Collaboration tools |
+| Custom private servers | Your own toolchain |
+
+**How to use**:
+1. Settings panel → "MCP Service Management" → Enable global switch
+2. Use `skill_manage mcp_connect` via AI conversation to add servers
+3. Tools auto-register, **no restart needed**
+
+Community MCP server list: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+
+Full changelog: [Release Notes](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.0).
 
 ---
 
@@ -142,13 +177,17 @@ When done, she notifies you via desktop or WeChat.
 
 ## 🎬 Real-world scenarios
 
-### Scenario 1: Morning smart assistant
+### Scenario 1: She shows up without you asking
 
 > **Setup**: "Check my inbox every morning at 8 AM and summarize the important emails."
 >
 > 8 AM she wakes up → opens Outlook → filters important emails → writes a summary → pushes to your WeChat.
 >
 > You see the important emails for today on the subway.
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-01-self-awakening.png" alt="Self-Awakening — She shows up on her own" width="100%">
+</p>
 
 ### Scenario 2: Real desktop operation
 
@@ -166,6 +205,10 @@ When done, she notifies you via desktop or WeChat.
 >
 > Not a database query — she genuinely remembers this matters to you.
 
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-05-cross-window.png" alt="Cross-Window Memory — She remembers everything across sessions and devices" width="100%">
+</p>
+
 ### Scenario 4: Real browser operation
 
 > "Help me search for round-trip flights from Beijing to Tokyo next week, direct flights only, cheapest first."
@@ -181,6 +224,10 @@ When done, she notifies you via desktop or WeChat.
 > "Refactor this file — change all callbacks to async/await."
 >
 > She edits your files directly; every change highlighted in Diff → you click ✅ Accept or ❌ Reject block by block → not "AI writes, you copy-paste."
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-07-ide.png" alt="IDE Workspace — Three panes (file tree + Monaco + chat), code together" width="100%">
+</p>
 
 ### Scenario 6: A private whisper
 
