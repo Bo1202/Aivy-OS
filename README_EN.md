@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,9 +19,20 @@
 
 ---
 
-## 🆕 v2.0 Update (2026-04-29 · Visual System Upgrade + IDE Three-Pane + MCP Protocol)
+## 🆕 v2.0.1 Update (2026-04-30 · Document Processing Capability Upgrade)
 
-v2.0 takes Aivy OS's visuals, workflow, and extensibility to the next level —
+| Capability | New Library | License | Use case |
+|---|---|---|---|
+| 📄 PDF page render to image | `pypdfium2` | Apache 2.0 | Render any PDF page to PNG/JPG, Chromium-grade engine, 300 DPI |
+| 📊 PDF table extraction | `pdfplumber` | MIT | Extract structured tables + high-precision text from PDF, industry standard |
+| 📝 Any document → Markdown | `markitdown` | MIT | docx/xlsx/pptx/pdf universal converter, by Microsoft 2024 |
+| 📈 Statistical chart polish | `seaborn` | BSD | Heatmaps / violin plots / grouped bars, matplotlib high-level wrapper |
+
+DocTool PDF text extraction upgraded from PyPDF2 to **pdfplumber** (multi-column / in-table text precision significantly improved) + UX detail polish (long-text bubble auto-wrap / AI file transfer path handling / lockscreen interaction smoothness).
+
+Full changelog: [Release Notes v2.0.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.1).
+
+## v2.0 Update (2026-04-28 · Visual System Upgrade + IDE Three-Pane)
 
 | Aspect | v1.x | **v2.0** |
 |---|---|---|
@@ -29,11 +40,17 @@ v2.0 takes Aivy OS's visuals, workflow, and extensibility to the next level —
 | IDE workflow | Single view | **Three-pane (file tree + Monaco + chat) + line-level Diff Review** |
 | Browser automation | Basic Playwright | **Link-direct navigation bypassing e-commerce anti-scraping + multi-tab sync** |
 | Protocol extension | Built-in tools only | **MCP protocol integration (plug & play external MCP servers)** |
-| Installer size | 250 MB | **425 MB** (full chromium / Monaco / Skills) |
+| Installer size | 250 MB | **473 MB** (full chromium / Monaco / Skills + v2.0.1 document processing ML libs) |
+
+Full changelog: [Release Notes v2.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.0).
+
+---
+
+## 🌟 Core Capability Highlights
 
 ### ⚡ DeepSeek V4 Pro Perfect Fit
 
-| Metric | v1.x | **v2.0** |
+| Metric | v1.x | **Current** |
 |---|---|---|
 | KV Cache hit rate | 99.47% | **100%** |
 | Cache coverage | ~50% | **80%+** |
@@ -58,8 +75,6 @@ Connect any MCP-compliant external server — **let Aivy OS use millions of comm
 3. Tools auto-register, **no restart needed**
 
 Community MCP server list: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
-
-Full changelog: [Release Notes](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.0).
 
 ---
 
