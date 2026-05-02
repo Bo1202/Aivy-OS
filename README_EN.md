@@ -34,20 +34,6 @@ Full changelog: [Release Notes v2.0.1](https://github.com/Bo1202/Aivy-OS/release
 
 For historical version notes, see the [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
-### ⚠️ Win11 Slow Startup Notice
-
-Aivy OS is currently unsigned, so Win11 security mechanisms may slow down startup (**Win10 is not affected**).
-
-**First verify root cause** — enable **Airplane mode** then launch Aivy OS:
-- ✅ **Instant** = SmartScreen cloud reputation check is the cause → **Solution A**
-- ❌ **Still slow** = Defender real-time scan / Smart App Control is the cause → **Solution B**
-
-**Solution A** (SmartScreen): Settings → Privacy & Security → Windows Security → App & Browser Control → Disable "Check apps and files" under "Reputation-based protection"
-
-**Solution B** (Defender): Windows Security → Virus & Threat Protection → Manage Settings → Exclusions → Add folder `C:\Users\<your-username>\AppData\Local\Programs\Aivy OS\`
-
-**Trying both is fine** (they don't conflict). **Long-term fix**: we are applying for a Windows code-signing certificate — after signing, all Win10/Win11 users will start instantly.
-
 ---
 
 ## 🌟 Core Capability Highlights
