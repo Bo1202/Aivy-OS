@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.22-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,7 +19,22 @@
 
 ---
 
-## 🆕 v2.0.1 更新（2026-04-30 · 文档处理能力大升级）
+## 🆕 v2.0.22 更新（2026-05-02 · 浏览器搜索稳定性 + 中断 UX + 隐私安全升级）
+
+| 改进 | 说明 |
+|---|---|
+| 🌐 **浏览器搜索工具大幅稳定性升级** | `web_search` / Crawl4AI 启动响应 + IPC 通信链路全面优化 |
+| 🆕 **中断机制通用化** | AI 推理中发新消息可立即打断 + 注入新上下文，所有用户通用 |
+| 🛡️ **安装包纯净化** | 配置文件 / 用户数据全部首启自动生成，安装包 100% 纯净不带任何用户数据 / API key |
+| 🚀 **DeepSeek V4 cache** | prompt cache 命中率 99.47%（首 token 延迟 4 秒 → <1 秒） |
+| 🆕 **MCP 集成** | Model Context Protocol 客户端 + 管理面板，连接任意 MCP Server |
+| 🎨 **v1.8 视觉升级** | 玻璃边缘光 v2 + 卡片发光 v2 + 调节器 + 滚动条按需 |
+
+完整清单见 [Release Notes v2.0.22](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.22)。
+
+---
+
+## 📦 累积自 v2.0.1（2026-04-30 · 文档处理能力大升级）
 
 | 能力 | 新增库 | License | 用途 |
 |---|---|---|---|
@@ -29,8 +44,6 @@
 | 📈 统计图表美化 | `seaborn` | BSD | 热力图/小提琴图/分组柱状图,matplotlib 高级封装 |
 
 DocTool PDF 文本提取从 PyPDF2 升级到 **pdfplumber**（多列布局/表格内文本精度大幅提升）+ 体验细节优化（长文本气泡自动换行 / AI 文件传输路径处理 / 锁屏交互流畅性）。
-
-完整清单见 [Release Notes v2.0.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.1)。
 
 历史版本说明请进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看对应版本。
 
