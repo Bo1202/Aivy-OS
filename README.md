@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.22-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.23-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,33 +19,16 @@
 
 ---
 
-## 🆕 v2.0.22 更新（2026-05-02 · 浏览器搜索稳定性 + 中断 UX + 隐私安全升级）
+## 🆕 v2.0.23 更新（2026-05-02 · Wiki 知识库可靠性升级）
 
 | 改进 | 说明 |
 |---|---|
-| 🌐 **浏览器搜索工具大幅稳定性升级** | `web_search` / Crawl4AI 启动响应 + IPC 通信链路全面优化 |
-| 🆕 **中断机制通用化** | AI 推理中发新消息可立即打断 + 注入新上下文，所有用户通用 |
-| 🛡️ **安装包纯净化** | 配置文件 / 用户数据全部首启自动生成，安装包 100% 纯净不带任何用户数据 / API key |
-| 🚀 **DeepSeek V4 cache** | prompt cache 命中率 99.47%（首 token 延迟 4 秒 → <1 秒） |
-| 🆕 **MCP 集成** | Model Context Protocol 客户端 + 管理面板，连接任意 MCP Server |
-| 🎨 **v1.8 视觉升级** | 玻璃边缘光 v2 + 卡片发光 v2 + 调节器 + 滚动条按需 |
+| 🔧 **索引同步机制升级** | 任何工具操作 Wiki 文件后,下次搜索自动找到 — 不再"搜不到"问题 |
+| 🆕 **主题独立索引页机制** | 每个主题（小说/项目/学习领域 etc）有自己的目录 + 索引页 + cross_refs 关系网络 |
+| 📚 **系统层引导** | AI 维护知识库时优先用 wiki 工具，避免索引跟磁盘脱节 |
+| 🛡️ **分类双向校验** | 写入按目录推分类，读取按目录优先 — 永不错位 |
 
-完整清单见 [Release Notes v2.0.22](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.22)。
-
----
-
-## 📦 累积自 v2.0.1（2026-04-30 · 文档处理能力大升级）
-
-| 能力 | 新增库 | License | 用途 |
-|---|---|---|---|
-| 📄 PDF 渲染图片 | `pypdfium2` | Apache 2.0 | 把 PDF 任意页渲染成 PNG/JPG,Chromium 同款引擎,300 DPI |
-| 📊 PDF 表格提取 | `pdfplumber` | MIT | 从 PDF 提取结构化表格 + 高精度文本,业界标配 |
-| 📝 任意文档→Markdown | `markitdown` | MIT | docx/xlsx/pptx/pdf 万能转换器,Microsoft 2024 |
-| 📈 统计图表美化 | `seaborn` | BSD | 热力图/小提琴图/分组柱状图,matplotlib 高级封装 |
-
-DocTool PDF 文本提取从 PyPDF2 升级到 **pdfplumber**（多列布局/表格内文本精度大幅提升）+ 体验细节优化（长文本气泡自动换行 / AI 文件传输路径处理 / 锁屏交互流畅性）。
-
-历史版本说明请进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看对应版本。
+完整清单见 [Release Notes v2.0.23](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.23)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 
@@ -502,6 +485,7 @@ Aivy OS 的创始人不是程序员。
 
 ## 📬 联系
 
+- 💬 **微信交流群** — 添加微信号 **4828797** 备注「Aivy OS」拉你进群
 - 📧 邮箱: 4828797@qq.com
 - 🐛 Bug 报告: [GitHub Issues](../../issues)
 - 💬 讨论: [GitHub Discussions](../../discussions)

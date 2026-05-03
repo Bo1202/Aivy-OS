@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.22-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.23-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,20 +19,16 @@
 
 ---
 
-## 🆕 v2.0.1 Update (2026-04-30 · Document Processing Capability Upgrade)
+## 🆕 v2.0.23 Update (2026-05-02 · Wiki Knowledge Base Reliability Upgrade)
 
-| Capability | New Library | License | Use case |
-|---|---|---|---|
-| 📄 PDF page render to image | `pypdfium2` | Apache 2.0 | Render any PDF page to PNG/JPG, Chromium-grade engine, 300 DPI |
-| 📊 PDF table extraction | `pdfplumber` | MIT | Extract structured tables + high-precision text from PDF, industry standard |
-| 📝 Any document → Markdown | `markitdown` | MIT | docx/xlsx/pptx/pdf universal converter, by Microsoft 2024 |
-| 📈 Statistical chart polish | `seaborn` | BSD | Heatmaps / violin plots / grouped bars, matplotlib high-level wrapper |
+| Improvement | Description |
+|---|---|
+| 🔧 **Index sync upgrade** | Wiki search auto-discovers any page, no more "missing entries" |
+| 🆕 **Topic-independent index pages** | Each topic (novel / project / learning area, etc.) gets its own directory + index page + cross_refs network |
+| 📚 **System-level guidance** | AI prefers wiki tools when maintaining knowledge base, avoiding index-disk drift |
+| 🛡️ **Bidirectional category validation** | Write infers category from path, read prioritizes path — never misclassified |
 
-DocTool PDF text extraction upgraded from PyPDF2 to **pdfplumber** (multi-column / in-table text precision significantly improved) + UX detail polish (long-text bubble auto-wrap / AI file transfer path handling / lockscreen interaction smoothness).
-
-Full changelog: [Release Notes v2.0.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.1).
-
-For historical version notes, see the [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
+Full changelog: [Release Notes v2.0.23](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.23). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
 ---
 
@@ -351,6 +347,7 @@ No unauthorized reverse engineering, decompilation, redistribution, or resale.
 
 ## 📬 Contact
 
+- 💬 **WeChat group** — Add WeChat ID **4828797** with note "Aivy OS" to join the group
 - 📧 Email: 4828797@qq.com
 - 🐛 Bug reports: [GitHub Issues](../../issues)
 - 💬 Discussions: [GitHub Discussions](../../discussions)
