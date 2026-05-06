@@ -23,13 +23,11 @@
 
 | Improvement | Description |
 |---|---|
-| ⚡ **Critical path 22.9× faster** | Operation latency 260ms → 11ms, smooth and fluid, works offline |
-| 📊 **Markdown table rendering fix** | Fixed GFM multi-column alignment `\| :--: \|` rendering glitch + header detection bug |
-| 🤖 **Smarter sub-agent dispatch** | System-level "core judgment meta-rule" — long tasks auto-dispatch to sub-agents in background, won't block your conversation |
-| 🐛 **Long-running tools no longer falsely interrupted** | GLOBAL_SEARCH full-disk scans / long crawlers / batch file ops complete normally |
-| 🐛 **Long conversation stability improved** | 50+ turn conversation identity recognition more stable |
-| 🐛 **UI drawer first-config instant display** | API config visible in drawer immediately after fill |
-| 🎯 **Old user upgrade 1-2s seamless** | Auto-backup-restore all your data on install, online upgrade fully transparent |
+| 📊 **Markdown table rendering fix** | Fixed GFM multi-column alignment `\| :--: \|` rendering glitch + header detection bug — all AI replies with tables display correctly |
+| 🤖 **Smarter sub-agent dispatch** | System-level "core judgment meta-rule" — long tasks (full-disk searches / batch file ops / long crawlers) auto-dispatch to sub-agents in background, won't block your conversation |
+| 🐛 **Long-running tools no longer falsely interrupted** | GLOBAL_SEARCH full-disk scans / long crawlers / batch file ops complete normally (previously falsely showed "interrupted" due to backend timeout) |
+| 🐛 **UI drawer first-config instant display** | API config visible in drawer immediately after fill (previously required WeChat chat or task execution first) |
+| 📦 **Old user data preservation on upgrade** | Auto-backup-restore all your data (config / memory / projects) on install |
 
 Full changelog: [Release Notes v2.0.25](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.25). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
