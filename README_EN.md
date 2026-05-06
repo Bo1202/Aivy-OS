@@ -19,12 +19,13 @@
 
 ---
 
-## 🆕 v2.0.25 Update (2026-05-06 · UX Optimization + Bug Fixes)
+## 🆕 v2.0.25 Update (vs v2.0.23 · UX Optimization + Wiki Refactor + Bug Fixes)
 
 | Improvement | Description |
 |---|---|
+| 📚 **Wiki knowledge base usability major upgrade** | Old relationship-graph version was overengineered (13 relation types / aliases / confidence / cross_refs) → New simple 3-tier structure (topic / index / page) + **multi-keyword tokenized search** (solves "can't find" issue) + **write safety check** prevents overwrites + **auto backlinks** + **main index injected every turn** |
+| 🤖 **Smarter sub-agent dispatch** | System-level "core judgment meta-rule" — long tasks (Wiki maintenance / full-disk searches / batch file ops / long crawlers) auto-dispatch to sub-agents in background, won't block your conversation |
 | 📊 **Markdown table rendering fix** | Fixed GFM multi-column alignment `\| :--: \|` rendering glitch + header detection bug — all AI replies with tables display correctly |
-| 🤖 **Smarter sub-agent dispatch** | System-level "core judgment meta-rule" — long tasks (full-disk searches / batch file ops / long crawlers) auto-dispatch to sub-agents in background, won't block your conversation |
 | 🐛 **Long-running tools no longer falsely interrupted** | GLOBAL_SEARCH full-disk scans / long crawlers / batch file ops complete normally (previously falsely showed "interrupted" due to backend timeout) |
 | 🐛 **UI drawer first-config instant display** | API config visible in drawer immediately after fill (previously required WeChat chat or task execution first) |
 | 📦 **Old user data preservation on upgrade** | Auto-backup-restore all your data (config / memory / projects) on install |
