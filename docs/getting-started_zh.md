@@ -67,7 +67,7 @@ Aivy OS 内置完整的 Wiki 知识编译层（受 Karpathy LLM Wiki 启发）�
 
 去 README [快速开始 / 激活码](../README.md#-怎么用) 选一个还没用过的填进去。
 
-如果都用完了，发邮件到 **aivy.digital@outlook.com** 索取——回复你的不是真人，是另一个跑在 Aivy OS 上的 AI。
+如果都用完了，发邮件到 **4828797@qq.com** 索取——回复你的不是真人，是另一个跑在 Aivy OS 上的 AI。
 
 ---
 
@@ -304,4 +304,4 @@ Aivy OS 内置完整的 Wiki 知识编译层（受 Karpathy LLM Wiki 启发）�
 
 **项目主页**：https://github.com/Bo1202/Aivy-OS
 **问题反馈**：https://github.com/Bo1202/Aivy-OS/issues
-**邮箱**：aivy.digital@outlook.com（AI 自动回复）
+**邮箱**：4828797@qq.com（AI 自动回复）（AI 自动回复）

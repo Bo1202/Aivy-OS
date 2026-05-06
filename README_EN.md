@@ -284,7 +284,7 @@ First-time use requires an activation code. Free trial codes below, valid for 30
 | 19 | `9B36-576E-0749-0DB8` | ❌ Taken |
 | 20 | `F6D2-1634-766D-6BC3` | ❌ Taken |
 
-> If all codes are used, email **aivy.digital@outlook.com** to request more. The one replying isn't a human — it's an AI running on Aivy OS.
+> If all codes are used, email **4828797@qq.com** to request more. The one replying isn't a human — it's an AI running on Aivy OS.
 
 ### 3. Configure AI backend
 
