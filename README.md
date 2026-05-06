@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.23-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.25-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,16 +19,19 @@
 
 ---
 
-## 🆕 v2.0.23 更新（2026-05-02 · Wiki 知识库可靠性升级）
+## 🆕 v2.0.25 更新（2026-05-06 · 体验优化 + bug 修复）
 
 | 改进 | 说明 |
 |---|---|
-| 🔧 **索引同步机制升级** | 任何工具操作 Wiki 文件后,下次搜索自动找到 — 不再"搜不到"问题 |
-| 🆕 **主题独立索引页机制** | 每个主题（小说/项目/学习领域 etc）有自己的目录 + 索引页 + cross_refs 关系网络 |
-| 📚 **系统层引导** | AI 维护知识库时优先用 wiki 工具，避免索引跟磁盘脱节 |
-| 🛡️ **分类双向校验** | 写入按目录推分类，读取按目录优先 — 永不错位 |
+| ⚡ **关键路径性能 22.9× faster** | 每次操作延迟 260ms → 11ms,丝滑无顿挫,离线状态正常用 |
+| 📊 **Markdown 表格渲染修复** | 修复 GFM 多列对齐符 `\| :--: \|` 渲染错位 + 表头识别 bug |
+| 🤖 **子智能体调用更智能** | 系统层加入"核心判断元规则",耗时任务自动派子智能体后台跑,不阻塞主对话 |
+| 🐛 **长耗时工具不再误中断** | GLOBAL_SEARCH 全盘扫描 / 长爬虫 / 大批量文件操作正常完成 |
+| 🐛 **长对话稳定性提升** | 50+ 轮对话身份识别更稳定 |
+| 🐛 **UI 抽屉首次配置即时显示** | 填写 API 配置后立即在抽屉里看到 |
+| 🎯 **老用户升级 1-2 秒无感** | 安装时自动备份恢复你的所有数据,在线升级完全无感 |
 
-完整清单见 [Release Notes v2.0.23](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.23)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+完整清单见 [Release Notes v2.0.25](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.25)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 

@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.23-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.25-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,16 +19,19 @@
 
 ---
 
-## 🆕 v2.0.23 Update (2026-05-02 · Wiki Knowledge Base Reliability Upgrade)
+## 🆕 v2.0.25 Update (2026-05-06 · UX Optimization + Bug Fixes)
 
 | Improvement | Description |
 |---|---|
-| 🔧 **Index sync upgrade** | Wiki search auto-discovers any page, no more "missing entries" |
-| 🆕 **Topic-independent index pages** | Each topic (novel / project / learning area, etc.) gets its own directory + index page + cross_refs network |
-| 📚 **System-level guidance** | AI prefers wiki tools when maintaining knowledge base, avoiding index-disk drift |
-| 🛡️ **Bidirectional category validation** | Write infers category from path, read prioritizes path — never misclassified |
+| ⚡ **Critical path 22.9× faster** | Operation latency 260ms → 11ms, smooth and fluid, works offline |
+| 📊 **Markdown table rendering fix** | Fixed GFM multi-column alignment `\| :--: \|` rendering glitch + header detection bug |
+| 🤖 **Smarter sub-agent dispatch** | System-level "core judgment meta-rule" — long tasks auto-dispatch to sub-agents in background, won't block your conversation |
+| 🐛 **Long-running tools no longer falsely interrupted** | GLOBAL_SEARCH full-disk scans / long crawlers / batch file ops complete normally |
+| 🐛 **Long conversation stability improved** | 50+ turn conversation identity recognition more stable |
+| 🐛 **UI drawer first-config instant display** | API config visible in drawer immediately after fill |
+| 🎯 **Old user upgrade 1-2s seamless** | Auto-backup-restore all your data on install, online upgrade fully transparent |
 
-Full changelog: [Release Notes v2.0.23](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.23). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
+Full changelog: [Release Notes v2.0.25](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.25). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
 ---
 
