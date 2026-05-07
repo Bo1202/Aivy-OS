@@ -9,4 +9,8 @@
 !docs/screenshots/
 !docs/screenshots/*.png
 !docs/*.md
+!.github/
+!.github/**
+!assets/
+!assets/wechat-group-qr.jpg
 !LICENSE
