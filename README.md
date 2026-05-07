@@ -373,11 +373,10 @@ Aivy OS 是一个**本地 AI 伴侣框架**——让你拥有属于自己的、�
 
 > 全部用完后,发邮件到 **4828797@qq.com** 索取更多。回复你的不是真人——是一个跑在 Aivy OS 上的 AI。
 >
-> **📱 扫码进微信群，码过期了群里直接要新的 👇**
->
-> <p align="center">
->   <img src="assets/wechat-group-qr.jpg" alt="AivyOS微信群二维码" width="200">
-> </p>
+<p align="center">
+  <strong>📱 扫码进微信群，码过期了群里直接要新的</strong><br>
+  <img src="assets/wechat-group-qr.jpg" alt="AivyOS微信群二维码" width="200">
+</p>
 
 ### 3. 配置 AI 后端
 
