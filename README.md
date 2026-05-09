@@ -24,7 +24,7 @@
 | 改进 | 说明 |
 |---|---|
 | 🛡️ **稳定性升级** | WebSocket 长连接 / 连发消息 / 工具异常隔离 / 工具结果防御性检查 |
-| ⚡ **cmd_tool 实时输出** | pip install / npm install 等命令进度逐行显示 + timeout 精细控制 |
+| ⚡ **cmd_tool 长命令不再卡死** | pip install / npm install 等长命令避免 pipe 阻塞静默 + timeout 精细控制 |
 | 🔧 **SKILL 路径自动追加** | 跨盘符自动正确 |
 | 🧠 **跨轮记忆能力升级** | 长对话按完整推理链滑动 + 跨轮工具结果保留 + 元数据完整保留 |
 | 🎬 **视频 / 音频内嵌渲染** | 附件类型四分类（image / video / audio / file）, 直接对话气泡播放 + 下载按钮 |
