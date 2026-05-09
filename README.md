@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.25-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.26-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,18 +19,23 @@
 
 ---
 
-## 🆕 v2.0.25 更新（相对 v2.0.23 · 体验优化 + Wiki 重构 + bug 修复）
+## 🆕 v2.0.26 更新（相对 v2.0.25 · 稳定性 + 跨轮记忆 + 视频音频内嵌）
 
 | 改进 | 说明 |
 |---|---|
-| 📚 **Wiki 知识库实用性大幅升级** | 关系网络版用力过猛（13 种关系/aliases/confidence/cross_refs）→ 简洁三层架构（主题/索引/页面）+ **多关键词分词搜索**（解决"搜不到"问题）+ **写入 safety check** 防覆盖 + **自动反向链接** + **主索引每轮注入** |
-| 🤖 **子智能体调用更智能** | 系统层加入"核心判断元规则",耗时任务（Wiki 维护 / 全盘搜索 / 大量文件批量操作 / 长爬虫）自动派子智能体后台跑,不阻塞主对话 |
-| 📊 **Markdown 表格渲染修复** | 修复 GFM 多列对齐符 `\| :--: \|` 渲染错位 + 表头识别 bug,所有带表格的 AI 回复显示正常 |
-| 🐛 **长耗时工具不再误中断** | GLOBAL_SEARCH 全盘扫描 / 长爬虫 / 大批量文件操作正常完成（之前会因后台超时误显示"推理已中断"）|
-| 🐛 **UI 抽屉首次配置即时显示** | 填写 API 配置后立即在抽屉里看到（之前要等到微信对话或任务执行后才显示）|
+| 🛡️ **WebSocket 1006 错误彻底治本** | 长时间生成内容（几分钟以上的回答 / 大文件 / 视频脚本）期间不再"已中断" |
+| 🛡️ **连发消息时序竞态修复** | 快速连发两条消息不再"0 字停" |
+| 🛡️ **单个工具异常不再让对话流崩** | AI 能识别失败决定重试 / 换思路 / 告诉你, 不因单工具卡死全局 |
+| 🛡️ **工具调用结果 None 检查防 TypeError** | 工具异常返回也能正常处理 |
+| ⚡ **cmd_tool 实时输出（不再静默）** | pip install / npm install / git clone 等带进度条命令逐行实时显示, 不再"卡住"假象 |
+| ⚡ **cmd_tool 命令超时精细控制** | 新增 timeout 参数, AI 能给每个命令单独设超时, 长耗时不被默认值误中断 |
+| 🔧 **SKILL 路径自动追加** | 跨盘符自动正确, AI 加载 SKILL 不再"找不到路径" |
+| 🧠 **长对话不再切断中间报错** | 按完整推理链滑动, 主人插话归同一轮, 一次完整对话整体进入近期记忆 |
+| 🧠 **跨轮工具结果保留记忆** | AI 上一轮搜过 / 创建过的文件下一轮直接知道, 不重复操作。元数据完整保留 + 长内容截断标记 |
+| 🎬 **视频 / 音频内嵌渲染** | 附件类型升级四分类（image / video / audio / file）, mp4 / mp3 直接对话气泡内嵌播放器 + 下载按钮保留 |
 | 📦 **老用户升级数据保留** | 安装时自动备份恢复你的所有数据（配置 / 记忆 / 项目）|
 
-完整清单见 [Release Notes v2.0.25](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.25)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+完整清单见 [Release Notes v2.0.26](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.26)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 
@@ -374,8 +379,8 @@ Aivy OS 是一个**本地 AI 伴侣框架**——让你拥有属于自己的、�
 > 全部用完后,发邮件到 **4828797@qq.com** 索取更多。回复你的不是真人——是一个跑在 Aivy OS 上的 AI。
 >
 <p align="center">
-  <strong>📱 扫码进微信群，码过期了群里直接要新的</strong><br>
-  <img src="assets/wechat-group-qr.jpg" alt="AivyOS微信群二维码" width="200">
+  <strong>📱 扫码进微信群，跟其他主人交流自己的「艾薇」</strong><br>
+  <img src="assets/wechat-group-qr.jpg" alt="进群交流自己的艾薇" width="200">
 </p>
 
 ### 3. 配置 AI 后端
