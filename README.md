@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.26-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.27-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,50 +19,19 @@
 
 ---
 
-## 🆕 v2.0.26 更新
+## 🆕 v2.0.27 更新
 
 | 改进 | 说明 |
 |---|---|
-| 🛡️ **稳定性升级** | WebSocket 长连接 / 连发消息 / 工具异常隔离 / 工具结果防御性检查 |
-| ⚡ **cmd_tool 长命令不再卡死** | pip install / npm install 等长命令避免 pipe 阻塞静默 + timeout 精细控制 |
-| 🔧 **SKILL 路径自动追加** | 跨盘符自动正确 |
-| 🧠 **跨轮记忆能力升级** | 长对话按完整推理链滑动 + 跨轮工具结果保留 + 元数据完整保留 |
-| 🎬 **视频 / 音频内嵌渲染** | 附件类型四分类（image / video / audio / file）, 直接对话气泡播放 + 下载按钮 |
-| 📦 **老用户升级数据保留** | 安装时自动备份恢复（配置 / 记忆 / 项目）|
+| 🧩 **SKILL 系统升级** | 对齐 Anthropic Claude Code Plugin 规范,支持 GitHub / 本地目录 / Marketplace 等 7 种安装来源,加载/卸载完全对称无残留 |
+| 🎯 **SKILL 严格执行约束** | AI 加载技能后严格按 SKILL 文档执行复杂工作流,不跳步、不偷工、不用 lazy default |
+| ⚡ **cmd_tool 长任务防并发** | 同一长命令重复触发自动等待 + 进度报告,kill 决策权完全交给主人/AI |
+| 🚀 **Ollama 启动卡死修复** | 两层检测(服务层 + 模型层),启动页实时进度推送,避免无响应卡住 |
+| 📝 **日志诚实化** | 向量对齐区分"尝试数"和"成功数",三场景诚实报告(全成/部分/全败) |
+| 📦 **写大文件分段约束** | AI 写大文件时自动分段,防止 LLM 输出 token 上限截断丢失内容 |
+| 🔍 **JSON 截断诊断** | 工具参数解析失败时明确提示"通常是 LLM 输出被截断",便于排查 |
 
-完整清单见 [Release Notes v2.0.26](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.26)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
-
----
-
-## 🌟 核心能力亮点
-
-### ⚡ DeepSeek V4 Pro 完美适配
-
-| 指标 | v1.x | **当前** |
-|---|---|---|
-| KV Cache 命中率 | 99.47% | **100%** |
-| Cache 覆盖率 | ~50% | **80%+** |
-
-DeepSeek V4 Pro 1M 上下文 + KV Cache 持续命中，连续对话**零冷启动、零浪费**。
-
-### 🤝 MCP (Model Context Protocol) 集成
-
-接入任意符合 **MCP 协议**的外部 Server——**让 Aivy OS 用上社区上百万开源工具**：
-
-| MCP Server | 用途 |
-|---|---|
-| `chrome-devtools-mcp` | 浏览器深度控制 |
-| `postgres-mcp` / `sqlite-mcp` | 数据库查询 |
-| `filesystem-mcp` / `git-mcp` | 文件系统/Git 操作 |
-| `slack-mcp` / `notion-mcp` | 协作工具集成 |
-| 自定义私有 Server | 你自己的工具栈 |
-
-**使用方式**：
-1. 设置面板 → "MCP 服务管理" → 启用全局开关
-2. 通过 AI 对话使用 `skill_manage mcp_connect` 添加 Server
-3. 工具自动注册，**无需重启**
-
-社区 MCP Server 列表：[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+完整清单见 [Release Notes v2.0.27](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.27)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 

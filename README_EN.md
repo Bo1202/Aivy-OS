@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.25-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.27-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,50 +19,19 @@
 
 ---
 
-## 🆕 v2.0.25 Update (vs v2.0.23 · UX Optimization + Wiki Refactor + Bug Fixes)
+## 🆕 v2.0.27 Update
 
 | Improvement | Description |
 |---|---|
-| 📚 **Wiki knowledge base usability major upgrade** | Old relationship-graph version was overengineered (13 relation types / aliases / confidence / cross_refs) → New simple 3-tier structure (topic / index / page) + **multi-keyword tokenized search** (solves "can't find" issue) + **write safety check** prevents overwrites + **auto backlinks** + **main index injected every turn** |
-| 🤖 **Smarter sub-agent dispatch** | System-level "core judgment meta-rule" — long tasks (Wiki maintenance / full-disk searches / batch file ops / long crawlers) auto-dispatch to sub-agents in background, won't block your conversation |
-| 📊 **Markdown table rendering fix** | Fixed GFM multi-column alignment `\| :--: \|` rendering glitch + header detection bug — all AI replies with tables display correctly |
-| 🐛 **Long-running tools no longer falsely interrupted** | GLOBAL_SEARCH full-disk scans / long crawlers / batch file ops complete normally (previously falsely showed "interrupted" due to backend timeout) |
-| 🐛 **UI drawer first-config instant display** | API config visible in drawer immediately after fill (previously required WeChat chat or task execution first) |
-| 📦 **Old user data preservation on upgrade** | Auto-backup-restore all your data (config / memory / projects) on install |
+| 🧩 **SKILL System Upgrade** | Aligned with Anthropic Claude Code Plugin spec, supports GitHub / local directory / Marketplace and 7 install sources, complete load/unload symmetry with no residue |
+| 🎯 **SKILL Strict Execution Constraint** | AI strictly follows the SKILL document workflow after loading — no skipped steps, no shortcuts, no lazy defaults |
+| ⚡ **cmd_tool Long-Task Concurrency Protection** | Same long command triggered repeatedly auto-waits + reports progress; kill decision fully delegated to owner / AI |
+| 🚀 **Ollama Startup Hang Fix** | Two-layer detection (service + model layer), real-time startup progress on launch page |
+| 📝 **Honest Logging** | Vector alignment distinguishes "attempted" vs "succeeded", three-scenario honest reports (all / partial / none) |
+| 📦 **Large File Segmented Writing** | AI auto-segments when writing large files, prevents LLM output token truncation |
+| 🔍 **JSON Truncation Diagnostic** | Tool argument parse failure explicitly indicates "usually LLM output truncated" for easier debugging |
 
-Full changelog: [Release Notes v2.0.25](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.25). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
-
----
-
-## 🌟 Core Capability Highlights
-
-### ⚡ DeepSeek V4 Pro Perfect Fit
-
-| Metric | v1.x | **Current** |
-|---|---|---|
-| KV Cache hit rate | 99.47% | **100%** |
-| Cache coverage | ~50% | **80%+** |
-
-DeepSeek V4 Pro 1M context + sustained KV cache hits — continuous conversations with **zero cold start, zero waste**.
-
-### 🤝 MCP (Model Context Protocol) Integration
-
-Connect any MCP-compliant external server — **let Aivy OS use millions of community open-source tools**:
-
-| MCP Server | Use case |
-|---|---|
-| `chrome-devtools-mcp` | Deep browser control |
-| `postgres-mcp` / `sqlite-mcp` | Database queries |
-| `filesystem-mcp` / `git-mcp` | Filesystem / Git operations |
-| `slack-mcp` / `notion-mcp` | Collaboration tools |
-| Custom private servers | Your own toolchain |
-
-**How to use**:
-1. Settings panel → "MCP Service Management" → Enable global switch
-2. Use `skill_manage mcp_connect` via AI conversation to add servers
-3. Tools auto-register, **no restart needed**
-
-Community MCP server list: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+Full changelog: [Release Notes v2.0.27](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.27). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
 ---
 
