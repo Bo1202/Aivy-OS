@@ -341,7 +341,8 @@ Aivy OS 是一个**本地 AI 伴侣框架**——让你拥有属于自己的、�
 >
 <p align="center">
   <strong>📱 扫码进微信群，跟其他主人交流自己的「艾薇」</strong><br>
-  <img src="assets/wechat-group-qr.jpg" alt="进群交流自己的艾薇" width="200">
+  <img src="assets/wechat-group-qr.jpg?v=20260517" alt="进群交流自己的艾薇" width="200"><br>
+  <sub>更新时间：2026-05-17（有效期 7 天）</sub>
 </p>
 
 ### 3. 配置 AI 后端
