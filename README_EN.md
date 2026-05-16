@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.27-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.28-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,19 +19,16 @@
 
 ---
 
-## 🆕 v2.0.27 Update
+## 🆕 v2.0.28 Update
 
 | Improvement | Description |
 |---|---|
-| 🧩 **SKILL System Upgrade** | Aligned with Anthropic Claude Code Plugin spec, supports GitHub / local directory / Marketplace and 7 install sources, complete load/unload symmetry with no residue |
-| 🎯 **SKILL Strict Execution Constraint** | AI strictly follows the SKILL document workflow after loading — no skipped steps, no shortcuts, no lazy defaults |
-| ⚡ **cmd_tool Long-Task Concurrency Protection** | Same long command triggered repeatedly auto-waits + reports progress; kill decision fully delegated to owner / AI |
-| 🚀 **Ollama Startup Hang Fix** | Two-layer detection (service + model layer), real-time startup progress on launch page |
-| 📝 **Honest Logging** | Vector alignment distinguishes "attempted" vs "succeeded", three-scenario honest reports (all / partial / none) |
-| 📦 **Large File Segmented Writing** | AI auto-segments when writing large files, prevents LLM output token truncation |
-| 🔍 **JSON Truncation Diagnostic** | Tool argument parse failure explicitly indicates "usually LLM output truncated" for easier debugging |
+| 🎨 **Canvas Flying Cards (Visual Workspace)** | AI proactively pushes content cards — **8 content types** (Markdown / Image / Video / Audio / Code / FileTree / Mindmap / IDE Editor) · **4 adaptive layouts** (single / tile 2-3 / folded ≥4 with stack area) · **Selection interaction** (select text on a card, AI knows what you refer to) · **Real-time awareness** (AI knows current cards immediately after push/close) |
+| 🔍 **AI Smart Inspect Card Content** | AI can read its own pushed card content for follow-up decisions (`canvas_inspect` tool, on-demand RAG, no token bloat) |
+| 📂 **Full View + Save** | Cards show preview only — click for full content · Save any card to local file |
+| 🌐 **AI Independent Browser** | AI uses **its own browser** (based on Chromium) for web operations — **no conflict with your daily Edge / Chrome** (you watch videos, it does its thing) · **Isolated login state** (your data stays private) · **Stable behavior** (not affected by browser auto-updates) |
 
-Full changelog: [Release Notes v2.0.27](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.27). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
+Full changelog: [Release Notes v2.0.28](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.28). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
 ---
 

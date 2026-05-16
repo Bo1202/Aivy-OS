@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.27-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.28-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,19 +19,16 @@
 
 ---
 
-## 🆕 v2.0.27 更新
+## 🆕 v2.0.28 更新
 
 | 改进 | 说明 |
 |---|---|
-| 🧩 **SKILL 系统升级** | 对齐 Anthropic Claude Code Plugin 规范,支持 GitHub / 本地目录 / Marketplace 等 7 种安装来源,加载/卸载完全对称无残留 |
-| 🎯 **SKILL 严格执行约束** | AI 加载技能后严格按 SKILL 文档执行复杂工作流,不跳步、不偷工、不用 lazy default |
-| ⚡ **cmd_tool 长任务防并发** | 同一长命令重复触发自动等待 + 进度报告,kill 决策权完全交给主人/AI |
-| 🚀 **Ollama 启动卡死修复** | 两层检测(服务层 + 模型层),启动页实时进度推送,避免无响应卡住 |
-| 📝 **日志诚实化** | 向量对齐区分"尝试数"和"成功数",三场景诚实报告(全成/部分/全败) |
-| 📦 **写大文件分段约束** | AI 写大文件时自动分段,防止 LLM 输出 token 上限截断丢失内容 |
-| 🔍 **JSON 截断诊断** | 工具参数解析失败时明确提示"通常是 LLM 输出被截断",便于排查 |
+| 🎨 **Canvas 飞卡(可视化工作区)** | AI 主动把要给你看的东西飞成卡片 — **8 种内容**(文档 / 图片 / 视频 / 音频 / 代码 / 文件树 / 思维导图 / IDE 编辑器)· **4 种自适应布局**(单卡 / 平铺 2-3 / 折叠 ≥4 + 堆叠区)· **框选交互**(在飞卡上框选一段,AI 立刻知道你指的是这块)· **AI 实时感知**(推完卡立刻知道当前几张,不需要你提醒) |
+| 🔍 **AI 智能查看飞卡内容** | AI 推完卡能自己读卡里内容做后续判断(`canvas_inspect` 工具,按需 RAG,不堆 token) |
+| 📂 **完整查看 + 保存** | 飞卡里只是预览,点开能看全文档 · 想留下某张飞卡能保存到本地 |
+| 🌐 **AI 独立浏览器** | AI 用**自己的独立浏览器**(基于 Chromium)操作网页 — 跟你日常的 Edge / Chrome **互不冲突**(你看视频它干别的)· **登录态独立**(数据更隔离)· **行为统一**(不被浏览器自动升级影响) |
 
-完整清单见 [Release Notes v2.0.27](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.27)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+完整清单见 [Release Notes v2.0.28](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.28)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 
