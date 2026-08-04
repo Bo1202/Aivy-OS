@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.28-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.31-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,16 +19,15 @@
 
 ---
 
-## 🆕 v2.0.28 更新
+## 🆕 v2.0.31 更新
 
 | 改进 | 说明 |
 |---|---|
-| 🎨 **Canvas 飞卡(可视化工作区)** | AI 主动把要给你看的东西飞成卡片 — **8 种内容**(文档 / 图片 / 视频 / 音频 / 代码 / 文件树 / 思维导图 / IDE 编辑器)· **4 种自适应布局**(单卡 / 平铺 2-3 / 折叠 ≥4 + 堆叠区)· **框选交互**(在飞卡上框选一段,AI 立刻知道你指的是这块)· **AI 实时感知**(推完卡立刻知道当前几张,不需要你提醒) |
-| 🔍 **AI 智能查看飞卡内容** | AI 推完卡能自己读卡里内容做后续判断(`canvas_inspect` 工具,按需 RAG,不堆 token) |
-| 📂 **完整查看 + 保存** | 飞卡里只是预览,点开能看全文档 · 想留下某张飞卡能保存到本地 |
-| 🌐 **AI 独立浏览器** | AI 用**自己的独立浏览器**(基于 Chromium)操作网页 — 跟你日常的 Edge / Chrome **互不冲突**(你看视频它干别的)· **登录态独立**(数据更隔离)· **行为统一**(不被浏览器自动升级影响) |
+| 🌐 **内嵌浏览器** | AI 在 Aivy OS 预览台内,用**同一台内嵌浏览器承载多个真实标签页** — **互不抢屏**(你正在看的标签与 AI 正在操作的标签彼此独立,它在后台干活不会切走你眼前的页面)· **前台由你说了算**(只有你明确要求显示时才切到前台,标签栏分别标出查看中与操作中)· **铺满工作区**(窗口最大化后网页按真实可用区域重新排版,而不是拉伸截图)· 与你日常的 Edge / Chrome 完全隔离,登录态独立 |
+| 🖼️ **图片发送** | 主窗口、处理中追加和悬浮窗口都支持**纯图片或图文消息**,不再要求先输入文字;图片在多步推理与工具调用过程中持续保留 |
+| ✨ **大量体验优化** | 自 v2.0.28 以来累积三个版本的改进 — **界面显示与交互细节、工具执行的稳定性、长对话中的记忆衔接**均有大量正向优化 |
 
-完整清单见 [Release Notes v2.0.28](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.28)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.0.31](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.31)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 

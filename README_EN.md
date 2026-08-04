@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.28-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.0.31-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,16 +19,15 @@
 
 ---
 
-## 🆕 v2.0.28 Update
+## 🆕 v2.0.31 Update
 
 | Improvement | Description |
 |---|---|
-| 🎨 **Canvas Flying Cards (Visual Workspace)** | AI proactively pushes content cards — **8 content types** (Markdown / Image / Video / Audio / Code / FileTree / Mindmap / IDE Editor) · **4 adaptive layouts** (single / tile 2-3 / folded ≥4 with stack area) · **Selection interaction** (select text on a card, AI knows what you refer to) · **Real-time awareness** (AI knows current cards immediately after push/close) |
-| 🔍 **AI Smart Inspect Card Content** | AI can read its own pushed card content for follow-up decisions (`canvas_inspect` tool, on-demand RAG, no token bloat) |
-| 📂 **Full View + Save** | Cards show preview only — click for full content · Save any card to local file |
-| 🌐 **AI Independent Browser** | AI uses **its own browser** (based on Chromium) for web operations — **no conflict with your daily Edge / Chrome** (you watch videos, it does its thing) · **Isolated login state** (your data stays private) · **Stable behavior** (not affected by browser auto-updates) |
+| 🌐 **Embedded Browser** | AI now works inside the Aivy OS preview workbench, driving **one embedded browser that hosts multiple real tabs** — **No screen stealing** (the tab you're viewing and the tab AI is operating are independent; background work never yanks away your current page) · **You decide what comes forward** (a tab is brought to front only when you explicitly ask; the tab bar marks *viewing* and *acting* separately) · **Fills the workspace** (pages re-layout to the real available area instead of stretching a screenshot) · Fully isolated from your daily Edge / Chrome, with its own login state |
+| 🖼️ **Image Sending** | Main window, mid-turn append and the floating window all accept **image-only or image+text messages** — no need to type text first; images persist across multi-step reasoning and tool calls |
+| ✨ **Extensive Refinements** | Three versions of improvements since v2.0.28 — **UI presentation and interaction details, tool execution stability, and memory continuity across long conversations** have all been substantially improved |
 
-Full changelog: [Release Notes v2.0.28](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.28). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
+**Upgrading is recommended for all users.** Full notes: [Release Notes v2.0.31](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.31). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
 ---
 
