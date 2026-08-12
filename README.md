@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.31-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,15 +19,15 @@
 
 ---
 
-## 🆕 v2.0.31 更新
+## 🆕 v2.1.0 更新
 
 | 改进 | 说明 |
 |---|---|
-| 🌐 **内嵌浏览器** | AI 在 Aivy OS 预览台内,用**同一台内嵌浏览器承载多个真实标签页** — **互不抢屏**(你正在看的标签与 AI 正在操作的标签彼此独立,它在后台干活不会切走你眼前的页面)· **前台由你说了算**(只有你明确要求显示时才切到前台,标签栏分别标出查看中与操作中)· **铺满工作区**(窗口最大化后网页按真实可用区域重新排版,而不是拉伸截图)· 与你日常的 Edge / Chrome 完全隔离,登录态独立 |
-| 🖼️ **图片发送** | 主窗口、处理中追加和悬浮窗口都支持**纯图片或图文消息**,不再要求先输入文字;图片在多步推理与工具调用过程中持续保留 |
-| ✨ **大量体验优化** | 自 v2.0.28 以来累积三个版本的改进 — **界面显示与交互细节、工具执行的稳定性、长对话中的记忆衔接**均有大量正向优化 |
+| 🎙️ **全双工语音** | **可以直接跟她说话了** — 她一边听一边答,不用按住说话,也不用等她讲完 · **随时打断**(你一开口她就停) · **停顿不断句**(说到一半想一下仍算同一句) · **语音退到后台后**,主界面、IDE、预览台照常使用 · 键盘声、电视声不会误打断 · 麦克风未经授权不会录音 |
+| 🔑 **语音只填一个 Key** | 选北京 / 新加坡地域,接口地址、模型、通道**全部自动填好** · **「获取音色」**由服务商自己报上来,换一家服务就换一批 · **「试听」**用选中的音色真念一句给你听 — **能出声就说明整条线路都通了**,满意直接生效 |
+| 🛡️ **稳定性与升级** | 修复偶发的**「想完了却不回话」**;修复升级时反复提示**「Aivy OS 无法关闭,请手动关闭后重试」**;AI 执行命令不会再误关闭 Aivy OS 自身 |
 
-**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.0.31](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.31)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.1.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.0)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 

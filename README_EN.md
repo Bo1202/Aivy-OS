@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.0.31-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,15 +19,15 @@
 
 ---
 
-## 🆕 v2.0.31 Update
+## 🆕 v2.1.0 Update
 
 | Improvement | Description |
 |---|---|
-| 🌐 **Embedded Browser** | AI now works inside the Aivy OS preview workbench, driving **one embedded browser that hosts multiple real tabs** — **No screen stealing** (the tab you're viewing and the tab AI is operating are independent; background work never yanks away your current page) · **You decide what comes forward** (a tab is brought to front only when you explicitly ask; the tab bar marks *viewing* and *acting* separately) · **Fills the workspace** (pages re-layout to the real available area instead of stretching a screenshot) · Fully isolated from your daily Edge / Chrome, with its own login state |
-| 🖼️ **Image Sending** | Main window, mid-turn append and the floating window all accept **image-only or image+text messages** — no need to type text first; images persist across multi-step reasoning and tool calls |
-| ✨ **Extensive Refinements** | Three versions of improvements since v2.0.28 — **UI presentation and interaction details, tool execution stability, and memory continuity across long conversations** have all been substantially improved |
+| 🎙️ **Full-Duplex Voice** | **You can just talk to her now** — she listens and answers at the same time; no push-to-talk, no waiting for her to finish · **Interrupt any time** (she stops the moment you speak) · **A pause is not a new sentence** (thinking mid-sentence still counts as one turn) · **Voice can run in the background** while you keep using the main window, IDE and preview workbench · Keyboard clatter and TV noise won't cut her off · The microphone is never used without your permission |
+| 🔑 **Voice Needs Only One Key** | Pick a region (Beijing / Singapore) and the endpoint, model and channels are **filled in for you** · **"Fetch voices"** asks the provider itself which voices exist, so switching providers switches the list · **"Preview"** has her actually read a line in the selected voice — **if you hear it, the whole path works**, and it takes effect right away |
+| 🛡️ **Stability & Upgrades** | Fixed the occasional **"finished thinking but never replied"**; fixed upgrades getting stuck on **"Aivy OS cannot be closed. Please close it manually and click retry"**; running system commands no longer risks closing Aivy OS itself |
 
-**Upgrading is recommended for all users.** Full notes: [Release Notes v2.0.31](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.0.31). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
+**Upgrading is recommended for all users.** Full notes: [Release Notes v2.1.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.0). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
 
 ---
 
