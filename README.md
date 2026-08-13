@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,15 +19,15 @@
 
 ---
 
-## 🆕 v2.1.0 更新
+## 🆕 v2.1.1 更新
 
 | 改进 | 说明 |
 |---|---|
-| 🎙️ **全双工语音** | **可以直接跟她说话了** — 她一边听一边答,不用按住说话,也不用等她讲完 · **随时打断**(你一开口她就停) · **停顿不断句**(说到一半想一下仍算同一句) · **语音退到后台后**,主界面、IDE、预览台照常使用 · 键盘声、电视声不会误打断 · 麦克风未经授权不会录音 |
-| 🔑 **语音只填一个 Key** | 选北京 / 新加坡地域,接口地址、模型、通道**全部自动填好** · **「获取音色」**由服务商自己报上来,换一家服务就换一批 · **「试听」**用选中的音色真念一句给你听 — **能出声就说明整条线路都通了**,满意直接生效 |
-| 🛡️ **稳定性与升级** | 修复偶发的**「想完了却不回话」**;修复升级时反复提示**「Aivy OS 无法关闭,请手动关闭后重试」**;AI 执行命令不会再误关闭 Aivy OS 自身 |
+| 🎙️ **语音稳定性修复** | 修复连续几次进入语音时偶发**第一次连不上**的问题,现在每次进入都稳定 · 修复嘈杂环境下**还没开口就误报「断流」**的问题,安静等待不再被打断 · 语音密钥保存方式升级,**配置更可靠** |
+| 🔑 **升级须知** | 升级后需要**重新填写一次语音 Key**(仅这一次),之后不会再要求 |
+| 🛡️ **其他稳定性** | 修复端口被占用时偶发**启动失败**的问题,现在会自动避开冲突端口正常启动 |
 
-**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.1.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.0)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.1.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.1)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
 
 ---
 
