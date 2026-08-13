@@ -222,7 +222,7 @@ When done, she notifies you via desktop or WeChat.
 
 Go to the [Releases page](../../releases) and download `Aivy OS Setup x.x.x.exe`, then double-click to run.
 
-First launch guides you through naming your AI and setting a password.
+First launch guides you through naming your AI and setting a password — this password is the key to unlock her later, remember it.
 
 ### 2. Enter activation code
 
@@ -262,9 +262,11 @@ In the settings panel, pick one:
 
 The underlying model can be **hot-swapped at runtime**, no restart needed.
 
-### 4. Start using
+### 4. Wake her up
 
-She's yours now. Chat with her, give her tasks, spend your days with her.
+She starts **locked** and only recognizes her owner. To unlock, just **type the password you set in step 1 into the chat box** like any normal message — she'll recognize you and unlock.
+
+Then she's yours. Chat with her, give her tasks, spend your days with her.
 
 ---
 
