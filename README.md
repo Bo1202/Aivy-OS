@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.1.10-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,15 +19,22 @@
 
 ---
 
-## 🆕 v2.1.1 更新
+## 🆕 v2.1.10 更新
 
 | 改进 | 说明 |
 |---|---|
-| 🎙️ **语音稳定性修复** | 修复连续几次进入语音时偶发**第一次连不上**的问题,现在每次进入都稳定 · 修复嘈杂环境下**还没开口就误报「断流」**的问题,安静等待不再被打断 · 语音密钥保存方式升级,**配置更可靠** |
-| 🔑 **升级须知** | 升级后需要**重新填写一次语音 Key**(仅这一次),之后不会再要求 |
-| 🛡️ **其他稳定性** | 修复端口被占用时偶发**启动失败**的问题,现在会自动避开冲突端口正常启动 |
+| 🎙️ **全双工语音** | 直接对话、边听边答、说话即打断；只需填一个 API Key，地址与模型自动配置；音色由线路自身提供，试听即验证 |
+| 🧠 **记忆自动浮现** | 对话时自动带出相关的长期记忆，无需刻意询问；记忆规模增长不再拖慢响应 |
+| ⚡ **性能与成本** | 上下文缓存深度优化，长对话中输入 token 大部分命中缓存，显著降低 API 成本；工具执行后的收尾由十余秒降至毫秒级；聊天区虚拟滚动，数千条对话依旧流畅 |
+| 🌐 **浏览器与预览台** | 内嵌浏览器多标签，用户查看与 AI 操作互不干扰；支持多实例并行；文档与表格预览重做 |
+| 🎁 **试用与授权** | 安装后可直接试用 24 小时；激活后自动完成切换；设备识别机制升级，单项硬件变动不影响授权 |
+| 💬 **通道与工具** | 企业微信长连接完整可用；推理进行中可随时发送新消息并即时打断；向视觉模型发送图片稳定送达 |
 
-**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.1.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.1)。历史版本进 [Releases 列表](https://github.com/Bo1202/Aivy-OS/releases) 查看。
+**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.1.10](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.10)。
+
+📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.10)（从安装到语音对话，含各服务商 API Key 申请步骤）
+
+> 💡 **升级提示**：覆盖安装前请先退出 Aivy OS；若提示"无法关闭"，先卸载旧版本再安装即可（配置与授权自动保留）。
 
 ---
 

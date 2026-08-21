@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.1.10-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,15 +19,20 @@
 
 ---
 
-## 🆕 v2.1.1 Update
+## 🆕 v2.1.10 Update
 
-| Improvement | Description |
+| Improvement | Details |
 |---|---|
-| 🎙️ **Voice Stability Fixes** | Fixed an occasional issue where entering voice several times in a row would **fail the first time** — now it connects reliably every time · Fixed noisy environments causing a **false "stream interrupted" before you even speak** — waiting quietly is no longer cut off · Voice key storage upgraded for **more reliable config** |
-| 🔑 **Upgrade Note** | You'll need to **re-enter your voice Key once** after upgrading (one time only) |
-| 🛡️ **Other Stability** | Fixed an occasional **startup failure when the port is already in use** — it now automatically picks a free port and starts normally |
+| 🎙️ **Full-duplex voice** | Talk directly, listen and answer at once, interrupt by speaking; one API key is all you need — endpoint and model configure themselves; voices come from the line itself, verified by preview playback |
+| 🧠 **Automatic memory recall** | Relevant long-term memories surface during conversation without being asked; growing memory no longer slows responses |
+| ⚡ **Performance & cost** | Deep context-cache optimization — most input tokens hit cache in long conversations, substantially reducing API cost; post-tool latency cut from tens of seconds to milliseconds; virtual scrolling keeps thousands of messages fluid |
+| 🌐 **Browser & preview** | Multi-tab embedded browser where your view and the AI's operations stay independent; multiple instances in parallel; document and spreadsheet preview redesigned |
+| 🎁 **Trial & licensing** | 24-hour trial right after installation; activation completes automatically; upgraded device identification tolerates single hardware changes |
+| 💬 **Channels & tools** | WeCom persistent connection fully functional; new messages can interrupt inference at any time; images reliably delivered to vision-capable models |
 
-**Upgrading is recommended for all users.** Full notes: [Release Notes v2.1.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.1). For historical versions, see [Releases list](https://github.com/Bo1202/Aivy-OS/releases).
+**Upgrading is recommended for all users.** Full notes: [Release Notes v2.1.10](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.10).
+
+> 💡 **Upgrade tip**: quit Aivy OS before installing over an existing version. If you see "cannot be closed", uninstall the old version first — settings and license are preserved automatically.
 
 ---
 
