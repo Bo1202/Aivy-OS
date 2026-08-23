@@ -34,7 +34,7 @@
 
 **建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.2.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.0)。
 
-📖 **新手教程**：[Aivy-OS-Getting-Started-CN.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.0/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
+📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.0/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
 
 ---
 
