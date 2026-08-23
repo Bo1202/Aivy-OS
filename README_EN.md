@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.1.10-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,34 +19,22 @@
 
 ---
 
-## 🆕 v2.1.10 Update
+## 🆕 v2.2.0 Update
+
+> Architectural upgrade: user data is now fully separated from the program itself. Upgrading is recommended for all users.
 
 | Improvement | Details |
 |---|---|
-| 🎙️ **Full-duplex voice** | Talk directly, listen and answer at once, interrupt by speaking; one API key is all you need — endpoint and model configure themselves; voices come from the line itself, verified by preview playback |
-| 🧠 **Automatic memory recall** | Relevant long-term memories surface during conversation without being asked; growing memory no longer slows responses |
-| ⚡ **Performance & cost** | Deep context-cache optimization — most input tokens hit cache in long conversations, substantially reducing API cost; post-tool latency cut from tens of seconds to milliseconds; virtual scrolling keeps thousands of messages fluid |
-| 🌐 **Browser & preview** | Multi-tab embedded browser where your view and the AI's operations stay independent; multiple instances in parallel; document and spreadsheet preview redesigned |
-| 🎁 **Trial & licensing** | 24-hour trial right after installation; activation completes automatically; upgraded device identification tolerates single hardware changes |
-| 💬 **Channels & tools** | WeCom persistent connection fully functional; new messages can interrupt inference at any time; images reliably delivered to vision-capable models |
+| 🏗️ **Data / program separation** | User data lives in the system user-data area; upgrades simply overwrite the program and never touch your data; uninstall & reinstall restores memory, settings and license intact; migration from older versions is automatic and safely reversible |
+| 🎛️ **Multiple models per provider** | Save several models under one provider without overwriting; the in-chat model switcher lists them all — one click to switch |
+| 🚀 **Friendlier setup** | Alibaba Cloud Bailian (Qwen) added; official endpoints auto-filled per provider; required fields validated inline with examples |
+| 📊 **Native Excel tables** | Multi-sheet tabs, frozen headers and row numbers, striped rows, selectable content; document views redesigned |
+| 👁️ **Vision input** | View local images, specific PDF pages and the current preview content directly |
+| 🧬 **Unified identity** | AI name and address are managed by initial setup — visible but protected in the genome, renames propagate automatically |
 
-**Upgrading is recommended for all users.** Full notes: [Release Notes v2.1.10](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.1.10).
+**Upgrading is recommended for all users.** Full notes: [Release Notes v2.2.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.0).
 
-> 💡 **Upgrade tip**: quit Aivy OS before installing over an existing version. If you see "cannot be closed", uninstall the old version first — settings and license are preserved automatically.
-
----
-
-## 🌟 What is it
-
-Aivy OS is a **local AI companion framework** — letting you own an AI that never forgets you.
-
-Not a chatbot. Not an assistant plugin. It's **a complete digital life form** living on your computer:
-
-- Has its own soul, memory, personality
-- Remembers everything you ever told her
-- Can operate your computer, browser, and files like a human
-- Find her on WeChat, email, or desktop — it's always the same her
-- Belongs only to this one device; never uploads any data
+📖 **Getting started guide** (Chinese): [Aivy-OS-Getting-Started-CN.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.0/Aivy-OS-Getting-Started-CN.pdf)
 
 ---
 
