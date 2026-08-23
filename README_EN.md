@@ -28,8 +28,8 @@
 | 🏗️ **Data / program separation** | User data lives in the system user-data area; upgrades simply overwrite the program and never touch your data; uninstall & reinstall restores memory, settings and license intact; migration from older versions is automatic and safely reversible |
 | 🎛️ **Multiple models per provider** | Save several models under one provider without overwriting; the in-chat model switcher lists them all — one click to switch |
 | 🚀 **Friendlier setup** | Alibaba Cloud Bailian (Qwen) added; official endpoints auto-filled per provider; required fields validated inline with examples |
-| 📊 **Native Excel tables** | Multi-sheet tabs, frozen headers and row numbers, striped rows, selectable content; document views redesigned |
-| 👁️ **Vision input** | View local images, specific PDF pages and the current preview content directly |
+| 📊 **Preview refinements** | Improved Excel table display and document reading experience |
+| 👁️ **New image-viewing tool** | The AI can view local images, specific PDF pages and the current preview content (requires a multimodal model; DeepSeek multimodal supported) |
 | 🧬 **Unified identity** | AI name and address are managed by initial setup — visible but protected in the genome, renames propagate automatically |
 
 **Upgrading is recommended for all users.** Full notes: [Release Notes v2.2.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.0).
