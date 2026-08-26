@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.2.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,22 +19,23 @@
 
 ---
 
-## 🆕 v2.2.0 Update
+## 🆕 v2.2.1 Update
 
-> Architectural upgrade: user data is now fully separated from the program itself. Upgrading is recommended for all users.
+> Stability release: fixes for interruption, false alarms and unexpected exits during voice conversation. Upgrading is recommended for all users.
 
-| Improvement | Details |
+| Fix | Details |
 |---|---|
-| 🏗️ **Data / program separation** | User data lives in the system user-data area; upgrades simply overwrite the program and never touch your data; uninstall & reinstall restores memory, settings and license intact; migration from older versions is automatic and safely reversible |
-| 🎛️ **Multiple models per provider** | Save several models under one provider without overwriting; the in-chat model switcher lists them all — one click to switch |
-| 🚀 **Friendlier setup** | Alibaba Cloud Bailian (Qwen) added; official endpoints auto-filled per provider; required fields validated inline with examples |
-| 📊 **Preview refinements** | Improved Excel table display and document reading experience |
-| 👁️ **New image-viewing tool** | The AI can view local images, specific PDF pages and the current preview content (requires a multimodal model; DeepSeek multimodal supported) |
-| 🧬 **Unified identity** | AI name and address are managed by initial setup — visible but protected in the genome, renames propagate automatically |
+| 🎙️ **Voice interruption** | Fixed a crash that could occur when interrupting her mid-sentence; fixed the voice view exiting to text mode on its own while speaking; fixed her going silent mid-turn and needing a restart |
+| 🎧 **Microphone recovery** | With headsets or built-in laptop microphones, a brief signal drop no longer ends the voice session — it resumes automatically once the microphone is back |
+| 🔕 **False alarms** | A voice connection closing normally is no longer reported as a failure; the unrelated red error banner is gone, along with leftover error states and duplicate notices after an interruption |
+| 🛡️ **Corrupt config protection** | A damaged config file no longer blocks startup: the program repairs it when possible, otherwise archives it safely and guides you through reconfiguration — user config is never silently deleted |
+| 🔑 **Trial entry fix** | A revoked license left on the machine no longer blocks entry to the trial |
+| 💭 **Expandable reasoning** | The thinking process can now be expanded and reviewed |
+| 🖼️ **Image viewing fix** | Fixed images in chat being hidden behind the preview panel when it was open |
 
-**Upgrading is recommended for all users.** Full notes: [Release Notes v2.2.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.0).
+**Upgrading is recommended for all users.** Full notes: [Release Notes v2.2.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.1).
 
-📖 **Getting started guide** (Chinese): [Aivy-OS-Getting-Started-CN.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.0/Aivy-OS-Getting-Started-CN.pdf)
+📖 **Getting started guide** (Chinese): [Aivy-OS-Getting-Started-CN.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.1/Aivy-OS-Getting-Started-CN.pdf)
 
 ---
 

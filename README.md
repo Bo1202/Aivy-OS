@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.2.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,22 +19,23 @@
 
 ---
 
-## 🆕 v2.2.0 更新
+## 🆕 v2.2.1 更新
 
-> 架构级升级：用户数据与程序本体完全分离，建议所有用户升级。
+> 稳定性版本：集中修复语音对话中的中断、误判与异常退出，建议所有用户升级。
 
-| 改进 | 说明 |
+| 修复 | 说明 |
 |---|---|
-| 🏗️ **数据与程序分离** | 用户数据独立存放于系统用户数据区；升级覆盖安装即完成、不再触碰数据；卸载重装后记忆、配置与授权完整恢复；旧版本升级自动迁移，可安全回退 |
-| 🎛️ **同厂商多模型** | 同一服务商可保存多个模型，新增不覆盖旧配置；会话中模型切换器展开全部已存模型，点击即切换 |
-| 🚀 **启动配置更友好** | 新增阿里云百炼（通义千问）；选择服务商自动填入官方接口地址；必填项当场校验并给出示例 |
-| 📊 **预览台优化** | Excel 表格显示与文档阅读体验优化 |
-| 👁️ **新增看图工具** | AI 可查看本地图片、PDF 指定页与预览台当前内容（需多模态模型，已适配 DeepSeek 多模态） |
-| 🧬 **身份统一管理** | AI 名称与称呼由初始设置统一管理，基因组中可见但受保护，改名自动同步 |
+| 🎙️ **语音中断修复** | 修复打断她说话时可能导致程序异常退出；修复说话过程中语音界面自行退出、回到文字模式；修复一轮对话中途不再出声、需重新开始才能恢复 |
+| 🎧 **麦克风恢复** | 戴耳机或使用笔记本内置麦克风时，麦克风信号短暂中断不再立即结束语音会话，恢复后自动继续 |
+| 🔕 **误报清理** | 语音连接正常结束时不再被误报为故障，界面不再出现无关的红色错误提示；修复打断后可能残留的错误状态与重复提示 |
+| 🛡️ **配置损坏保护** | 配置文件损坏时不再无法启动：程序会尝试自动修复，无法修复时将损坏文件安全归档并引导重新配置，任何情况下都不会静默删除用户配置 |
+| 🔑 **试用入口修复** | 修复已失效的激活码残留在本机时，会阻挡用户进入试用的问题 |
+| 💭 **思考过程展开** | 思考过程支持展开查看 |
+| 🖼️ **图片查看修复** | 修复预览台打开时点击对话中的图片，图片被预览台遮挡、无法查看的问题 |
 
-**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.2.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.0)。
+**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.2.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.1)。
 
-📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.0/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
+📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.1/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
 
 ---
 
