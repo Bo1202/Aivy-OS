@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.2.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.2.2-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,24 +19,20 @@
 
 ---
 
-## 🆕 v2.2.1 Update
+## 🆕 v2.2.2 Update
 
-> Stability release: fixes for interruption, false alarms and unexpected exits during voice conversation. Upgrading is recommended for all users.
+> Fixes an install-location issue that could interrupt conversations; you can now send images and files after Voice moves to the background.
 
-| Fix | Details |
+| Update | Details |
 |---|---|
-| 🎙️ **Voice interruption** | Fixed a crash that could occur when interrupting her mid-sentence; fixed the voice view exiting to text mode on its own while speaking; fixed her going silent mid-turn and needing a restart |
-| 🎧 **Microphone recovery** | With headsets or built-in laptop microphones, a brief signal drop no longer ends the voice session — it resumes automatically once the microphone is back |
-| 🔕 **False alarms** | A voice connection closing normally is no longer reported as a failure; the unrelated red error banner is gone, along with leftover error states and duplicate notices after an interruption |
-| 🛡️ **Corrupt config protection** | A damaged config file no longer blocks startup: the program repairs it when possible, otherwise archives it safely and guides you through reconfiguration — user config is never silently deleted |
-| 🔑 **Trial entry fix** | A revoked license left on the machine no longer blocks entry to the trial |
-| 💭 **Expandable reasoning** | The thinking process can now be expanded and reviewed |
-| 🖼️ **Image viewing fix** | Fixed images in chat being hidden behind the preview panel when it was open |
+| 🗂️ **Install location fix** | Fixes the error that cut her off mid-reply when installed to `C:\Program Files` (choosing "for all users"). User data now lives in your personal folder — **any install location works**, and switching install modes no longer loses your activation or chat history |
+| 📎 **Attachments from Voice background** | After Voice moves to the background, the chat box accepts images, documents and media just like normal — no longer text-only |
+| 🔀 **Switch-to-text button** | New button in the Voice header: return to the chat window and keep typing while Voice keeps running in the background and still speaks its replies. Only clickable once Voice is connected; the ✕ is now labeled "End voice" to match what it actually does |
+| 🎧 **Headset interruption fix** | Fixes being kicked out of Voice — and losing that turn — on the second brief microphone dropout (Bluetooth glitches, headset mode switches) |
+| 📄 **Large files read on demand** | Large text files are no longer pasted into the conversation wholesale; they are stored and read on demand, so one big file can't fill the context. Small files still show inline |
+| 🗑️ **Uninstall notice** | Uninstalling now tells you where your chat history and activation are kept, and can open that folder for you (uninstalling does not delete them — reinstall and continue) |
 
-**Upgrading is recommended for all users.** Full notes: [Release Notes v2.2.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.1).
-
-📖 **Getting started guide** (Chinese): [Aivy-OS-Getting-Started-CN.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.1/Aivy-OS-Getting-Started-CN.pdf)
-
+**All users are recommended to upgrade.** Full notes: [Release Notes v2.2.2](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.2).
 ---
 
 ## ✨ What it can do
@@ -220,32 +216,12 @@ First launch guides you through naming your AI and setting a password — this p
 
 ### 2. Enter activation code
 
-First-time use requires an activation code. Free trial codes below, valid for 30 days, first come first served:
+An activation code is required. After install you get a free trial period first; activate when it ends.
 
-| # | Activation Code | Status |
-|---|-----------------|--------|
-| 1 | `4DE9-9B19-FC96-B125` | ❌ Taken |
-| 2 | `39B1-3F30-B8FA-D004` | ❌ Taken |
-| 3 | `198B-175F-A542-170A` | ✅ Available |
-| 4 | `3F7B-B3AA-1618-7273` | ✅ Available |
-| 5 | `81C2-56E9-F6CB-A2C2` | ❌ Taken |
-| 6 | `3950-AD5B-3636-FEB5` | ✅ Available |
-| 7 | `8B4D-F2FA-E1E7-7A0C` | ✅ Available |
-| 8 | `383A-F4A5-359D-F40E` | ❌ Taken |
-| 9 | `C319-31CE-9A99-0948` | ✅ Available |
-| 10 | `52A6-D1C9-7C37-02EE` | ✅ Available |
-| 11 | `9508-CC54-3F51-DB42` | ✅ Available |
-| 12 | `4097-E114-BA56-CBF1` | ❌ Taken |
-| 13 | `E3C4-A9DC-0E13-91F7` | ❌ Taken |
-| 14 | `9D56-BC8A-34C3-72B8` | ❌ Taken |
-| 15 | `1548-64AB-0C0D-3DEC` | ❌ Taken |
-| 16 | `623B-E218-EEAB-95EE` | ❌ Taken |
-| 17 | `4B36-2FFA-4AE3-2B02` | ❌ Taken |
-| 18 | `A03E-2BE8-66D0-5A65` | ❌ Taken |
-| 19 | `9B36-576E-0749-0DB8` | ❌ Taken |
-| 20 | `F6D2-1634-766D-6BC3` | ❌ Taken |
+**How to get one**: email **4828797@qq.com** and tell us what you plan to use it for.
+Whoever replies isn't a human — it's an AI running on Aivy OS.
 
-> If all codes are used, email **4828797@qq.com** to request more. The one replying isn't a human — it's an AI running on Aivy OS.
+> Codes are bound to the machine. Uninstalling or reinstalling never loses your activation.
 
 ### 3. Configure AI backend
 
@@ -310,7 +286,6 @@ No unauthorized reverse engineering, decompilation, redistribution, or resale.
 
 ## 📬 Contact
 
-- 💬 **WeChat group** — Add WeChat ID **4828797** with note "Aivy OS" to join the group
 - 📧 Email: 4828797@qq.com
 - 🐛 Bug reports: [GitHub Issues](../../issues)
 - 💬 Discussions: [GitHub Discussions](../../discussions)
