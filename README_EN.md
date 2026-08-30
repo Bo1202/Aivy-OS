@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.2.2-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,20 +19,20 @@
 
 ---
 
-## 🆕 v2.2.2 Update
+## 🆕 v2.3.0 Update
 
-> Fixes an install-location issue that could interrupt conversations; you can now send images and files after Voice moves to the background.
+> Send her a video and she understands it; voice reconnects by itself when the line drops.
 
 | Update | Details |
 |---|---|
-| 🗂️ **Install location fix** | Fixes the error that cut her off mid-reply when installed to `C:\Program Files` (choosing "for all users"). User data now lives in your personal folder — **any install location works**, and switching install modes no longer loses your activation or chat history |
-| 📎 **Attachments from Voice background** | After Voice moves to the background, the chat box accepts images, documents and media just like normal — no longer text-only |
-| 🔀 **Switch-to-text button** | New button in the Voice header: return to the chat window and keep typing while Voice keeps running in the background and still speaks its replies. Only clickable once Voice is connected; the ✕ is now labeled "End voice" to match what it actually does |
-| 🎧 **Headset interruption fix** | Fixes being kicked out of Voice — and losing that turn — on the second brief microphone dropout (Bluetooth glitches, headset mode switches) |
-| 📄 **Large files read on demand** | Large text files are no longer pasted into the conversation wholesale; they are stored and read on demand, so one big file can't fill the context. Small files still show inline |
-| 🗑️ **Uninstall notice** | Uninstalling now tells you where your chat history and activation are kept, and can open that folder for you (uninstalling does not delete them — reinstall and continue) |
+| 🎬 **Video understanding out of the box** | Send her a video and she can watch it: frame-by-frame visual understanding plus automatic speech transcription. A complete media decoder (FFmpeg, LGPL) is now bundled — **no extra software to install**; if you already have FFmpeg, your system version still takes priority. Video editing and format conversion tasks benefit too |
+| 🔁 **Voice auto-reconnect** | When the voice line drops unexpectedly, it reconnects within seconds and resumes the live conversation — no more leaving and re-entering Voice |
+| 🔇 **Voice degradation root fixes** | The two root causes of "she can't hear you / she goes silent" after degradation are fixed — degraded mode is now merely slower, not deaf or mute |
+| 📝 **Live captions** | Captions follow exactly what she is saying, as she says it — narration, tool results and the final answer all stream in sync instead of appearing at the end |
+| 🚀 **256K output limit** | Long tool instructions from reasoning models no longer get cut off mid-way; the limit auto-adapts to each model's real capability |
+| 🧠 **Smarter memory recall** | Duplicate old memories merge into the single most relevant one; when a topic has both an old and a newer decision, both surface together in time order |
 
-**All users are recommended to upgrade.** Full notes: [Release Notes v2.2.2](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.2.2).
+**All users are recommended to upgrade.** Full notes: [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0).
 ---
 
 ## ✨ What it can do
