@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,22 +19,20 @@
 
 ---
 
-## 🆕 v2.3.0 更新
+## 🆕 v2.3.1 更新
 
-> 这个版本，发视频给她就能看懂了；语音断了会自己接回来。
+> v2.3.0 的稳定性补丁：SOCKS 代理下无法初始化的问题已根治，报错直接说真话。
 
 | 更新 | 说明 |
 |---|---|
-| 🎬 **视频理解开箱即用** | 发视频给她就能看：画面逐帧理解、声音自动转写。内置完整媒体解码组件（FFmpeg，LGPL 许可），**无需安装任何额外软件**；已自行安装 FFmpeg 的用户不受影响，仍优先使用系统版本。视频剪辑、格式转换类任务同样受益 |
-| 🔁 **语音断线自动重连** | 语音线路意外断开后几秒内自动接回并恢复实时对话，不再需要退出语音重新进入 |
-| 🔇 **语音降级根源修复** | "她听不见你说话 / 她不出声"的两处根源问题已根治——降级后真的只是"慢一点"，不是"聋了哑了" |
-| 📝 **字幕实时同步** | 她念到哪里、字幕显示到哪里——讲解过程、工具结果、最终回答全程可见，不再等全部说完才一次性跳出 |
-| 🚀 **输出上限 256K** | 思考型模型执行复杂操作时指令被截断的问题已解决；上限按各模型实际能力自动适配，无需手动调整 |
-| 🧠 **记忆浮现更聪明** | 重复的旧记忆自动合并、只留最相关的一条；同一件事先后有过不同结论时，新旧一起呈现、按时间排开 |
+| 🌐 **SOCKS 代理支持** | 修复部分代理软件"系统代理"使用 SOCKS 模式时无法完成初始化的问题——现已内置完整代理支持组件，代理开着也能正常初始化和使用 |
+| 💬 **报错显示真实原因** | 初始化失败时不再显示难以理解的技术乱码或误导性提示，直接说明真实原因，便于排查和反馈 |
+| 🔑 **忙碌时认证即时生效** | 她执行定时任务等后台工作时，你输入的认证信息现在随时输入、随时生效，不再需要等她空闲后重新输入 |
+| 🧭 **浏览器面板修复** | 修复一个参数异常会产生故障页面、进而影响内嵌浏览器响应的问题 |
 
-**建议所有用户升级到本版本。** 完整说明见 [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0)。
+**建议所有用户升级。** v2.3.0 的完整新特性（视频理解开箱、语音自愈、256K 输出、记忆增强）见 [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0)，本版说明见 [Release Notes v2.3.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.1)。
 
-📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.2.1/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
+📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.3.1/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
 ---
 
 ## 🎯 为什么选 Aivy OS

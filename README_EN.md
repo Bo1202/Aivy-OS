@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,20 +19,18 @@
 
 ---
 
-## 🆕 v2.3.0 Update
+## 🆕 v2.3.1 Update
 
-> Send her a video and she understands it; voice reconnects by itself when the line drops.
+> Stability patch for v2.3.0: initialization under SOCKS proxies is fixed, and error messages now tell the truth.
 
 | Update | Details |
 |---|---|
-| 🎬 **Video understanding out of the box** | Send her a video and she can watch it: frame-by-frame visual understanding plus automatic speech transcription. A complete media decoder (FFmpeg, LGPL) is now bundled — **no extra software to install**; if you already have FFmpeg, your system version still takes priority. Video editing and format conversion tasks benefit too |
-| 🔁 **Voice auto-reconnect** | When the voice line drops unexpectedly, it reconnects within seconds and resumes the live conversation — no more leaving and re-entering Voice |
-| 🔇 **Voice degradation root fixes** | The two root causes of "she can't hear you / she goes silent" after degradation are fixed — degraded mode is now merely slower, not deaf or mute |
-| 📝 **Live captions** | Captions follow exactly what she is saying, as she says it — narration, tool results and the final answer all stream in sync instead of appearing at the end |
-| 🚀 **256K output limit** | Long tool instructions from reasoning models no longer get cut off mid-way; the limit auto-adapts to each model's real capability |
-| 🧠 **Smarter memory recall** | Duplicate old memories merge into the single most relevant one; when a topic has both an old and a newer decision, both surface together in time order |
+| 🌐 **SOCKS proxy support** | Fixes initialization failing when your proxy app's "system proxy" runs in SOCKS mode — full proxy support components are now bundled, so everything works with your proxy on |
+| 💬 **Honest error messages** | Initialization failures no longer show cryptic or misleading text; the real cause is shown directly, making self-diagnosis and reporting easy |
+| 🔑 **Auth works while she's busy** | Credentials entered while she is running background work (e.g. scheduled tasks) now take effect immediately — no more re-entering after she becomes idle |
+| 🧭 **Browser panel fix** | Fixes a parameter edge case that could create a broken page and affect the embedded browser's responsiveness |
 
-**All users are recommended to upgrade.** Full notes: [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0).
+**All users are recommended to upgrade.** v2.3.0 highlights (video understanding, voice self-healing, 256K output, smarter memory): [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0) · This patch: [Release Notes v2.3.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.1).
 ---
 
 ## ✨ What it can do
