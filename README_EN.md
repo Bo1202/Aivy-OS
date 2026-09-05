@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,18 +19,20 @@
 
 ---
 
-## 🆕 v2.3.1 Update
+## 🆕 v2.4.0 Update
 
-> Stability patch for v2.3.0: initialization under SOCKS proxies is fixed, and error messages now tell the truth.
+> Rebuilt access boundary, file-operation core and project memory: Aivy OS now trusts only your own machine by default, permanently remembers every project's progress, and gives an actionable account of every failure.
 
 | Update | Details |
 |---|---|
-| 🌐 **SOCKS proxy support** | Fixes initialization failing when your proxy app's "system proxy" runs in SOCKS mode — full proxy support components are now bundled, so everything works with your proxy on |
-| 💬 **Honest error messages** | Initialization failures no longer show cryptic or misleading text; the real cause is shown directly, making self-diagnosis and reporting easy |
-| 🔑 **Auth works while she's busy** | Credentials entered while she is running background work (e.g. scheduled tasks) now take effect immediately — no more re-entering after she becomes idle |
-| 🧭 **Browser panel fix** | Fixes a parameter edge case that could create a broken page and affect the embedded browser's responsiveness |
+| 🔒 **Local-only by default** | Connections from other devices are refused; to use Aivy OS from another device, enable remote access in the configuration and set an access passphrase. Other sites in your local browser cannot reach Aivy OS |
+| 🛡️ **Zero credential exposure** | Authentication credentials are never visible to an unauthorized session and are masked the instant they are typed; with no credential configured, the lock screen admits nothing |
+| 🧠 **Permanent project memory** | Register a project once; every later operation inside its directory is filed to that project automatically and survives across conversations and restarts. Location, latest step and last activity of every open project are visible in each turn |
+| 📁 **Edits as intended** | File edits preserve the original line-ending style and always work from the current on-disk content; undo is precise to a single step |
+| 🧭 **Failures with evidence** | Tool failures are classified into type, cause and recommendation so she can retry, reroute or report; long tasks deliver their progress before stopping at the limit |
+| 📋 **Rules separated from state** | The workbench carries only engineering discipline and registration rules; project state comes from a single source, the task journal, and never goes stale |
 
-**All users are recommended to upgrade.** v2.3.0 highlights (video understanding, voice self-healing, 256K output, smarter memory): [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0) · This patch: [Release Notes v2.3.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.1).
+**All users are recommended to upgrade.** Full notes: [Release Notes v2.4.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.4.0).
 ---
 
 ## ✨ What it can do

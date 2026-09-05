@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.3.1-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,20 +19,22 @@
 
 ---
 
-## 🆕 v2.3.1 更新
+## 🆕 v2.4.0 更新
 
-> v2.3.0 的稳定性补丁：SOCKS 代理下无法初始化的问题已根治，报错直接说真话。
+> 重构访问边界、文件操作内核与项目记忆机制：Aivy OS 从此默认只信任你的本机，永久记得每个项目的进程，并对自己的每一次失败给出可执行的交代。
 
 | 更新 | 说明 |
 |---|---|
-| 🌐 **SOCKS 代理支持** | 修复部分代理软件"系统代理"使用 SOCKS 模式时无法完成初始化的问题——现已内置完整代理支持组件，代理开着也能正常初始化和使用 |
-| 💬 **报错显示真实原因** | 初始化失败时不再显示难以理解的技术乱码或误导性提示，直接说明真实原因，便于排查和反馈 |
-| 🔑 **忙碌时认证即时生效** | 她执行定时任务等后台工作时，你输入的认证信息现在随时输入、随时生效，不再需要等她空闲后重新输入 |
-| 🧭 **浏览器面板修复** | 修复一个参数异常会产生故障页面、进而影响内嵌浏览器响应的问题 |
+| 🔒 **默认仅信任本机** | 来自其他设备的连接一律拒绝；如需在其他设备上使用，须在配置中开启远程访问并设置访问口令。本机浏览器中的其他站点无法触达 Aivy OS |
+| 🛡️ **凭证零暴露** | 认证凭证不再对任何未授权会话可见，输入的瞬间即以遮罩呈现；未设置凭证时，锁屏不放行任何输入 |
+| 🧠 **永久记得任务进程** | 项目只需登记一次，此后该目录内的每一步操作自动归档到对应任务，跨对话、跨重启不丢失；未完成项目的位置、最近一步与最近活动时间每轮可见 |
+| 📁 **改动即所见** | 文件编辑严格保留原有换行风格，始终以磁盘当前内容为基准；撤销精确到单步 |
+| 🧭 **失败有据可循** | 工具执行失败统一归类为类型、原因与建议，她据此决定重试、换路或向你汇报；长任务达到上限时先交付进展再停止 |
+| 📋 **规则与状态分离** | 工作台只承载工程纪律与登记规则，项目状态由任务日志单一来源提供，不再手工维护、不会过期 |
 
-**建议所有用户升级。** v2.3.0 的完整新特性（视频理解开箱、语音自愈、256K 输出、记忆增强）见 [Release Notes v2.3.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.0)，本版说明见 [Release Notes v2.3.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.3.1)。
+**建议所有用户升级。** 完整说明见 [Release Notes v2.4.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.4.0)。
 
-📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.3.1/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
+📖 **新手教程**：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.4.0/Aivy-OS-Getting-Started-CN.pdf)（从安装到语音对话，含各服务商 API Key 申请步骤）
 ---
 
 ## 🎯 为什么选 Aivy OS
