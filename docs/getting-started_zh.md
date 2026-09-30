@@ -303,9 +303,12 @@ Aivy OS 内置完整的 Wiki 知识编译层（受 Karpathy LLM Wiki 启发）�
 | `postgres-mcp` / `sqlite-mcp` | 数据库查询（让她直接读你的数据库） |
 | `filesystem-mcp` / `git-mcp` | 文件/Git 高级操作 |
 | `slack-mcp` / `notion-mcp` | 协作工具集成 |
+| `you-search`（You.com） | 实时联网搜索（`https://api.you.com/mcp?profile=free`，免费档无需 API Key） |
 | 自定义私有 Server | 你自己的 API/工具栈 |
 
 社区 MCP Server 列表：[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+
+You.com 搜索是远程 MCP Server 的一个例子：`https://api.you.com/mcp?profile=free`（keyless 免费档，无需 API Key / 注册），接入后她多出一个 `you-search` 实时联网搜索工具，可作为内置 `web_search` 之外的补充选项。
 
 ### 怎么用
 
