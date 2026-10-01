@@ -1,6 +1,6 @@
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
+[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
 [![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
@@ -19,20 +19,22 @@
 
 ---
 
-## 🆕 v2.4.0 Update
+## 🆕 v2.5.0 Update
 
-> Rebuilt access boundary, file-operation core and project memory: Aivy OS now trusts only your own machine by default, permanently remembers every project's progress, and gives an actionable account of every failure.
+> She is better with her hands and her ears: she works with windows and controls directly, handles web page dialogs, can be interrupted gently in voice chat without being thrown off by a cough, and the first launch walks you to a working key and model.
 
 | Update | Details |
 |---|---|
-| 🔒 **Local-only by default** | Connections from other devices are refused; to use Aivy OS from another device, enable remote access in the configuration and set an access passphrase. Other sites in your local browser cannot reach Aivy OS |
-| 🛡️ **Zero credential exposure** | Authentication credentials are never visible to an unauthorized session and are masked the instant they are typed; with no credential configured, the lock screen admits nothing |
-| 🧠 **Permanent project memory** | Register a project once; every later operation inside its directory is filed to that project automatically and survives across conversations and restarts. Location, latest step and last activity of every open project are visible in each turn |
-| 📁 **Edits as intended** | File edits preserve the original line-ending style and always work from the current on-disk content; undo is precise to a single step |
-| 🧭 **Failures with evidence** | Tool failures are classified into type, cause and recommendation so she can retry, reroute or report; long tasks deliver their progress before stopping at the limit |
-| 📋 **Rules separated from state** | The workbench carries only engineering discipline and registration rules; project state comes from a single source, the task journal, and never goes stale |
+| 🖥️ **Desktop control rebuilt** | Works with windows, buttons, inputs and lists directly instead of memorised coordinates; launches installed apps; operates context menus, drop-down menus and dialogs; captures windows that are covered; waits for a busy app before continuing |
+| 🌐 **A more capable browser** | Page dialogs are reported and handled; new key, hover, wait and back actions; pages in the preview panel are laid out at desktop width and scaled to fit |
+| 🔎 **New web search route** | Uses the web search built into your chosen model first, and falls back to searching in the browser when that finds nothing or falls short |
+| 🎙️ **Voice that feels like a conversation** | Gentle barge-in: when you start talking she lowers her voice first and stops only once it is clearly you; a cough, a throat-clear or a quick "mm" no longer cuts her off; your computer checks for speech before audio is sent for recognition; she hears your tone |
+| 🧰 **Sturdier commands and files** | Long commands run in the background, their output can be read on from where you left off, and she tells you when they finish; large files are read page by page; cross-drive searches say plainly what was not searched and whether results were cut short |
+| 🚀 **A smoother first launch** | Pick a provider and the key field tells you where to get a key, with a link that opens the page; enter the key and press "Fetch models" to pick from the models available to you |
+| 📦 **Install and uninstall** | A real install progress bar; uninstall asks whether to keep your data (to pick up where you left off after reinstalling) or remove everything; the installer checks the Windows version and tells Windows 7 / 8 users that Windows 10 or later is required |
 
-**All users are recommended to upgrade.** Full notes: [Release Notes v2.4.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.4.0).
+**All users are recommended to upgrade.** Full notes: [Release Notes v2.5.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.5.0).
+
 ---
 
 ## ✨ What it can do
@@ -85,9 +87,11 @@ Not just chat. She has hands, eyes, and tools — the full capability table belo
 | **Search & find** | Full-disk search, filename patterns, file content keyword search | "Find that contract file from last March" |
 | **Run commands** | CMD / PowerShell / bash, process management, software installation | "Install Node.js for me" |
 | **Python scripts** | Persistent environment, data analysis, visualization, API calls, automation | "Calculate YoY growth from this Excel sheet" |
-| **Web search** | Multi-engine: Baidu / Bing / Google / Sogou / 360, with built-in scraping | "Search for reviews comparing this camera" |
-| **Browser automation** | Opens browser, clicks, fills forms, screenshots, multi-tab, iframe | "Book me a direct flight from Beijing to Tokyo next week" |
-| **Desktop control** | Keyboard/mouse control on **any software** — WeChat/Photoshop/Office/games | "Change this photo's background to white in Photoshop" |
+| **Web search** | Uses your model's built-in web search first, falls back to searching in the browser | "Search for reviews comparing this camera" |
+| **Browser automation** | Opens browser, clicks, fills forms, screenshots, multi-tab, iframe, page dialogs, key / hover / wait / back | "Book me a direct flight from Beijing to Tokyo next week" |
+| **Desktop control** | Works with windows and controls in **any software** — buttons, inputs, lists, menus, dialogs; launches installed apps; checks the result afterwards | "Change this photo's background to white in Photoshop" |
+| **Voice** | Full-duplex voice chat, gentle barge-in, not cut off by a cough, hears your tone, keeps working while you talk | "Remind me to take an umbrella tomorrow morning if it rains" |
+| **Preview panel** | Documents, sheets, PDFs, web pages and code open right beside the chat; you see her changes as she makes them | "Open the table you just made" |
 | **IDE code development** | Three-pane view (file tree + editor + chat), Diff block-by-block review | "Refactor this file, async/await to Promise" |
 | **Document handling** | PDF / Word / Excel / PPT read/write/edit, no Office required | "Summarize these 10 PDFs into one Excel table" |
 | **Vision** | Screenshots, photos, charts, scans — auto-enabled with multimodal models | "What does the error in this screenshot mean?" |
@@ -212,27 +216,22 @@ When done, she notifies you via desktop or WeChat.
 
 Go to the [Releases page](../../releases) and download `Aivy OS Setup x.x.x.exe`, then double-click to run.
 
+> Requires **Windows 10 or Windows 11 (64-bit)**.
+
 First launch guides you through naming your AI and setting a password — this password is the key to unlock her later, remember it.
 
-### 2. Enter activation code
+### 2. Configure AI backend
 
-An activation code is required. After install you get a free trial period first; activate when it ends.
+On first launch you pick a provider and enter a key: **the key field tells you where to get one**, with a link that opens the page. Enter the key and press "**Fetch models**" to pick from the models available to you.
 
-**How to get one**: email **4828797@qq.com** and tell us what you plan to use it for.
-Whoever replies isn't a human — it's an AI running on Aivy OS.
-
-> Codes are bound to the machine. Uninstalling or reinstalling never loses your activation.
-
-### 3. Configure AI backend
-
-In the settings panel, pick one:
+To add more backends later, open the settings panel and pick one:
 
 - **Ollama (recommended)**: Install [Ollama](https://ollama.com), pull a model, done. **Fully local, free**.
 - **Cloud API**: Enter API Key (supports Gemini / DeepSeek / Kimi / Claude / OpenAI-compatible / Qwen)
 
 The underlying model can be **hot-swapped at runtime**, no restart needed.
 
-### 4. Wake her up
+### 3. Wake her up
 
 She starts **locked** and only recognizes her owner. To unlock, just **type the password you set in step 1 into the chat box** like any normal message — she'll recognize you and unlock.
 
