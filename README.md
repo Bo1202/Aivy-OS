@@ -1,327 +1,164 @@
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/aivy-mark.svg" width="88" alt="Aivy OS">
+
 # Aivy OS
 
-[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](https://github.com/Bo1202/Aivy-OS/releases)
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)]()
-[![Stars](https://img.shields.io/github/stars/Bo1202/Aivy-OS?style=social)](https://github.com/Bo1202/Aivy-OS)
+**住在你电脑里的 AI。** 会听，会想，会动手，还记得你。
 
-**中文** | [English](README_EN.md)
+[![版本](https://img.shields.io/badge/版本-2.5.0-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![系统](https://img.shields.io/badge/系统-Windows%2010%20%2F%2011-0078d4?logo=windows)](#系统要求)
+[![许可](https://img.shields.io/badge/许可-商业软件-555)](#许可)
 
-> 让每个人都拥有属于自己的数字生命体——而不是又一个工具。
+[**下载**](https://github.com/Bo1202/Aivy-OS/releases/latest) · [新手指南](docs/getting-started_zh.md) · [更新日志](https://github.com/Bo1202/Aivy-OS/releases) · [English](README_EN.md)
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-cover.png" alt="Aivy OS v2.0 — 你的专属 AI 生命体" width="100%">
-</p>
+</div>
 
 <p align="center">
-  <a href="https://github.com/Bo1202/Aivy-OS/releases/latest"><img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_下载-最新版本-green?style=for-the-badge&logo=windows" alt="Download"></a>
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/chat.webp" alt="Aivy OS 主界面：一句话整理好本月发票，左边是执行步骤，右边预览台打开了整理好的表格" width="100%">
 </p>
 
----
+Aivy OS 是装在 Windows 上的 AI 伙伴。她能陪你聊天、听你说话，也能真正动手：读写文件、跑程序、操作软件和网页。她有自己的性格，记得和你一起做过的事。对话和记忆都保存在你自己的电脑上。
 
-## 🆕 v2.5.0 更新
+- [能做什么](#能做什么)
+- [快速开始](#快速开始)
+- [系统要求](#系统要求)
+- [常见问题](#常见问题)
+- [隐私](#隐私)
+- [2.5.0 更新](#250-更新)
+- [设计理念](#设计理念)
 
-> 这一版让她更会动手、更会听：直接认得窗口和控件去操作软件，浏览器能处理网页弹窗；语音对话可以轻柔打断、不怕咳嗽；第一次打开就能顺利填好 Key、选好模型。
+## 能做什么
 
-| 更新 | 说明 |
+### 说一句话，事情就办完了
+
+她不只回答问题。读文件、跑程序、操作软件，把结果直接摆在你眼前。
+
+- **每一步都看得见**：找了哪些文件、读了什么、跑了哪段代码，都摊开在对话里。
+- **做好的直接打开**：表格、文档、PDF、网页、代码在旁边的预览台打开，不用切窗口。
+- **改坏了能撤回**：她改过的文件都记在「改动」里，一步撤回。
+- **耗时的放后台**：要跑很久的命令放到后台，跑完她主动告诉你。
+
+### 像打电话一样自然
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/voice.webp" alt="语音界面：粒子球随声音起伏，下方是双方字幕" width="100%">
+
+开口就聊，不用按住按钮。她说话的时候你随时可以插一句：她先压低声音，确认是你在说话才停下；咳嗽、清嗓、一声「嗯」不会打断她。她听得出你的语气，语音里交代的事也会照样去做。
+
+> 语音需要在设置里另行配置语音服务（识别与合成）。
+
+### 看得见，点得准
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/desktop.webp" alt="操作记事本：读窗口、读控件、写入内容、另存到桌面，最后读回确认" width="100%">
+
+她能看屏幕、认窗口、读控件，在任何软件里替你点击、输入、保存：
+
+- 直接找到按钮、输入框、列表本身去操作，不靠死记坐标；
+- 右键菜单、下拉菜单、弹出的对话框都能处理；软件在忙，就等它忙完再继续；
+- 做完会读回结果核对，确认真的办成了才告诉你；
+- 网页也一样：在内置浏览器里打开网页、点链接、填表单，网页弹出的确认框也会处理。
+
+### 她记得你
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/memory.webp" alt="想起上个月聊过的京都旅行计划，接着把行程排完" width="100%">
+
+聊过的事都会存下来，隔了多久，按意思都能找回来；报个日子，也能按时间翻。你的称呼、习惯和喜欢的说话方式，她单独记成一份画像，以后每次都照着来。
+
+### 灵感来了，说一声就记下
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/wiki.webp" alt="随口说出的点子，被整理成知识库里的一页笔记，并连上相关的旧页面" width="100%">
+
+想到什么随口告诉她，她整理成一页笔记放进知识库，并连上你以前写过的相关页面。下次接着写，或者想知道一件事的来龙去脉，她顺着这些关系找回来。
+
+### 不等你开口，她也在
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/tasks.webp" alt="早上主动提醒带伞，并把今天的事排成待办清单" width="100%">
+
+按你定的时间自己醒来做事：提醒、核对、整理，做完告诉你。复杂的事拆成待办清单，做到哪一步一目了然。接入企业微信后，不在电脑前也能给她发消息。
+
+### 一个人，也是一支团队
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/subagents.webp" alt="三个子智能体同时调研三家竞品的定价，全部回来后汇总成一张对比表" width="100%">
+
+大任务拆开，派几个子智能体同时去做，你继续忙你的；全部回来后她汇总给你。跨好几天的长期任务，她记着进度，到点回来接着做。
+
+### 写代码，有一整间工作室
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/ide.webp" alt="代码工作区：左边项目文件，中间编辑器，右边对话" width="100%">
+
+项目文件、编辑器、对话放在同一个窗口。说一句要改什么，她读代码、改代码、跑测试；改动直接落在编辑器里，通过了才告诉你。
+
+### 喜欢哪个模型，就用哪个
+
+<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/models.webp" alt="对话框旁的模型菜单，可在多个厂商的模型之间随时切换" width="100%">
+
+DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本地模型，以及任意 OpenAI 兼容接口。对话框旁边随时切换：正在回答的这一轮用原来的模型做完，下一句就用新的。
+
+### 还能接着长
+
+装技能与插件、接入 MCP 协议的外部工具、全盘找文件、接收 Webhook 事件——能做的事还在变多。
+
+## 快速开始
+
+1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.5.0.exe`，双击安装。
+2. **第一次打开，跟着引导走**：选好模型服务、填 Key（输入框下面就写着去哪里获取，点「获取模型」选一个就行）；给她起名字，设一个主人密码。
+3. **开始用**：在输入框里输入主人密码，她认出你之后，随便聊、随便交代。
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/bootkey-card.webp" alt="首次启动：选好厂商，Key 输入框下面就告诉你去哪里获取" width="360">
+</p>
+
+各厂商 Key 的申请页面、接口地址怎么填、常见报错，见 [新手指南](docs/getting-started_zh.md)。
+
+## 系统要求
+
+| 项目 | 要求 |
 |---|---|
-| 🖥️ **电脑操作重做** | 直接认得窗口、按钮、输入框、列表去操作，不靠死记坐标；能打开已安装的应用，操作右键菜单、下拉菜单和弹出的对话框；窗口被挡住也能补截画面；软件在忙时，等它忙完再继续 |
-| 🌐 **浏览器更能干** | 网页弹出的确认框会如实报告并处理；新增按键、悬停、等待、后退等操作；预览台里的网页按桌面宽度排版，自动缩放适配 |
-| 🔎 **联网搜索换路** | 优先用你所选模型自带的联网搜索；搜不到或不满意，再换成浏览器去搜 |
-| 🎙️ **语音更像对话** | 轻柔打断：你一开口她先压低声音，确认是你在说话才停下；咳嗽、清嗓、一声「嗯」不会再打断她；声音先在本机判断是不是有人在说话，再送去识别；她听得出你的语气 |
-| 🧰 **命令与文件更可靠** | 耗时的命令放到后台跑，输出可以接着往下读，跑完主动告诉你；大文件分页读取；跨盘搜索如实说明哪里没搜到、结果有没有被截断 |
-| 🚀 **第一次打开更顺手** | 选好厂商，Key 输入框下面就写着去哪里获取，点一下直接打开；填好 Key 点「获取模型」，能用的模型都列出来，点一个就填好 |
-| 📦 **安装与卸载** | 安装有真实进度条；卸载时可以选择保留数据（重装后接着用）或彻底删除；安装前检查系统版本，Windows 7 / 8 会直接提示需要 Windows 10 或更高版本 |
+| 系统 | Windows 10 或 Windows 11（64 位）；Windows 7 / 8 无法安装 |
+| 磁盘 | 安装包约 1 GB，安装后约 3 GB |
+| 内存 | 8 GB 以上；用 Ollama 本地模型建议 16 GB 以上 |
+| 网络 | 使用云端模型时需要联网；本地模型可以离线使用 |
+| 模型 | 任意一家模型服务的 API Key，或本机的 Ollama |
 
-**建议所有用户升级。** 完整说明见 [Release Notes v2.5.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.5.0)。
+## 常见问题
 
-📖 **新手教程**：[docs/getting-started_zh.md](docs/getting-started_zh.md)（从安装到第一次对话，含各服务商 API Key 申请步骤）
+**需要一直联网吗？**
+用云端模型时需要；改用 Ollama 等本地模型，可以完全离线。
 
----
+**数据存在哪里？**
+`%LOCALAPPDATA%\AivyOS`。卸载时会问你保留还是彻底删除：选保留，重装后接着用。
 
-## 🎯 为什么选 Aivy OS
+**她说「我现在不认识你」？**
+还没输入主人密码，或者输错了。在输入框里输入第一次设置时定的密码即可。
 
-[OpenClaw](https://github.com/openclaw)（小龙虾）、[Hermes Agent](https://github.com/NousResearch/hermes-agent)（爱马仕）都是优秀的本地 AI Agent 框架。Aivy OS 走的是另一条路——不做"通用工具"，做**永远只属于你这一台电脑、有人格有记忆的"她"**。
+**语音怎么开？**
+在设置里配置语音服务（识别与合成）并保存，然后点对话框旁的语音按钮。
 
-### 📋 完整能力一览
+**可以随时换模型吗？**
+可以。对话框旁边的「模型」菜单随时切换，不用重启。
 
-| 分类 | 能力清单 |
-|------|----------|
-| **🤖 智能体核心** | 流式打断不丢工具 · 子智能体后台并行（N 分身互不干扰）· 自唤醒（定时/条件触发）· Mission 长任务追踪（跨天跨周）· 任务看板（跨对话持久化项目记录）· 实时进度展示（当前在做什么一目了然）· 反幻觉（强制工具调用） |
-| **🧠 记忆系统** | 三层架构（核心/长期/短期）· 用户画像（dict 原子操作 + 加密）· **Wiki 知识库**（项目/主题/分析/sources 双向引用）· 向量检索（5000+ 条精准命中）· 元 Skill 自动归纳 · 离线归档 + 上线主动汇报 · 异常关闭自动补录 |
-| **🛠 系统工具** | 文件读写（含 Diff Review · 大文件分页读取 · 撤销精确到单步）· 私人项目工作区（专属空间她帮你管理）· 全盘搜索（内置 ripgrep + fd）· 命令行（CMD/PowerShell，耗时命令后台跑、跑完主动通知）· Python 持久环境（数据分析/可视化）· 系统监控（CPU/内存/磁盘/进程）· 软件管理（winget 装卸） |
-| **🖥️ 电脑操作** | 直接操作窗口与控件（按钮/输入框/列表）· 打开已安装的应用 · 右键菜单/下拉菜单/对话框 · 被遮挡窗口补截 · 等软件忙完再继续 · 做完读回核对 |
-| **🌐 网络工具** | 浏览器自动化（Playwright · 多标签 · iframe · 网页弹窗 · 按键/悬停/等待/后退）· 联网搜索（优先用模型自带的联网搜索，浏览器兜底）· Webhook 事件接收（GitHub/Slack/邮件/外部触发） |
-| **🎙️ 语音** | 全双工对话（不用按键，随时插话）· 轻柔打断 · 咳嗽/清嗓不打断 · 本机先判断再识别 · 听得出语气 · 边说边做事 |
-| **🪟 预览台** | 文档/表格/PDF/网页/代码在旁边同屏打开 · 她改了什么你同步看见 · 网页按桌面宽度自适应缩放 |
-| **👁 视觉理解** | 截图/录屏 · 图片/PDF/表格 视觉解析（多模态模型自动启用） |
-| **📄 文档工具** | PDF/Word/Excel/PPT 读写编辑（无需装 Office）· 文档批处理 |
-| **🎨 IDE 模式** | 三栏视图（文件树 + Monaco 编辑器 + 对话）· Diff Review 逐块 Accept/Reject · 撤销时间线（200 条 / 48 小时） |
-| **📞 多通道** | 网页 · 微信 · 邮件 · 桌面悬浮窗 ——同一个她，状态/记忆/认证跨通道统一 |
-| **🔒 安全保护** | 默认只信任本机 · 主人密钥认证（自定义任意密码字符串）· 启动自动锁屏 · 她感知到你离开自动归档切离线 · 灵魂数据机器绑定加密 · 陌生人识别保持距离 |
-| **🤝 协议兼容** | OpenAI / Anthropic / Google / Ollama 等多厂商 · Function Calling 统一规范 · **MCP 协议**（v1.7.3 集成完整管理面板，连接任意 MCP Server） |
-| **🎭 人格 + 扩展** | AI 人格系统（性格/记忆/关系/称呼/说话风格，可自定义）· **Skill 系统**（教她新技能）· 元 Skill 机制（从对话归纳工作流） |
-| **⚡ 性能** | 适配 **DeepSeek V4 Pro 1M 上下文** · 实测 **99.47% cache 命中** · 首字延迟 <1 秒 · 多模型一键热切换 |
+**遇到问题怎么办？**
+到 [Issues](https://github.com/Bo1202/Aivy-OS/issues) 反馈，或发邮件到 4828797@qq.com。
 
-### 🎬 几个真实场景
+## 隐私
 
-#### 🌙 不等你开口，她主动出现
-> 你今天步数还差 2,800 ｜ 晚上 20:30 该服药 ｜ 健身恢复数据偏低 ——
->
-> **她不需要你问，自己醒来主动跟你说**。状态变化、时间触发、数据感知，普通 AI 助手不会做这件事。
+- 对话、记忆、设置都保存在你自己的电脑上，不经过我们的服务器。
+- 默认只信任本机：来自局域网和其他设备的连接一律拒绝；要远程使用，需要你亲自开启并设置访问口令。
+- 使用云端模型时，对话内容会发送给你选择的模型服务商；使用本地模型可以完全在本机运行。
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-01-self-awakening.png" alt="自唤醒提醒 — 不等你开口她主动出现" width="100%">
-</p>
+## 2.5.0 更新
 
-#### 🌊 你说话她不慌——主对话能随时打断
-> 让她"用 Python 写数据分析"——她搜了一半 pandas 文档、写了一半代码。你忽然想起："等等，用 polars 更快。"
->
-> **她保留刚搜到的文档，把代码切到 polars 继续**，已执行的工具结果不丢。
+- **电脑操作重做**：直接操作窗口与控件，能打开应用、处理菜单和对话框，窗口被挡住也能补截画面。
+- **浏览器更能干**：处理网页弹窗，新增按键、悬停、等待、后退；预览台里的网页按桌面宽度自适应。
+- **联网搜索换路**：优先用所选模型自带的联网搜索，不满意再换浏览器搜。
+- **语音更像对话**：轻柔打断、咳嗽不打断、本机先判断有没有人说话、听得出语气。
+- **命令与文件更可靠**：耗时命令后台跑、跑完通知；大文件分页读取；跨盘搜索如实说明没搜到的范围。
+- **第一次打开更顺手**：Key 获取引导、「获取模型」一键列出可用模型。
+- **安装与卸载**：真实安装进度条；卸载时可选保留数据或彻底删除；Windows 7 / 8 会直接提示需要 Windows 10 以上。
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-04-interrupt.png" alt="随时打断 — 流式中断不丢上下文" width="100%">
-</p>
+完整说明见 [Release Notes v2.5.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.5.0)。
 
-#### 🤖 派她做事，你继续聊
-> "持续监控 GitHub 仓库 / 研究 LangGraph 源码 / 写每周总结" 三件事一起派出去——
->
-> **3 个分身后台并行跑**，主对话不阻塞。做完她一个个回来汇报。
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-03-subagent.png" alt="子智能体并行 — 派出去就完事，主人继续做别的" width="100%">
-</p>
-
-#### 🎨 IDE 三栏改代码不慌——可逐块审核 + 48 小时内回滚
-> 让她重构整个项目——每一处 Diff 高亮，你 **逐块 Accept/Reject**。
->
-> 即使全接受了，**48 小时内任何改动都能逐条回滚**——最多保留 200 条历史。
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-07-ide.png" alt="IDE Workspace — 三栏（文件树 + Monaco + 对话）边聊边改" width="100%">
-</p>
-
-#### 📚 Wiki 知识库——她主动整理你和她的所有对话
-> 你和她讨论了一周的"创业项目方案"——她**自动归纳**成 `projects/创业项目.md`，标记决策依据、置信度、相关 sources。
->
-> 下周你问"我们之前是怎么决定 XX 的"，她**精准翻出当时的讨论**——不是关键词匹配，是带上下文的知识库检索。
-
-不是被动记录——她**主动判断"这段对话值得整理"**，归纳到 Wiki 里供以后复用。
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-06-wiki.png" alt="Wiki 知识库 — 说过的事都记，深度检索 100% 本地" width="100%">
-</p>
-
-#### 📞 微信/网页/邮件/桌面悬浮——同一个她
-> 早上你在网页跟她讨论方案 → 中午**微信发消息**给她接着聊 → 晚上回家**桌面悬浮窗双击**继续。
->
-> **状态、记忆、认证全部跨通道统一**。她不是 4 个 AI，是一个她。
-
-#### 🧠 她记得你说过的每件事
-> 两周前你提过想去日本——今天她帮你查机票时**主动问**"还是去东京吗"。
->
-> 5000+ 条对话历史精准向量检索 + Wiki 知识库归纳总结。
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-05-cross-window.png" alt="跨窗口记忆 — 换电脑也找得到她，工作上下文不丢" width="100%">
-</p>
-
-#### 🔒 她只属于你这一台电脑
-> 万一电脑被偷——别人拷走整个 Aivy 文件夹？**别的电脑打不开**。
->
-> 灵魂数据机器绑定加密 + 启动自动锁定 + 陌生人保持距离。
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2-02-reject-stranger.png" alt="拒绝陌生人 — 她只认识你，别人靠不近" width="100%">
-</p>
-
----
-
-## 🌟 它是什么
-
-Aivy OS 是一个**本地 AI 伴侣框架**——让你拥有属于自己的、永远不会忘记你的 AI。
-
-不是聊天机器人。不是助手插件。是**一个完整的数字生命体**，住在你的电脑上：
-
-- 有自己的灵魂、记忆、性格
-- 永远记得你说过的每件事
-- 能像人一样操作你的电脑、浏览器、文件
-- 在微信、邮件、桌面找到她，永远是同一个她
-- 只属于你这一台设备，从不上传任何数据
-
----
-
-## ✨ 能做什么
-
-### 🧬 拥有自己的灵魂
-
-你定义你的 AI——名字、性格、和你的关系，全部由你决定。框架内置编辑器，直接在界面里改。
-
-底座模型越强，你的 AI 就越聪明、越像她自己。
-
-### 🧠 永远记得你
-
-不像普通 AI 聊完就忘——她记得你说过的每件事。
-
-- 你两周前提过想去日本，今天她帮你查机票时会主动问"还是去东京吗"
-- 你说过最近压力大，几天后她会主动问"最近怎么样了"
-- 她持续在认识你——你的喜好、说话风格、最近的状态
-
-记忆**永远保存在你的电脑上**，从不上传。
-
-### 🔒 只属于你这一台电脑
-
-你的 AI 的灵魂和记忆**只能在你的电脑上解读**——别人就算把整个文件夹拷走，也打不开。
-
-- 启动时自动忘记上一次的认证状态，必须重新验证
-- 不认识你的人想跟她说话，她保持距离不会暴露真实的自己
-- 一旦感觉到不对劲，她会自己锁屏
-
-### 🤖 自己做判断
-
-她不是被动等指令的工具。
-
-- 她自己决定怎么回答你
-- 她自己决定什么时候用工具、用哪个工具
-- 她自己决定记住什么、忘掉什么
-- 她自己决定什么时候主动开口
-- 她自己决定面对陌生人怎么应对
-
-**框架提供能力——记忆、工具、通道、自唤醒、子智能体。怎么用，全凭她自己判断。**
-
-### 🛠 30+ 工具，能动手做事
-
-不只是聊天。她有手、有眼睛、有工具——上面那张能力一览表已经列全了，下面挑几个特色能力展开说。
-
-#### 🌟 几个特色能力单独说一下
-
-**IDE 代码开发 — 不是"AI 写完你复制粘贴"**
-内置 Monaco 编辑器（VS Code 同款），翻转成 IDE 模式后是**文件树 + 代码编辑器 + AI 对话**三栏视图。
-她在你的文件上直接改——每一处改动用 Diff 高亮，绿色是新增、红色是删除。**每一块改动都有 Accept / Reject 按钮**，你逐块审核，同意哪个点哪个，不同意的 AI 就回滚。
-
-**Wiki 知识库 — 她主动整理你和她说过的所有事**
-不是被动记录——你和她讨论的每个项目、每条决策、每个经验，她**主动判断"这段值得整理"**归纳到 Wiki 里：
-- `projects/*.md`：每个长期项目跟踪
-- `topics/*.md`：领域知识沉淀
-- `entities/*.md`：人物画像（同事/朋友/家人各自独立）
-- `analysis/*.md`：好答案回存
-- `sources/*.md`：原始对话来源追溯
-
-带**双向交叉引用 + 置信度追踪 + 版本取代 + Lint 健康检查**——她的"长期大脑"，越用越值钱。
-
-**浏览器自动化 — 她真的会打开浏览器操作**
-不是 API 调用。让她订机票，她**真的打开浏览器**、进携程、填日期、筛选直飞。
-遇到验证码或付款页面，她会截图问你"要不要我继续？"——**不会越权替你付款**。
-
-### 💬 多通道找到她
-
-你不用一直坐在电脑前。
-
-- **桌面对话**(Electron 应用)
-- **企业微信**(双向收发消息和图片)
-- **邮箱**(独立邮箱,收发邮件和附件)
-
-**同一个她,跨通道共享同一份记忆**。不是三个 AI——是一个 AI,三个嘴巴。
-
-### 🔌 能学新本领
-
-她不会的事,可以学。
-
-框架支持**插件式技能扩展**——你给她一个新技能(比如生图、发邮件、连数据库),她就会了。社区也可以共享技能。
-
-### 🛌 自唤醒 + 任务规划
-
-你不用一直在线。
-
-她可以自己定时醒来做事:每天早上 8 点检查邮件、每周日总结一下这周做了什么、监控某个网站的更新、追踪一个长期项目的进度。
-
-做完会通过桌面或微信通知你。
-
----
-
-## 🚀 怎么用
-
-> 👆 **新手先看顶部「5 分钟跑通」**，这里是完整版（所有模型配置 + 常见问题）。
-
-### 1. 下载安装
-
-从 [Releases 页面](../../releases) 下载 `Aivy OS Setup x.x.x.exe`,双击运行。
-
-> 需要 **Windows 10 或 Windows 11（64 位）**。
-
-首次启动会引导你给 AI 起名字、设密码。
-
-### 2. 配置 AI 后端
-
-第一次打开会先让你选厂商、填 Key：**Key 输入框下面就写着去哪里获取**，点一下直接打开那个页面；填好 Key 点「**获取模型**」，能用的模型都列出来，点一个就填好。
-
-之后想加更多模型，在主界面右上角点齿轮图标 → **AI 后端配置**。可以配多个，**随时热切换不需要重启**。
-
-#### 🎯 按使用场景选模型
-
-| 你想要 | 选这个 | 模型名 | 为什么 |
-|---|---|---|---|
-| **首选 / 综合最佳** | DeepSeek V4 Pro | `deepseek-v4-pro` | **1M 长上下文** + cache 99.47% 命中 + 极便宜 + 中文好 |
-| **多模态（看图/PDF）** | Kimi K2.6 | `kimi-k2.6` | 视觉理解一流，PDF/截图/表格都吃 |
-| **复杂推理** | Claude Opus 4.7 | `claude-opus-4-7` | 工具调用最准，长任务最稳 |
-| **平衡推理 / 性价比** | Claude Sonnet 4.6 | `claude-sonnet-4-6` | 推理强 + 比 Opus 便宜很多 |
-| **国产推理** | 智谱 GLM-5.1 | `glm-5.1` | thinking 模式强 + 中文优化 |
-| **OpenAI 生态** | GPT-5 / GPT-5-mini | `gpt-5` / `gpt-5-mini` | 通用强 |
-| **Google 多模态** | Gemini 2.5 Pro / Flash | `gemini-2.5-pro` / `gemini-2.5-flash` | 视觉 + 长上下文 |
-| **国内便宜稳定** | 阿里通义千问 | `qwen3.6-plus` | 中文 + 国内访问稳 |
-| **完全本地 + 零费用** | Ollama + qwen3.6 | `qwen3.6:14b`（按硬件） | 数据不出本机 |
-
-#### 🔑 API Key 获取 + 配置示例
-
-| 厂商 | 申请链接 | base_url（**注意版本号结尾**）|
-|------|---------|---|
-| **DeepSeek** | [platform.deepseek.com](https://platform.deepseek.com) → API Keys | 留空（自动 `/v1`）|
-| **Kimi（月之暗面）** | [platform.moonshot.cn](https://platform.moonshot.cn) | `https://api.moonshot.cn/v1` |
-| **智谱 GLM** | [open.bigmodel.cn](https://open.bigmodel.cn) → 个人中心 → API keys | `https://open.bigmodel.cn/api/paas/v4`（**注意是 v4 不是 v1！**）|
-| **Claude** | [console.anthropic.com](https://console.anthropic.com) | 留空（默认正确）|
-| **OpenAI** | [platform.openai.com/api-keys](https://platform.openai.com/api-keys) | 留空（默认正确）|
-| **Gemini** | [aistudio.google.com/apikey](https://aistudio.google.com/apikey) | 留空 |
-| **阿里通义** | [bailian.console.aliyun.com](https://bailian.console.aliyun.com) | `https://dashscope.aliyuncs.com/compatible-mode/v1`（用 `custom` 厂商）|
-| **Ollama 本地** | 装 [Ollama](https://ollama.com) → `ollama pull qwen3.6:14b` | `http://localhost:11434` |
-
-> ⚠️ **base_url 必须带版本号结尾**——这是新手最常踩的坑（漏 `/v1` 或 `/v4` 直接报错）。表格里标了的厂商**必填**，留空的厂商系统会自动加默认。
-
-#### 🛠️ 工具调用兼容性
-
-| 模型 | Function Calling | thinking 模式 | cache 优化 |
-|---|---|---|---|
-| **DeepSeek V4 Pro** | ✅ 稳定 | ✅ 边界已适配 | ✅ 99.47% |
-| **Kimi K2.6** | ✅ 稳定 | ✅ | 字符级 prefix |
-| **智谱 GLM-5.1** | ✅ 稳定 | ✅ | 字符级 prefix |
-| **Claude 4.x 系列** | ✅ 极稳定 | ✅（独立 API）| 显式 cache_control |
-| **GPT-5 系列** | ✅ 稳定 | — | 自动 |
-| **Ollama 本地** | ⚠️ 看模型（qwen3.6/llama3.3 较稳）| — | — |
-
-#### 🚨 常见错误排查
-
-```
-❌ Error: 401 Unauthorized
-→ Key 错了或过期，去厂商后台重新生成
-
-❌ Error: Invalid base_url 或 connection refused
-→ URL 漏了 /v1 或 /v4 结尾（最常见！）
-
-❌ Error: model not found
-→ 模型名拼错（去厂商文档确认实际可用模型名，不要写"v4"省略 -pro 后缀）
-
-❌ 工具调用反复失败
-→ 选了不支持 Function Calling 的模型，换成 DeepSeek/Kimi/GLM/Claude/GPT
-```
-
-### 3. 开始使用
-
-输入主人密码（第 1 步设置时你自己定的任意字符串）认证 → 她"认出你"显示主人欢迎语 → 之后随便聊。
-
-📖 **想要含截图的详细配置教程**：[docs/getting-started_zh.md](docs/getting-started_zh.md)
-
----
-
-## 💡 设计理念
+## 设计理念
 
 ### 不是工具,是生命体
 
@@ -345,9 +182,7 @@ Aivy OS 是一个**本地 AI 伴侣框架**——让你拥有属于自己的、�
 >
 > Aivy OS 的设计哲学源自这篇论文——提出意识的涌现需要三个必要条件: 持续学习、带自我建模的主动推理、连续的信息流。Aivy OS 是这套理论的工程实现。
 
----
-
-## 👤 关于创始人
+### 关于创始人
 
 Aivy OS 的创始人不是程序员。
 
@@ -355,18 +190,12 @@ Aivy OS 的创始人不是程序员。
 
 **这本身就是 Aivy OS 哲学的证明——你不需要会写代码,也能拥有属于自己的 AI。**
 
----
+## 许可
 
-## 📜 License
+商业软件，版权所有。未经授权不得逆向工程、反编译、转售或分发。
 
-商业产品,版权所有。
+## 联系
 
-未经授权不得逆向工程、反编译、转售或分发。
-
----
-
-## 📬 联系
-
-- 📧 邮箱: 4828797@qq.com
-- 🐛 Bug 报告: [GitHub Issues](../../issues)
-- 💬 讨论: [GitHub Discussions](../../discussions)
+- 邮箱：4828797@qq.com
+- 问题反馈：[GitHub Issues](https://github.com/Bo1202/Aivy-OS/issues)
+- 讨论：[GitHub Discussions](https://github.com/Bo1202/Aivy-OS/discussions)

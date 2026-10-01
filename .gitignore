@@ -8,9 +8,11 @@
 !docs/
 !docs/screenshots/
 !docs/screenshots/*.png
+!docs/screenshots/v2.5/
+!docs/screenshots/v2.5/*.webp
+!docs/screenshots/v2.5/*.svg
 !docs/*.md
 !.github/
 !.github/**
 !assets/
-!assets/wechat-group-qr.jpg
 !LICENSE

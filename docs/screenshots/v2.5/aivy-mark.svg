@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Aivy OS">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="46%" r="56%">
+      <stop offset="0" stop-color="#1a1d26"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </radialGradient>
+    <filter id="ringGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="letterGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="256" cy="256" r="244" fill="#0b0c10"/>
+  <circle cx="256" cy="256" r="196" fill="url(#core)"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#e3f6ff" stroke-width="16" filter="url(#ringGlow)"/>
+  <g fill="none" stroke="#4fc3f7" stroke-width="20" stroke-linejoin="miter" stroke-linecap="butt" filter="url(#letterGlow)">
+    <path d="M178 336 L256 158 L334 336"/>
+    <path d="M205 276 L307 276"/>
+  </g>
+</svg>
