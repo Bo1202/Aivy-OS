@@ -38,7 +38,7 @@ She doesn't stop at answers. She reads files, runs code and operates apps, then 
 
 - **Every step in view**: which files she found, what she read, which code she ran — all laid out in the conversation.
 - **Results open beside the chat**: sheets, documents, PDFs, web pages and code open in the preview panel, no window switching.
-- **One-step undo**: every file she changes is listed under 改动 (Changes) and can be undone in one step.
+- **Undo**: code and config files she changes are listed under 改动 (Changes) and can be undone.
 - **Long jobs in the background**: slow commands run in the background and she tells you when they finish.
 
 ### As natural as a phone call
