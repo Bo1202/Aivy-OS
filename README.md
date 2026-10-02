@@ -198,4 +198,3 @@ Aivy OS 的创始人不是程序员。
 
 - 邮箱：4828797@qq.com
 - 问题反馈：[GitHub Issues](https://github.com/Bo1202/Aivy-OS/issues)
-- 讨论：[GitHub Discussions](https://github.com/Bo1202/Aivy-OS/discussions)

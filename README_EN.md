@@ -200,4 +200,3 @@ Proprietary software, all rights reserved. Reverse engineering, decompiling, res
 
 - Email: 4828797@qq.com
 - Issues: [GitHub Issues](https://github.com/Bo1202/Aivy-OS/issues)
-- Discussions: [GitHub Discussions](https://github.com/Bo1202/Aivy-OS/discussions)
