@@ -6,7 +6,7 @@
 
 **An AI that lives on your computer.** She listens, thinks, gets things done — and remembers you.
 
-[![Version](https://img.shields.io/badge/version-2.5.0-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.6.0-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078d4?logo=windows)](#system-requirements)
 [![License](https://img.shields.io/badge/license-proprietary-555)](#license)
 
@@ -27,7 +27,7 @@ Aivy OS is an AI companion for Windows. She chats with you and listens to you, a
 - [System requirements](#system-requirements)
 - [FAQ](#faq)
 - [Privacy](#privacy)
-- [What's new in 2.5.0](#whats-new-in-250)
+- [What's new in 2.6.0](#whats-new-in-260)
 - [Philosophy](#philosophy)
 
 ## What she can do
@@ -45,7 +45,7 @@ She doesn't stop at answers. She reads files, runs code and operates apps, then 
 
 <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/voice.webp" alt="Voice mode: a particle sphere moves with the voice, with captions for both speakers" width="100%">
 
-Just start talking — no push-to-talk. You can cut in while she speaks: she lowers her voice first and stops only once it is clearly you; a cough, a throat-clear or a quick "mm" won't cut her off. She hears your tone, and she acts on what you ask by voice.
+Just start talking — no push-to-talk. You can cut in while she speaks: she lowers her voice first and stops only once it is clearly you; a cough, a throat-clear or a quick "mm" won't cut her off. She hears your tone, and she acts on what you ask by voice. With a reading voice, her own voice has expression too: its tone follows her mood, with a soft laugh or a sigh when the moment calls for it.
 
 > Voice needs a speech service (recognition and synthesis) configured in Settings.
 
@@ -102,7 +102,7 @@ Install skills and plugins, connect external tools over MCP, search files across
 
 ## Quick start
 
-1. **Install**: download `Aivy OS Setup 2.5.0.exe` from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
+1. **Install**: download `Aivy OS Setup 2.6.0.exe` (listed as `Aivy.OS.Setup.2.6.0.exe`) from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
 2. **Follow the first-run guide**: pick a model provider and enter your key (the key field tells you where to get one; press 获取模型 to choose from your available models), then name her and set an owner password.
 3. **Start**: type the owner password into the chat box; once she recognises you, talk to her and hand her tasks.
 
@@ -134,7 +134,7 @@ In `%LOCALAPPDATA%\AivyOS`. Uninstalling asks whether to keep it or remove every
 You haven't entered the owner password yet, or it was wrong. Type the password you set on first run into the chat box.
 
 **How do I turn on voice?**
-Configure a speech service (recognition and synthesis) in Settings, save, then press the voice button beside the chat box.
+In Settings › 语音 (Voice), paste your key and press 验证并保存 (Verify and save). Once it passes, press 开始语音对话 (Start voice chat) or the waveform button left of the Send button.
 
 **Can I switch models at any time?**
 Yes, from the model menu beside the chat box, without restarting.
@@ -148,17 +148,18 @@ Open an [issue](https://github.com/Bo1202/Aivy-OS/issues) or email 4828797@qq.co
 - Only this computer is trusted by default: connections from the local network and other devices are refused; remote use has to be turned on by you, with an access passphrase.
 - With a cloud model, conversation content is sent to the model provider you chose; a local model keeps everything on your computer.
 
-## What's new in 2.5.0
+## What's new in 2.6.0
 
-- **Desktop control rebuilt**: works with windows and controls directly, launches apps, handles menus and dialogs, and captures covered windows.
-- **A more capable browser**: handles page dialogs; new key, hover, wait and back actions; web pages in the preview panel scale to fit.
-- **New web search route**: the chosen model's built-in web search first, browser search as the fallback.
-- **Voice that feels like a conversation**: gentle barge-in, not cut off by a cough, local speech check before recognition, hears your tone.
-- **Sturdier commands and files**: long commands in the background with a notice when done; large files read page by page; cross-drive searches say what was not searched.
-- **A smoother first launch**: guidance on where to get a key, and one click to list the models available to you.
-- **Install and uninstall**: a real progress bar; uninstall can keep your data or remove everything; Windows 7 / 8 users are told Windows 10 or later is required.
+- **A voice with expression**: new reading voices whose tone follows how she feels; where the chosen model supports it, she can also laugh softly or sigh.
+- **A new voice settings page**: status at a glance, a key is saved only after it is verified, and one click on a voice switches to it and plays a sample; when a check fails, it says exactly which part and what to do.
+- **Speaking up, and stopping**: you can let her speak up on her own, reading reminders and finished background tasks aloud (off by default); press Stop or send a new message and she goes quiet at once.
+- **Background results in the conversation**: when a background task finishes, its result joins the conversation you are having; hover the background badge to see how each task is going.
+- **Long tasks, start to finish**: however large the job, she carries it through; the context ring shows how full the conversation is in real time, with a tidy-up line you can set yourself.
+- **Steadier commands, search and browser**: no more garbled command output, much faster file search in large folders; web actions are never repeated when the outcome is unclear, and dialogs, new pages and long pages are all handled.
+- **Stronger security and privacy**: passphrases and keys are hidden in logs automatically; until you authenticate, nothing touches your computer or your data.
+- **A leaner installer**: Word, Excel, PowerPoint and PDF handling is built in; upgrading keeps the skills you already have and all your data.
 
-Full notes: [Release Notes v2.5.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.5.0).
+Full notes: [Release Notes v2.6.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.0). 📖 Getting started: [Aivy OS getting started guide (PDF, Chinese)](https://github.com/Bo1202/Aivy-OS/releases/download/v2.6.0/Aivy-OS-Getting-Started-CN.pdf), or read the [guide online](docs/getting-started_zh.md) (Chinese).
 
 ## Philosophy
 
