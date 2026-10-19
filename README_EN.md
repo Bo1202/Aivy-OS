@@ -45,7 +45,7 @@ She doesn't stop at answers. She reads files, runs code and operates apps, then 
 
 <img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/voice.webp" alt="Voice mode: a particle sphere moves with the voice, with captions for both speakers" width="100%">
 
-Just start talking — no push-to-talk. You can cut in while she speaks: she lowers her voice first and stops only once it is clearly you; a cough, a throat-clear or a quick "mm" won't cut her off. She hears your tone, and she acts on what you ask by voice. With a reading voice, her own voice has expression too: its tone follows her mood, with a soft laugh or a sigh when the moment calls for it.
+Just start talking — no push-to-talk. You can cut in while she speaks: she lowers her voice first and stops only once it is clearly you; a cough, a throat-clear or a quick "mm" won't cut her off. She hears your tone, and she acts on what you ask by voice. With the new expressive voices, she sounds the way she feels: her tone follows her mood, with a soft laugh or a sigh when the moment calls for it.
 
 > Voice needs a speech service (recognition and synthesis) configured in Settings.
 
@@ -150,13 +150,13 @@ Open an [issue](https://github.com/Bo1202/Aivy-OS/issues) or email 4828797@qq.co
 
 ## What's new in 2.6.0
 
-- **A voice with expression**: new reading voices whose tone follows how she feels; where the chosen model supports it, she can also laugh softly or sigh.
+- **A voice with expression**: a new set of expressive voices whose tone follows how she feels; where the chosen model supports it, she can also laugh softly or sigh.
 - **A new voice settings page**: status at a glance, a key is saved only after it is verified, and one click on a voice switches to it and plays a sample; when a check fails, it says exactly which part and what to do.
 - **Speaking up, and stopping**: you can let her speak up on her own, reading reminders and finished background tasks aloud (off by default); press Stop or send a new message and she goes quiet at once.
 - **Background results in the conversation**: when a background task finishes, its result joins the conversation you are having; hover the background badge to see how each task is going.
-- **Long tasks, start to finish**: however large the job, she carries it through; the context ring shows how full the conversation is in real time, with a tidy-up line you can set yourself.
+- **Long tasks, start to finish**: however large the job, she carries it through; the context ring shows how full the conversation is in real time, with a tidy-up line (整理线) you can set yourself.
 - **Steadier commands, search and browser**: no more garbled command output, much faster file search in large folders; web actions are never repeated when the outcome is unclear, and dialogs, new pages and long pages are all handled.
-- **Stronger security and privacy**: passphrases and keys are hidden in logs automatically; until you authenticate, nothing touches your computer or your data.
+- **Stronger security and privacy**: passphrases and keys are hidden in logs automatically; until you authenticate, she won't do anything on your computer or with your data.
 - **A leaner installer**: Word, Excel, PowerPoint and PDF handling is built in; upgrading keeps the skills you already have and all your data.
 
 Full notes: [Release Notes v2.6.0](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.0). 📖 Getting started: [Aivy OS getting started guide (PDF, Chinese)](https://github.com/Bo1202/Aivy-OS/releases/download/v2.6.0/Aivy-OS-Getting-Started-CN.pdf), or read the [guide online](docs/getting-started_zh.md) (Chinese).
