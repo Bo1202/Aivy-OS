@@ -100,6 +100,8 @@ DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本�
 
 ## 快速开始
 
+> Aivy OS 是独立的 Windows 软件，不是插件，也不是 npm / pnpm 包。这个仓库只放说明文档，程序在 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 的安装包里。
+
 1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.0.exe`（页面上显示为 `Aivy.OS.Setup.2.6.0.exe`），双击安装。
 2. **第一次打开，跟着引导走**：选好模型服务、填 Key（输入框下面就写着去哪里获取，点「获取模型」选一个就行）；给她起名字，设一个主人密码。
 3. **开始用**：在输入框里输入主人密码，她认出你之后，随便聊、随便交代。
@@ -121,6 +123,9 @@ DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本�
 | 模型 | 任意一家模型服务的 API Key，或本机的 Ollama |
 
 ## 常见问题
+
+**把仓库地址粘到别的软件里「安装插件」，报错装不上？**
+Aivy OS 不是插件，不能装进别的软件里，用 `git clone`、`npm`、`pnpm` 也装不上（会出现 `ERR_PNPM_GIT_RESOLVE_FAILED` 之类的错误）。请到 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `.exe` 安装包，双击安装。
 
 **需要一直联网吗？**
 用云端模型时需要；改用 Ollama 等本地模型，可以完全离线。

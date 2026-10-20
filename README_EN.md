@@ -102,6 +102,8 @@ Install skills and plugins, connect external tools over MCP, search files across
 
 ## Quick start
 
+> Aivy OS is a standalone Windows app, not a plugin or an npm / pnpm package. This repository only holds documentation; the app itself is the installer on [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest).
+
 1. **Install**: download `Aivy OS Setup 2.6.0.exe` (listed as `Aivy.OS.Setup.2.6.0.exe`) from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
 2. **Follow the first-run guide**: pick a model provider and enter your key (the key field tells you where to get one; press 获取模型 to choose from your available models), then name her and set an owner password.
 3. **Start**: type the owner password into the chat box; once she recognises you, talk to her and hand her tasks.
@@ -123,6 +125,9 @@ Provider key pages, endpoint settings and common errors are covered in the [gett
 | Model | An API key from any supported provider, or Ollama on this computer |
 
 ## FAQ
+
+**I pasted the repository URL into another app's "install plugin" box and it failed.**
+Aivy OS is not a plugin and cannot be installed into another app; `git clone`, `npm` and `pnpm` will not install it either (you will see errors such as `ERR_PNPM_GIT_RESOLVE_FAILED`). Download the `.exe` installer from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
 
 **Does it need to be online all the time?**
 Only for cloud models. With a local model such as Ollama it can run fully offline.
