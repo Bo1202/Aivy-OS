@@ -156,7 +156,6 @@ Open an [issue](https://github.com/Bo1202/Aivy-OS/issues) or email 4828797@qq.co
 
 ## What's new in 2.6.1
 
-- **Safer licensing and trials**: license and trial checks are hardened, and an ended trial is now reported accurately instead of occasionally showing a false alarm.
 - **Steadier voice**: no more getting stuck on "Connecting"; a failed voice settings save now tells you why, and an unreadable voice key can be reset in one click; Aivy knows right away when you end a voice chat.
 - **Steadier greetings and scheduled tasks**: an occasional error is retried once; if one starts just as you send a message, your words are kept; entering the correct wake password while one is running signs you in on the spot.
 - **Smoother details**: fetching the model list from a model service on this computer or your local network is no longer affected by the system proxy; the start page no longer keeps a stale error; Settings › System › License info shows your activation code.
