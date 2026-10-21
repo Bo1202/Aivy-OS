@@ -6,7 +6,7 @@
 
 **An AI that lives on your computer.** She listens, thinks, gets things done — and remembers you.
 
-[![Version](https://img.shields.io/badge/version-2.6.0-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.6.1-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078d4?logo=windows)](#system-requirements)
 [![License](https://img.shields.io/badge/license-proprietary-555)](#license)
 
@@ -27,6 +27,7 @@ Aivy OS is an AI companion for Windows. She chats with you and listens to you, a
 - [System requirements](#system-requirements)
 - [FAQ](#faq)
 - [Privacy](#privacy)
+- [What's new in 2.6.1](#whats-new-in-261)
 - [What's new in 2.6.0](#whats-new-in-260)
 - [Philosophy](#philosophy)
 
@@ -104,7 +105,7 @@ Install skills and plugins, connect external tools over MCP, search files across
 
 > Aivy OS is a standalone Windows app, not a plugin or an npm / pnpm package. This repository only holds documentation; the app itself is the installer on [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest).
 
-1. **Install**: download `Aivy OS Setup 2.6.0.exe` (listed as `Aivy.OS.Setup.2.6.0.exe`) from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
+1. **Install**: download `Aivy OS Setup 2.6.1.exe` (listed as `Aivy.OS.Setup.2.6.1.exe`) from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
 2. **Follow the first-run guide**: pick a model provider and enter your key (the key field tells you where to get one; press 获取模型 to choose from your available models), then name her and set an owner password.
 3. **Start**: type the owner password into the chat box; once she recognises you, talk to her and hand her tasks.
 
@@ -152,6 +153,16 @@ Open an [issue](https://github.com/Bo1202/Aivy-OS/issues) or email 4828797@qq.co
 - Conversations, memories and settings stay on your computer and never pass through our servers.
 - Only this computer is trusted by default: connections from the local network and other devices are refused; remote use has to be turned on by you, with an access passphrase.
 - With a cloud model, conversation content is sent to the model provider you chose; a local model keeps everything on your computer.
+
+## What's new in 2.6.1
+
+- **Safer licensing and trials**: license and trial checks are hardened, and an ended trial is now reported accurately instead of occasionally showing a false alarm.
+- **Steadier voice**: no more getting stuck on "Connecting"; a failed voice settings save now tells you why, and an unreadable voice key can be reset in one click; Aivy knows right away when you end a voice chat.
+- **Steadier greetings and scheduled tasks**: an occasional error is retried once; if one starts just as you send a message, your words are kept; entering the correct wake password while one is running signs you in on the spot.
+- **Smoother details**: fetching the model list from a model service on this computer or your local network is no longer affected by the system proxy; the start page no longer keeps a stale error; Settings › System › License info shows your activation code.
+- **Upgrading**: install over the old version; all settings and data are kept and activated users stay activated. The first use needs a network connection once.
+
+Full notes: [Release Notes v2.6.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.1).
 
 ## What's new in 2.6.0
 

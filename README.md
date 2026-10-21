@@ -6,7 +6,7 @@
 
 **住在你电脑里的 AI。** 会听，会想，会动手，还记得你。
 
-[![版本](https://img.shields.io/badge/版本-2.6.0-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![版本](https://img.shields.io/badge/版本-2.6.1-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![系统](https://img.shields.io/badge/系统-Windows%2010%20%2F%2011-0078d4?logo=windows)](#系统要求)
 [![许可](https://img.shields.io/badge/许可-商业软件-555)](#许可)
 
@@ -25,6 +25,7 @@ Aivy OS 是装在 Windows 上的 AI 伙伴。她能陪你聊天、听你说话�
 - [系统要求](#系统要求)
 - [常见问题](#常见问题)
 - [隐私](#隐私)
+- [2.6.1 更新](#261-更新)
 - [2.6.0 更新](#260-更新)
 - [设计理念](#设计理念)
 
@@ -102,7 +103,7 @@ DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本�
 
 > Aivy OS 是独立的 Windows 软件，不是插件，也不是 npm / pnpm 包。这个仓库只放说明文档，程序在 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 的安装包里。
 
-1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.0.exe`（页面上显示为 `Aivy.OS.Setup.2.6.0.exe`），双击安装。
+1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.1.exe`（页面上显示为 `Aivy.OS.Setup.2.6.1.exe`），双击安装。
 2. **第一次打开，跟着引导走**：选好模型服务、填 Key（输入框下面就写着去哪里获取，点「获取模型」选一个就行）；给她起名字，设一个主人密码。
 3. **开始用**：在输入框里输入主人密码，她认出你之后，随便聊、随便交代。
 
@@ -150,6 +151,16 @@ Aivy OS 不是插件，不能装进别的软件里，用 `git clone`、`npm`、`
 - 对话、记忆、设置都保存在你自己的电脑上，不经过我们的服务器。
 - 默认只信任本机：来自局域网和其他设备的连接一律拒绝；要远程使用，需要你亲自开启并设置访问口令。
 - 使用云端模型时，对话内容会发送给你选择的模型服务商；使用本地模型可以完全在本机运行。
+
+## 2.6.1 更新
+
+- **授权与试用更安全可靠**：校验全面加固；试用到期时准确告知，不再偶尔误报。
+- **语音更稳**：不再卡在「正在连接」；语音设置保存失败会说明原因，语音密钥读不出来时可一键重置；结束语音后她会立即知晓。
+- **主动问候与定时任务更稳**：偶发错误自动再试一次；恰好在你发消息时开始，你的话也不会丢；未认证时输入正确的唤醒密码当场完成认证。
+- **细节更顺手**：使用本机或局域网里的模型服务时，获取模型列表不受系统代理影响；启动页的错误提示不再残留；「设置 › 系统 › 授权信息」可以查看自己的激活码。
+- **升级须知**：直接覆盖安装，设置与数据全部保留，已激活无需重新激活；第一次使用需要联网一次完成验证。
+
+完整说明见 [Release Notes v2.6.1](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.1)。📖 新手教程：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.6.1/Aivy-OS-Getting-Started-CN.pdf)，或在线阅读 [新手指南](docs/getting-started_zh.md)。
 
 ## 2.6.0 更新
 
