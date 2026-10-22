@@ -214,6 +214,7 @@ Key 复制错了、多了空格，或已经失效。去厂商后台重新创建�
 | `postgres-mcp` / `sqlite-mcp` | 数据库查询（让她直接读你的数据库） |
 | `filesystem-mcp` / `git-mcp` | 文件/Git 高级操作 |
 | `slack-mcp` / `notion-mcp` | 协作工具集成 |
+| You.com 联网搜索 | 联网搜索 + 网页全文抓取（远程 Server：`https://api.you.com/mcp?profile=free`，免 API Key，答案自带来源） |
 | 自定义私有 Server | 你自己的 API/工具栈 |
 
 社区 MCP Server 列表：[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
