@@ -6,7 +6,7 @@
 
 **住在你电脑里的 AI。** 会听，会想，会动手，还记得你。
 
-[![版本](https://img.shields.io/badge/版本-2.6.1-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![版本](https://img.shields.io/badge/版本-2.6.2-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![系统](https://img.shields.io/badge/系统-Windows%2010%20%2F%2011-0078d4?logo=windows)](#系统要求)
 [![许可](https://img.shields.io/badge/许可-商业软件-555)](#许可)
 
@@ -25,6 +25,7 @@ Aivy OS 是装在 Windows 上的 AI 伙伴。她能陪你聊天、听你说话�
 - [系统要求](#系统要求)
 - [常见问题](#常见问题)
 - [隐私](#隐私)
+- [2.6.2 更新](#262-更新)
 - [2.6.1 更新](#261-更新)
 - [2.6.0 更新](#260-更新)
 - [设计理念](#设计理念)
@@ -103,7 +104,7 @@ DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本�
 
 > Aivy OS 是独立的 Windows 软件，不是插件，也不是 npm / pnpm 包。这个仓库只放说明文档，程序在 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 的安装包里。
 
-1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.1.exe`（页面上显示为 `Aivy.OS.Setup.2.6.1.exe`），双击安装。
+1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.2.exe`（页面上显示为 `Aivy.OS.Setup.2.6.2.exe`），双击安装。
 2. **第一次打开，跟着引导走**：选好模型服务、填 Key（输入框下面就写着去哪里获取，点「获取模型」选一个就行）；给她起名字，设一个主人密码。
 3. **开始用**：在输入框里输入主人密码，她认出你之后，随便聊、随便交代。
 
@@ -151,6 +152,18 @@ Aivy OS 不是插件，不能装进别的软件里，用 `git clone`、`npm`、`
 - 对话、记忆、设置都保存在你自己的电脑上，不经过我们的服务器。
 - 默认只信任本机：来自局域网和其他设备的连接一律拒绝；要远程使用，需要你亲自开启并设置访问口令。
 - 使用云端模型时，对话内容会发送给你选择的模型服务商；使用本地模型可以完全在本机运行。
+
+## 2.6.2 更新
+
+- **更快，也更省**：重新构建的对话架构，让模型服务的缓存得以大幅命中；对话越长，节省越明显，连续操作时回应更快。
+- **思考，收放由你**：模型名称旁新增思考深度滑条，默认、关、低、中、高五档；部分模型不支持调节，此时滑条变灰并给出提示。
+- **模型，随心切换**：「自定义」服务可以保存多条线路；右下角按「模型 · 线路 · 地址」一眼看全，选定即保存。
+- **企业微信，不止文字**：图片、文件、视频收发自如；语音消息与图文混排完整送达。
+- **界面，更顺手**：输入框右键剪切、复制、粘贴；看图左右切换；表情触手可及；IDE 随 Aivy 的改动同步更新。
+- **更稳，更细致**：窗口截取更可靠；网络波动后自动恢复连接；模型服务连续报错时，对话如常。
+- **升级须知**：直接覆盖安装，设置与数据全部保留，已激活无需重新激活；原来的「自定义」服务自动成为第一条线路。
+
+完整说明见 [Release Notes v2.6.2](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.2)。📖 新手教程：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.6.2/Aivy-OS-Getting-Started-CN.pdf)，或在线阅读 [新手指南](docs/getting-started_zh.md)。
 
 ## 2.6.1 更新
 
