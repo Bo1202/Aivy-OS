@@ -6,7 +6,7 @@
 
 **住在你电脑里的 AI。** 会听，会想，会动手，还记得你。
 
-[![版本](https://img.shields.io/badge/版本-2.6.2-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![版本](https://img.shields.io/badge/版本-2.6.3-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![系统](https://img.shields.io/badge/系统-Windows%2010%20%2F%2011-0078d4?logo=windows)](#系统要求)
 [![许可](https://img.shields.io/badge/许可-商业软件-555)](#许可)
 
@@ -25,6 +25,7 @@ Aivy OS 是装在 Windows 上的 AI 伙伴。她能陪你聊天、听你说话�
 - [系统要求](#系统要求)
 - [常见问题](#常见问题)
 - [隐私](#隐私)
+- [2.6.3 更新](#263-更新)
 - [2.6.2 更新](#262-更新)
 - [2.6.1 更新](#261-更新)
 - [2.6.0 更新](#260-更新)
@@ -104,7 +105,7 @@ DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本�
 
 > Aivy OS 是独立的 Windows 软件，不是插件，也不是 npm / pnpm 包。这个仓库只放说明文档，程序在 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 的安装包里。
 
-1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.2.exe`（页面上显示为 `Aivy.OS.Setup.2.6.2.exe`），双击安装。
+1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.3.exe`（页面上显示为 `Aivy.OS.Setup.2.6.3.exe`），双击安装。
 2. **第一次打开，跟着引导走**：选好模型服务、填 Key（输入框下面就写着去哪里获取，点「获取模型」选一个就行）；给她起名字，设一个主人密码。
 3. **开始用**：在输入框里输入主人密码，她认出你之后，随便聊、随便交代。
 
@@ -152,6 +153,16 @@ Aivy OS 不是插件，不能装进别的软件里，用 `git clone`、`npm`、`
 - 对话、记忆、设置都保存在你自己的电脑上，不经过我们的服务器。
 - 默认只信任本机：来自局域网和其他设备的连接一律拒绝；要远程使用，需要你亲自开启并设置访问口令。
 - 使用云端模型时，对话内容会发送给你选择的模型服务商；使用本地模型可以完全在本机运行。
+
+## 2.6.3 更新
+
+- **MCP，按需而来**：用哪个，亮哪个——设置里的 MCP 面板改为指示灯；开机不再自动连接，需要时才连、这件事做完再断开，平时不占用对话；正在使用时，对话框下方和语音界面会出现小标记；已在设置里登记的 MCP，说名字就能连。
+- **技能，开箱即用**：自带软件的技能一句话就能用起来，第一次会先征得你的同意；开着系统代理时，连接本机服务更稳；安装技能如实汇报结果，识别更多仓库结构，依赖安装更安心。
+- **视频，放大来看**：聊天里的视频一键放大（双击画面也行），倍速一并带上，画中画依然在。
+- **更稳，更细致**：完成认证之后，不会再偶尔被当成访客；控制条更干净，细节持续打磨。
+- **升级须知**：直接覆盖安装，设置与数据全部保留，已激活无需重新激活；以前打开过「启动时自动连接」的，升级后改为按需连接。
+
+完整说明见 [Release Notes v2.6.3](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.3)。📖 新手教程：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.6.3/Aivy-OS-Getting-Started-CN.pdf)，或在线阅读 [新手指南](docs/getting-started_zh.md)。
 
 ## 2.6.2 更新
 
