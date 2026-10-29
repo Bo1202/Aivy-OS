@@ -6,7 +6,7 @@
 
 **住在你电脑里的 AI。** 会听，会想，会动手，还记得你。
 
-[![版本](https://img.shields.io/badge/版本-2.6.3-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![版本](https://img.shields.io/badge/版本-2.6.4-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![系统](https://img.shields.io/badge/系统-Windows%2010%20%2F%2011-0078d4?logo=windows)](#系统要求)
 [![许可](https://img.shields.io/badge/许可-商业软件-555)](#许可)
 
@@ -25,6 +25,7 @@ Aivy OS 是装在 Windows 上的 AI 伙伴。她能陪你聊天、听你说话�
 - [系统要求](#系统要求)
 - [常见问题](#常见问题)
 - [隐私](#隐私)
+- [2.6.4 更新](#264-更新)
 - [2.6.3 更新](#263-更新)
 - [2.6.2 更新](#262-更新)
 - [2.6.1 更新](#261-更新)
@@ -105,7 +106,7 @@ DeepSeek、通义千问、Kimi、智谱、OpenAI、Gemini、Claude、Ollama 本�
 
 > Aivy OS 是独立的 Windows 软件，不是插件，也不是 npm / pnpm 包。这个仓库只放说明文档，程序在 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 的安装包里。
 
-1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.3.exe`（页面上显示为 `Aivy.OS.Setup.2.6.3.exe`），双击安装。
+1. **下载安装**：从 [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.4.exe`（页面上显示为 `Aivy.OS.Setup.2.6.4.exe`），双击安装。
 2. **第一次打开，跟着引导走**：选好模型服务、填 Key（输入框下面就写着去哪里获取，点「获取模型」选一个就行）；给她起名字，设一个主人密码。
 3. **开始用**：在输入框里输入主人密码，她认出你之后，随便聊、随便交代。
 
@@ -153,6 +154,16 @@ Aivy OS 不是插件，不能装进别的软件里，用 `git clone`、`npm`、`
 - 对话、记忆、设置都保存在你自己的电脑上，不经过我们的服务器。
 - 默认只信任本机：来自局域网和其他设备的连接一律拒绝；要远程使用，需要你亲自开启并设置访问口令。
 - 使用云端模型时，对话内容会发送给你选择的模型服务商；使用本地模型可以完全在本机运行。
+
+## 2.6.4 更新
+
+- **语音界面，能说也能写**：语音界面里就是完整的输入框——打字、添加文件、粘贴、拖入图片，说着话就能把截图或文件拿给 Aivy 看；Esc 不再结束语音对话，结束时点 ×；语音线路偶有异常时，提示会写明原因，点「重新检查并连接」通过即可继续，无需重启。
+- **随时停下**：处理中，输入框空着时点一下红色按钮，这一轮立刻停下；服务迟迟没有回应时，按停止或直接插话也会当场断开；写到一半按下停止，已经写出来的内容会留下，说一声「接着写」，Aivy 就从停下的地方继续。
+- **称呼，由你来定**：和你说话时，Aivy 用的都是你在引导页设定的称呼；在「性格与行为」里写下任何符号和表情，都不会影响 Aivy 认出你。
+- **更稳，更细致**：一次修改同一个文件的多处内容，每一处都稳稳落下，撤销记录也更可靠；误按刷新快捷键，界面也不会失去响应；保存按钮在任何尺寸的屏幕上都看得到；在精简版 Windows 上安装更稳。
+- **升级须知**：直接覆盖安装，设置与数据全部保留，已激活无需重新激活。
+
+完整说明见 [Release Notes v2.6.4](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.4)。📖 新手教程：[Aivy OS 新手教程.pdf](https://github.com/Bo1202/Aivy-OS/releases/download/v2.6.4/Aivy-OS-Getting-Started-CN.pdf)，或在线阅读 [新手指南](docs/getting-started_zh.md)。
 
 ## 2.6.3 更新
 
