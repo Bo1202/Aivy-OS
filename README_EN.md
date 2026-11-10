@@ -6,7 +6,7 @@
 
 **An AI that lives on your computer.** She listens, thinks, gets things done — and remembers you.
 
-[![Version](https://img.shields.io/badge/version-2.6.4-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.6.5-4fc3f7)](https://github.com/Bo1202/Aivy-OS/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078d4?logo=windows)](#system-requirements)
 [![License](https://img.shields.io/badge/license-proprietary-555)](#license)
 
@@ -27,6 +27,7 @@ Aivy OS is an AI companion for Windows. She chats with you and listens to you, a
 - [System requirements](#system-requirements)
 - [FAQ](#faq)
 - [Privacy](#privacy)
+- [What's new in 2.6.5](#whats-new-in-265)
 - [What's new in 2.6.4](#whats-new-in-264)
 - [What's new in 2.6.3](#whats-new-in-263)
 - [What's new in 2.6.2](#whats-new-in-262)
@@ -84,9 +85,7 @@ She wakes up on your schedule to remind, check and tidy up, then reports back. C
 
 ### One of her, a whole team
 
-<img src="https://cdn.jsdelivr.net/gh/Bo1202/Aivy-OS@main/docs/screenshots/v2.5/subagents.webp" alt="Three sub-agents research three competitors' pricing in parallel; the results come back as one comparison table" width="100%">
-
-Big jobs are split up and handed to several sub-agents at once while you keep working; she pulls their results together when they're all back. For tasks that span days, she tracks progress and comes back on time to continue.
+She has a staff BOT team: 小探 (the scout) looks things up, 分析师 (the analyst) thinks things through, 阿工 (the builder) makes the changes, 核对员 (the checker) finds faults, and 监控员 (the monitor) watches for changes. Say "have 小探 look into it", or hand her a big job: how many pieces to hand out and to whom is her call, you keep working, and she tells you the result when it's done. You can hire more staff and give them specialist skills. For tasks that span days, she tracks progress and comes back on time to continue.
 
 ### A full studio for code
 
@@ -108,7 +107,7 @@ Install skills and plugins, connect external tools over MCP, search files across
 
 > Aivy OS is a standalone Windows app, not a plugin or an npm / pnpm package. This repository only holds documentation; the app itself is the installer on [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest).
 
-1. **Install**: download `Aivy OS Setup 2.6.4.exe` (listed as `Aivy.OS.Setup.2.6.4.exe`) from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
+1. **Install**: download `Aivy OS Setup 2.6.5.exe` (listed as `Aivy.OS.Setup.2.6.5.exe`) from [Releases](https://github.com/Bo1202/Aivy-OS/releases/latest) and run it.
 2. **Follow the first-run guide**: pick a model provider and enter your key (the key field tells you where to get one; press 获取模型 to choose from your available models), then name her and set an owner password.
 3. **Start**: type the owner password into the chat box; once she recognises you, talk to her and hand her tasks.
 
@@ -156,6 +155,19 @@ Open an [issue](https://github.com/Bo1202/Aivy-OS/issues) or email 4828797@qq.co
 - Conversations, memories and settings stay on your computer and never pass through our servers.
 - Only this computer is trusted by default: connections from the local network and other devices are refused; remote use has to be turned on by you, with an access passphrase.
 - With a cloud model, conversation content is sent to the model provider you chose; a local model keeps everything on your computer.
+
+## What's new in 2.6.5
+
+- **Aivy's staff BOT team**: one Aivy, a whole team — five resident staff, each with a job: 小探 (the scout) looks things up, 分析师 (the analyst) thinks things through, 阿工 (the builder) makes the changes, 核对员 (the checker) finds faults, 监控员 (the monitor) watches for changes; no extra setup — once your model key is in and you have authenticated, just say "have 小探 look into it" or "have 阿工 change it", and Aivy tells you the result when it's done; several jobs move forward at once — how many to hand out and to whom is Aivy's call, each staff member takes 5 at a time and the whole team 10 by default, and anything beyond that queues automatically; staff can search the web and open pages, and read a project's notes before touching it; as long as the app is open, Aivy can also hand out work at a time you agreed on; from the background badge you can stop one job, or all of them.
+- **A team you put together**: tell Aivy, or click ＋ on the staff bar, settle a name, a role and a personality, and a new staff member is on the job — up to 20 more; give staff specialities from the skills you have installed, up to 5 each; models follow the main model by default, and you can pick a different default or configure one staff member separately; name, role, personality, skills and model can all be changed by telling Aivy, while the avatar, each staff member's limit and whether commands may be run are set on the staff card.
+- **One card each**: a staff bar sits on the left of the chat area, and in the voice screen too — who's busy and with how many jobs, without opening anything; click an avatar for the staff card: the current step, the files changed, and that staff member's conversation and memory are all on it, several cards can be open at once, and Aivy can pop one up for you; you can chat with a staff member right on the card without disturbing the work in hand, and anything important is passed on to Aivy; every staff member remembers the rules you taught and builds up experience of its own — memories you can see and edit on the card.
+- **Reviewed before it lands**: files changed by staff land only after Aivy has looked at them; the staff card shows what changed line by line, say the word if you don't want it, and it can be undone for 7 days; for work done in the background, 阿工 and 分析师 are checked by 核对员 first by default and go back to revise if it doesn't pass — switchable per staff member on the card; turn on 能跑命令 (can run commands) on the staff card and staff such as 阿工 and 核对员 can run tests and builds themselves — off by default; changes made by commands are not covered by "reviewed before it lands", so read the note on the card before turning it on.
+- **Time, set by Aivy**: every staff job, and every command or Python run sent to the background, gets a time limit that Aivy sets to fit the size of the work; on longer jobs, staff start wrapping up ahead of time; when time is up nothing is cut off blindly — extend, stop, or leave open a program the command started: Aivy decides; half-done work isn't wasted, and you'll be told if something comes up.
+- **A clearer view of the background**: the background badge says whether a job is computing, waiting, or possibly stuck; when background Python has been silent for 5 minutes the badge says it may be stuck and where it stopped, and at 20 minutes Aivy takes a look and decides whether to stop it or keep waiting; you can ask Aivy to stop any background command or Python run, and if one can't be stopped right away you'll be told; with WeCom linked, you can have Aivy send word to your phone when background work runs out of time or finishes.
+- **Steadier, more refined**: what gets finished while you're away is kept until Aivy has told you, and if the app restarts midway, what the latest batch finished is still there; while the app is open, daily and hourly reminders and recurring tasks run on time, anything missed in the last 7 days is reported by Aivy after you next authenticate, and whether to catch up is your call; bubbles for background reports and interrupted replies keep only the main text; message text styling stays consistent from start to finish; searches keep every link while using less of the conversation; staff can still open web pages with common proxy software running.
+- **Upgrading**: install over the old version; all settings and data are kept and activated users stay activated.
+
+Full notes: [Release Notes v2.6.5](https://github.com/Bo1202/Aivy-OS/releases/tag/v2.6.5).
 
 ## What's new in 2.6.4
 
