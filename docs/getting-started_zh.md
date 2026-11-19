@@ -50,7 +50,7 @@ Aivy OS 内置 Wiki 知识库，按项目、主题、人物和分析自动整理
 - **磁盘**：安装包约 1 GB，安装后约 3 GB
 - **网络**：使用云端模型时需要联网；用 Ollama 本地模型可以离线
 
-1. 去 [Releases 页面](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.5.exe`（页面上显示为 `Aivy.OS.Setup.2.6.5.exe`），双击运行，按提示安装。安装时有进度条，一般一两分钟。
+1. 去 [Releases 页面](https://github.com/Bo1202/Aivy-OS/releases/latest) 下载 `Aivy OS Setup 2.6.6.exe`（页面上显示为 `Aivy.OS.Setup.2.6.6.exe`），双击运行，按提示安装。安装时有进度条，一般一两分钟。
    如果 Windows 提示「已保护你的电脑」，点「更多信息」→「仍要运行」——这是 Windows 对没有购买微软签名证书的软件的统一提示。
 2. 第一次打开会慢一些：系统正在检查新程序的文件（杀毒软件扫描）。等待页上会显示「已等」多久，好了会自动进入，**不要重复打开**。
 
